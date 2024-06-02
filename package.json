@@ -1,0 +1,22 @@
+{
+  "name": "cypress-withtypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/**.ts --env allure=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.29.0",
+    "allure-cypress": "^2.15.1",
+    "cypress": "^13.8.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "typescript": "^5.4.5"
+  }
+}
