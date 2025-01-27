@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": [
+      "cypress",
+      "@badeball/cypress-cucumber-preprocessor",
+      "node",
+      "@shelex/cypress-allure-plugin",
+      "cypress-wait-until"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "module": "commonjs",      
+    "moduleResolution": "node", 
+    "outDir": "dist"
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "generate-cucumber-html-report.ts",
+    "types/**/*.d.ts"                
+  ]
+}
+  

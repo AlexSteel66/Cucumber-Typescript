@@ -2,7 +2,7 @@
 /// <reference types="cypress-xpath" /> 
 
 import 'cypress-iframe';
-import ProductPage from '../pages/ProductPage';
+import ProductPage from './pages/ProductPage';
 const productPage = new ProductPage()
 
 // ***********************************************
@@ -43,14 +43,16 @@ Cypress.Commands.add('iClickAway', () => {
   cy.get('body').click({force: true}); 
 });
 
-Cypress.Commands.add('visitKpasURL', (): void => {
-  const url = 'https://www.kpas.sk/';
-  cy.visit(url);
+Cypress.Commands.add('visitMainWebsite', (): void => {
+  const baseUrl = Cypress.config('baseUrl');
+  cy.visit("baseUrl");
 });
 
-Cypress.Commands.add('visitVIGsite', (): void => {
-  const url = 'https://group.vig/';
-  cy.visit(url);
+Cypress.Commands.add('visitBusinessMax', (): void => {
+  const baseUrl = Cypress.config('baseUrl');
+  const businessMaxPath = Cypress.env('businessMaxPath');
+  const fullUrl = `${baseUrl}${businessMaxPath}`;
+  cy.visit(fullUrl);
 });
 
 Cypress.Commands.add('getText', (selector: string) => {
@@ -69,6 +71,12 @@ Cypress.Commands.add("chooseHeader", (headerName: string) => {
 
 Cypress.Commands.add('getValueOfField', (fieldName: string) => {
   return productPage.getWebelementOfFieldInput(fieldName)
+    .invoke('val')
+    .then((value) => value?.toString() || '');;
+})
+
+Cypress.Commands.add('getValueOfTextArea', (textAreaName: string) => {
+  return productPage.getTextArea(textAreaName)
     .invoke('val')
     .then((value) => value?.toString() || '');;
 })
@@ -109,7 +117,7 @@ Cypress.Commands.add('verifyAllLinksInPageAreOk', () => {
       cy.request({
         url: href,
         failOnStatusCode: false,
-        timeout: 10000, 
+        timeout: 20000, 
       }).then((response) => {
         const elapsedTime = (Date.now() - startTime) / 1000; 
         const statusCode = response.status;

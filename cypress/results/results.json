@@ -1,0 +1,9 @@
+{
+  "browserName": "chrome",
+  "browserVersion": "132.0.6834.84",
+  "osName": "Win32",
+  "osVersion": "Windows NT 10.0; Win64; x64",
+  "cypressVersion": "13.17.0",
+  "startedTestsAt": "2025-01-27T10:43:15.826Z",
+  "endedTestsAt": "2025-01-27T10:44:37.385Z"
+}

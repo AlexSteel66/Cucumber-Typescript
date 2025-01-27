@@ -14,8 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-//import 'cypress-mochawesome-reporter/register';
+import 'cypress-wait-until';
+import './commands';
 import 'cypress-mochawesome-reporter/register';
 import 'cypress-xpath';
 import 'cypress-iframe';
+import "@badeball/cypress-cucumber-preprocessor";
+import "cypress-cucumber-attach-screenshots-to-failed-steps";
+import './hooks.ts';
+
+
+
+

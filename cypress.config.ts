@@ -1,16 +1,46 @@
-import { defineConfig } from 'cypress';
-import { on } from 'process';
+import { defineConfig } from "cypress";
+import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
+import createBundler from "@bahmutov/cypress-esbuild-preprocessor";
+import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
 
-module.exports = defineConfig({
-reporter: 'cypress-mochawesome-reporter',
-
+export default defineConfig({
+  video: false,
+  screenshotOnRunFailure: true,
+  screenshotsFolder: "cypress/reports/screenshots",
+  videosFolder: "cypress/videos",
+  videoCompression: 32,
   e2e: {
-    baseUrl: "https://todo.qacart.com",
+    baseUrl: "https://kooperativa.sk/",
     pageLoadTimeout: 120000,
+    defaultCommandTimeout: 10000,
+    requestTimeout: 20000,
+    numTestsKeptInMemory: 0,
     chromeWebSecurity: false,
-    setupNodeEvents(on, config) {
-    require('cypress-mochawesome-reporter/plugin')(on);
-  
+    specPattern: "cypress/e2e/features/**/*.feature",
+    retries: 0,
+    viewportWidth: 1280,
+    viewportHeight: 720,
+    env: {
+      businessMaxPath: "poistenie/firmy-zivnostnici/biznis-max",
+      stepDefinitions: "cypress/support/step_definitions/**/*.{js,ts}",
+      TAGS: "@Regression",
+      cucumberJson: {
+        generate: false, 
+        outputFolder: "cypress/reports/cucumber-json/",
+        filePrefix: "",
+        fileSuffix: ".cucumber",
+      },
+    },
+    async setupNodeEvents(on, config) {
+      await addCucumberPreprocessorPlugin(on, config);
+
+      on(
+        "file:preprocessor",
+        createBundler({
+          plugins: [createEsbuildPlugin(config)],
+        })
+      );
+      return config;
     },
   },
-});   
+});

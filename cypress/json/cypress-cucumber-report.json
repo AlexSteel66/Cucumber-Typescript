@@ -1,0 +1,4124 @@
+[
+    {
+        "comments": [],
+        "description": "",
+        "elements": [
+            {
+                "description": "",
+                "id": "Testing banking insurance;Verification of links inside banking insurance",
+                "keyword": "Scenario",
+                "line": 4,
+                "name": "Verification of links inside banking insurance",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 5,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 6,
+                        "name": "I wait for 1500 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 7,
+                        "name": "I click onto hyperlink \"Bankopoistenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 8,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 10,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 20,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 31,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 44,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@BankingM"
+                    }
+                ],
+                "type": "scenario"
+            },
+            {
+                "description": "",
+                "id": "Testing banking insurance;Verification of funeral insurance",
+                "keyword": "Scenario",
+                "line": 60,
+                "name": "Verification of funeral insurance",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 61,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 62,
+                        "name": "I wait for 1500 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 63,
+                        "name": "I click onto hyperlink \"Bankopoistenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 64,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 65,
+                        "name": "I click onto the link of webelement with text \"Pohrebné poistenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 67,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 73,
+                        "name": "I don’t see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 86,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 94,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@Banking"
+                    },
+                    {
+                        "name": "@only_this_scenarioT"
+                    }
+                ],
+                "type": "scenario"
+            }
+        ],
+        "id": "Testing banking insurance",
+        "keyword": "Feature",
+        "line": 1,
+        "name": "Testing banking insurance",
+        "uri": "cypress\\e2e\\features\\Banking insurance.feature",
+        "tags": []
+    },
+    {
+        "comments": [],
+        "description": "",
+        "elements": [
+            {
+                "description": "",
+                "id": "Some basic features;Basic verification of links inside the main page and additonal verification of all hyperlinks",
+                "keyword": "Scenario",
+                "line": 4,
+                "name": "Basic verification of links inside the main page and additonal verification of all hyperlinks",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 6,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 7,
+                        "name": "I wait for 1000 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 8,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 10,
+                        "name": "I see hyperlink for webelements",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 28,
+                        "name": "Inside the block \"Auto\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 36,
+                        "name": "Inside the block \"Život\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 50,
+                        "name": "Inside the block \"Majetok\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 54,
+                        "name": "Inside the block \"Zodpovednosť\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 58,
+                        "name": "Inside the block \"Cestovanie\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 64,
+                        "name": "Inside the block \"Firmy a živnostníci\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 71,
+                        "name": "Inside the block \"Asistenčné služby\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 74,
+                        "name": "Inside the block \"Bankopoistenie\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 77,
+                        "name": "Inside the block \"Rýchle linky\" with highlighted header I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 86,
+                        "name": "Inside the block \"Dôležité odkazy\" with highlighted header I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 95,
+                        "name": "Verify all links are OK",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@only_this_scenario"
+                    }
+                ],
+                "type": "scenario"
+            },
+            {
+                "description": "",
+                "id": "Some basic features;Testing basic verification of fields inside request for the information form",
+                "keyword": "Scenario",
+                "line": 98,
+                "name": "Testing basic verification of fields inside request for the information form",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 99,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 100,
+                        "name": "I click onto webelement \"Kontakty\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 101,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 103,
+                        "name": "I wait for 3500 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 104,
+                        "name": "I click onto the button \"Cestovanie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 105,
+                        "name": "I click onto the button \"Žiadosti\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 106,
+                        "name": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 107,
+                        "name": "I see the following fields",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 116,
+                        "name": "I do not see the following fields",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 121,
+                        "name": "I see the text area \"Správa\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 123,
+                        "name": "I select the radiobutton \"Spoločnosť\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 125,
+                        "name": "I see the following fields",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 134,
+                        "name": "I do not see the following fields",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "But ",
+                        "line": 139,
+                        "name": "I see the text area \"Správa\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 140,
+                        "name": "I select the radiobutton \"Fyzická osoba\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 141,
+                        "name": "I type \"Alex\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 142,
+                        "name": "field \"Meno\" has value \"Alex\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 143,
+                        "name": "I type \"\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 144,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 145,
+                        "name": "I see validation message \"Meno je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 146,
+                        "name": "I type \"Alex\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 147,
+                        "name": "I do not see validation message \"Meno je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 149,
+                        "name": "I type \"Gregor\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 150,
+                        "name": "field \"Priezvisko\" has value \"Gregor\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 151,
+                        "name": "I type \"\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 152,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 153,
+                        "name": "I see validation message \"Priezvisko je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 154,
+                        "name": "I type \"Gregor\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 155,
+                        "name": "I do not see validation message \"Priezvisko je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 158,
+                        "name": "I type \"1234567\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 159,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 160,
+                        "name": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 162,
+                        "name": "I type \"123456789\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 163,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 164,
+                        "name": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 166,
+                        "name": "I type \"abcdefgh\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 167,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 168,
+                        "name": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 170,
+                        "name": "I type \"12345678\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 171,
+                        "name": "field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\" has value \"12345678\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 172,
+                        "name": "I do not see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 174,
+                        "name": "I type \"1234567890\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 175,
+                        "name": "field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\" has value \"1234567890\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 176,
+                        "name": "I do not see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 178,
+                        "name": "I type \"\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 179,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 180,
+                        "name": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 182,
+                        "name": "I type \"test\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 183,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 184,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 186,
+                        "name": "I type \"test@\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 187,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 188,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 190,
+                        "name": "I type \"test@gmail\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 191,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 192,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 194,
+                        "name": "I type \"test@gmail.\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 195,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 196,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 198,
+                        "name": "I type \"\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 199,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 200,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 202,
+                        "name": "I type \"test@gmail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 203,
+                        "name": "field \"Email\" has value \"test@gmail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 204,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 205,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 207,
+                        "name": "I type \"example.name+test@gmail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 208,
+                        "name": "field \"Email\" has value \"example.name+test@gmail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 209,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 210,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 212,
+                        "name": "I type \"user123@mail.domain.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 213,
+                        "name": "field \"Email\" has value \"user123@mail.domain.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 214,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 216,
+                        "name": "I type \"name.surname@mail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 217,
+                        "name": "field \"Email\" has value \"name.surname@mail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 218,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 219,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 221,
+                        "name": "I type \"email_12345@gmail.io\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 222,
+                        "name": "field \"Email\" has value \"email_12345@gmail.io\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 223,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 224,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 226,
+                        "name": "I type \"\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 227,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 228,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 230,
+                        "name": "I type \"123\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 231,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 232,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 234,
+                        "name": "I type \"123456\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 235,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 236,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 238,
+                        "name": "I type \"1234567\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 239,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 240,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 242,
+                        "name": "I type \"12345678\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 243,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 244,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 246,
+                        "name": "I type \"123456789\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 247,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 248,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 250,
+                        "name": "I type \"\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 251,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 252,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 254,
+                        "name": "I type \"323456789\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 255,
+                        "name": "field \"Telefón\" has value \"+421 323 456 789\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 256,
+                        "name": "I do not see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 258,
+                        "name": "I type \"987654321\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 259,
+                        "name": "field \"Telefón\" has value \"+421 987 654 321\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 260,
+                        "name": "I do not see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 262,
+                        "name": "I type \"\" into the text area \"Správa\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 263,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 264,
+                        "name": "I see validation message \"Vaša správa je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 266,
+                        "name": "I type \"Give me something\" into the text area \"Správa\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 267,
+                        "name": "text area \"Správa\" has value \"Give me something\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 268,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 269,
+                        "name": "I do not see validation message \"Vaša správa je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@only_this_scenario"
+                    }
+                ],
+                "type": "scenario"
+            }
+        ],
+        "id": "Some basic features",
+        "keyword": "Feature",
+        "line": 1,
+        "name": "Some basic features",
+        "uri": "cypress\\e2e\\features\\BasicFeatures.feature",
+        "tags": []
+    },
+    {
+        "comments": [],
+        "description": "",
+        "elements": [
+            {
+                "description": "",
+                "id": "Testing banking insurance;Verification of links inside banking insurance",
+                "keyword": "Scenario",
+                "line": 4,
+                "name": "Verification of links inside banking insurance",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 5,
+                        "name": "I visit business-max product",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 6,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 7,
+                        "name": "I see article \"Odcudzenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 8,
+                        "name": "I see article \"Vandalizmus\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 9,
+                        "name": "I see article \"Poistenie skla\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 11,
+                        "name": "I click onto next slide",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 12,
+                        "name": "I see article \"Zodpovednosť za škodu spôsobenú vadou výrobku\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 13,
+                        "name": "I see article \"Lom stroja\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 14,
+                        "name": "I see article \"Preprava zásielky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 16,
+                        "name": "I click onto next slide",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 18,
+                        "name": "I see articles",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 23,
+                        "name": "I click onto next slide",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 24,
+                        "name": "I see articles",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 29,
+                        "name": "I click onto next slide",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 30,
+                        "name": "I see articles",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 35,
+                        "name": "I click onto the article \"Búracie práce\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 36,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 41,
+                        "name": "I close this dialog",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 42,
+                        "name": "I don´t see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 47,
+                        "name": "I click onto the article \"Škody na podzemných a nadzemných vedeniach\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 48,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 53,
+                        "name": "I close this dialog",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 54,
+                        "name": "I don´t see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 58,
+                        "name": "I click onto previous slide",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 59,
+                        "name": "I click onto the article \"Regresy sociálnej a zdravotných poisťovní\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 60,
+                        "name": "I see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 65,
+                        "name": "I close this dialog",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 66,
+                        "name": "I don´t see these texts",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@BusinessMax"
+                    }
+                ],
+                "type": "scenario"
+            }
+        ],
+        "id": "Testing banking insurance",
+        "keyword": "Feature",
+        "line": 1,
+        "name": "Testing banking insurance",
+        "uri": "cypress\\e2e\\features\\Biznis-max.feature",
+        "tags": []
+    },
+    {
+        "comments": [],
+        "description": "",
+        "elements": [
+            {
+                "description": "",
+                "id": "Testing section responsibility insurance;Verification of fields, links and checkboxes for responsibility insurance",
+                "keyword": "Scenario",
+                "line": 4,
+                "name": "Verification of fields, links and checkboxes for responsibility insurance",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 5,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 6,
+                        "name": "I wait for 1500 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 7,
+                        "name": "I click onto hyperlink \"Poistenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 9,
+                        "name": "I see links",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 18,
+                        "name": "I click onto the simple link \"zodpovednost\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 19,
+                        "name": "I click onto the simple link \"zodpovednost/skoda-sposobena-zamestnavatelovi\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 20,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 28,
+                        "name": "I click onto the link of webelement with text \"Chcem poistenie zodpovednosti\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 29,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 30,
+                        "name": "I see following checkboxes in states",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 45,
+                        "name": "I deselect the checkbox \"Poistenie zodpovednosti\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 46,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 47,
+                        "name": "I see message \"Vyberte aspoň jedno poistenie.\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 48,
+                        "name": "I select the checkbox \"Poistenie zodpovednosti\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 49,
+                        "name": "I don´t see message \"Vyberte aspoň jedno poistenie.\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 52,
+                        "name": "I type \"Alex\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 53,
+                        "name": "field \"Meno\" has value \"Alex\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 54,
+                        "name": "I type \"\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 55,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 56,
+                        "name": "I see validation message \"Meno je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 57,
+                        "name": "I type \"Alex\" into the field \"Meno\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 58,
+                        "name": "I do not see validation message \"Meno je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 60,
+                        "name": "I type \"Gregor\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 61,
+                        "name": "field \"Priezvisko\" has value \"Gregor\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 62,
+                        "name": "I type \"\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 63,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 64,
+                        "name": "I see validation message \"Priezvisko je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 65,
+                        "name": "I type \"Gregor\" into the field \"Priezvisko\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 66,
+                        "name": "I do not see validation message \"Priezvisko je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 69,
+                        "name": "I type \"test\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 70,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 71,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 73,
+                        "name": "I type \"test@\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 74,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 75,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 77,
+                        "name": "I type \"test@gmail\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 78,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 79,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 81,
+                        "name": "I type \"test@gmail.\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 82,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 83,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 85,
+                        "name": "I type \"\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 86,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 87,
+                        "name": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 89,
+                        "name": "I type \"test@gmail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 90,
+                        "name": "field \"Email\" has value \"test@gmail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 91,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 92,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 94,
+                        "name": "I type \"example.name+test@gmail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 95,
+                        "name": "field \"Email\" has value \"example.name+test@gmail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 96,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 97,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 99,
+                        "name": "I type \"user123@mail.domain.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 100,
+                        "name": "field \"Email\" has value \"user123@mail.domain.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 101,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 103,
+                        "name": "I type \"name.surname@mail.com\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 104,
+                        "name": "field \"Email\" has value \"name.surname@mail.com\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 105,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 106,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 108,
+                        "name": "I type \"email_12345@gmail.io\" into the field \"Email\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 109,
+                        "name": "field \"Email\" has value \"email_12345@gmail.io\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 110,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 111,
+                        "name": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 113,
+                        "name": "I type \"\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 114,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 115,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 117,
+                        "name": "I type \"123\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 118,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 119,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 121,
+                        "name": "I type \"123456\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 122,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 123,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 125,
+                        "name": "I type \"1234567\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 126,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 127,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 129,
+                        "name": "I type \"12345678\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 130,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 131,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 133,
+                        "name": "I type \"123456789\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 134,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 135,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 137,
+                        "name": "I type \"\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 138,
+                        "name": "I click away",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 139,
+                        "name": "I see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 141,
+                        "name": "I type \"323456789\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 142,
+                        "name": "field \"Telefón\" has value \"+421 323 456 789\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 143,
+                        "name": "I do not see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 145,
+                        "name": "I type \"987654321\" into the field \"Telefón\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 146,
+                        "name": "field \"Telefón\" has value \"+421 987 654 321\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 147,
+                        "name": "I do not see validation message \"Telefónne číslo je povinný údaj\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    }
+                ],
+                "type": "scenario"
+            },
+            {
+                "description": "",
+                "id": "Testing section responsibility insurance;Verification of links inside responsibility insurance",
+                "keyword": "Scenario",
+                "line": 150,
+                "name": "Verification of links inside responsibility insurance",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "line": 152,
+                        "name": "I visit the main website",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 153,
+                        "name": "I wait for 1500 milliseconds",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "line": 154,
+                        "name": "I click onto hyperlink \"Poistenie\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 155,
+                        "name": "I click onto the simple link \"zodpovednost\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 156,
+                        "name": "I click onto the simple link \"zodpovednost/skoda-sposobena-zamestnavatelovi\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 157,
+                        "name": "I click onto the link of webelement with text \"Chcem poistenie zodpovednosti\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 158,
+                        "name": "I click onto the button \"Odmietnuť všetky\"",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 160,
+                        "name": "Inside the block \"Auto\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 168,
+                        "name": "Inside the block \"Život\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 183,
+                        "name": "Inside the block \"Majetok\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 187,
+                        "name": "Inside the block \"Zodpovednosť\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 191,
+                        "name": "Inside the block \"Cestovanie\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 197,
+                        "name": "Inside the block \"Asistenčné služby\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 200,
+                        "name": "Inside the block \"Bankopoistenie\" I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 203,
+                        "name": "Inside the block \"Rýchle linky\" with highlighted header I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "line": 212,
+                        "name": "Inside the block \"Dôležité odkazy\" with highlighted header I see hyperlinks",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "line": 221,
+                        "name": "I see links for webelements with text",
+                        "result": {
+                            "status": "",
+                            "duration": 0,
+                            "error_message": null
+                        },
+                        "embeddings": [],
+                        "match": {
+                            "location": "not available:0"
+                        }
+                    }
+                ],
+                "tags": [
+                    {
+                        "name": "@Regression"
+                    },
+                    {
+                        "name": "@only_this_scenario"
+                    }
+                ],
+                "type": "scenario"
+            }
+        ],
+        "id": "Testing section responsibility insurance",
+        "keyword": "Feature",
+        "line": 1,
+        "name": "Testing section responsibility insurance",
+        "uri": "cypress\\e2e\\features\\Responsibility insurance.feature",
+        "tags": []
+    }
+]
