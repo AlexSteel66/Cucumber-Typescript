@@ -1,6 +1,6 @@
 Feature: Some basic features
 
-  @Regression  @only_this_scenario
+  @Regression 
   Scenario: Basic verification of links inside the main page and additonal verification of all hyperlinks
 
     Given I visit the main website
@@ -8,19 +8,19 @@ Feature: Some basic features
     Then I click onto the button "Odmietnuť všetky"
 
     Then I see hyperlink for webelements
-      | Kontakty                                                                    |
-      | Asistenčné služby                                                           |
-      | Pobočky KOOPERATIVA                                                         |
-      | Stav mojej škody                                                            |
-      | Postup pri poistnej udalosti                                                |
-      | Dôležité dokumenty                                                          |
-      | Online platba poistného                                                     |
-      | Prihlásenie do klientskej zóny                                              |
-      | Asistenčné služby                                                           |
-      | Nové vylepšené poistenie Bezstarostný život                                 |
-      | Prvá appka na hlásenie poistných udalostí                                   |
-      | Vynovené poistenie Bezstarostný domov                                       |
-      | Elektronická karta PZP (zelená karta)                                       |
+      | Kontakty                                  |
+      | Asistenčné služby                         |
+      | Pobočky KOOPERATIVA                       |
+      | Stav mojej škody                          |
+      | Postup pri poistnej udalosti              |
+      | Dôležité dokumenty                        |
+      | Online platba poistného                   |
+      | Prihlásenie do klientskej zóny            |
+      | Asistenčné služby                         |
+      | Prvá appka na hlásenie poistných udalostí |
+      | Elektronická karta PZP (zelená karta)     |
+
+    And I don´t see these texts
       | Zimný denník jedného auta: Môj náročný týždeň na cestách                    |
       | Pokojné Vianoce začínajú doma. Chráňte to, na čom najviac záleží            |
       | Menej papiera, viac zelene: Prečo sa oplatí prejsť na digitálnu komunikáciu |
@@ -94,7 +94,7 @@ Feature: Some basic features
 
     And Verify all links are OK
 
-  @Regression @only_this_scenario
+  @Regression
   Scenario: Testing basic verification of fields inside request for the information form
     Given I visit the main website
     When I click onto webelement "Kontakty"
@@ -140,31 +140,26 @@ Feature: Some basic features
     Then I select the radiobutton "Fyzická osoba"
     When I type "Alex" into the field "Meno"
     Then field "Meno" has value "Alex"
-    When I type "" into the field "Meno"
-    And I click away
+    When I type " " into the field "Meno"
     Then I see validation message "Meno je povinný údaj"
     When I type "Alex" into the field "Meno"
     Then I do not see validation message "Meno je povinný údaj"
 
     When I type "Gregor" into the field "Priezvisko"
     Then field "Priezvisko" has value "Gregor"
-    When I type "" into the field "Priezvisko"
-    And I click away
+    When I type " " into the field "Priezvisko"
     Then I see validation message "Priezvisko je povinný údaj"
     And I type "Gregor" into the field "Priezvisko"
     Then I do not see validation message "Priezvisko je povinný údaj"
 
 
     When I type "1234567" into the field "Číslo poistnej zmluvy / Číslo návrhu zmluvy"
-    And I click away
     Then I see validation message "Číslo zmluvy musí mať 8 alebo 10 číslic"
 
     When I type "123456789" into the field "Číslo poistnej zmluvy / Číslo návrhu zmluvy"
-    And I click away
     Then I see validation message "Číslo zmluvy musí mať 8 alebo 10 číslic"
 
     When I type "abcdefgh" into the field "Číslo poistnej zmluvy / Číslo návrhu zmluvy"
-    And I click away
     Then I see validation message "Číslo zmluvy musí mať 8 alebo 10 číslic"
 
     When I type "12345678" into the field "Číslo poistnej zmluvy / Číslo návrhu zmluvy"
@@ -176,37 +171,29 @@ Feature: Some basic features
     Then I do not see validation message "Číslo zmluvy musí mať 8 alebo 10 číslic"
 
     When I type "" into the field "Číslo poistnej zmluvy / Číslo návrhu zmluvy"
-    And I click away
     Then I see validation message "Číslo zmluvy musí mať 8 alebo 10 číslic"
 
     When I type "test" into the field "Email"
-    And I click away
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "test@" into the field "Email"
-    And I click away
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "test@gmail" into the field "Email"
-    And I click away
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "test@gmail." into the field "Email"
-    And I click away
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "" into the field "Email"
-    And I click away
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "test@gmail.com" into the field "Email"
     Then field "Email" has value "test@gmail.com"
-    And I click away
     And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "example.name+test@gmail.com" into the field "Email"
     Then field "Email" has value "example.name+test@gmail.com"
-    And I click away
     And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "user123@mail.domain.com" into the field "Email"
@@ -215,40 +202,31 @@ Feature: Some basic features
 
     When I type "name.surname@mail.com" into the field "Email"
     Then field "Email" has value "name.surname@mail.com"
-    And I click away
     And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "email_12345@gmail.io" into the field "Email"
     Then field "Email" has value "email_12345@gmail.io"
-    And I click away
     And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "" into the field "Telefón"
-    And I click away
     And I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "123" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "123456" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "1234567" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "12345678" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "123456789" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "" into the field "Telefón"
-    And I click away
     Then I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "323456789" into the field "Telefón"
@@ -260,12 +238,10 @@ Feature: Some basic features
     And I do not see validation message "Telefónne číslo je povinný údaj"
 
     When I type "" into the text area "Správa"
-    And I click away
     Then I see validation message "Vaša správa je povinný údaj"
 
     When I type "Give me something" into the text area "Správa"
     Then text area "Správa" has value "Give me something"
-    And I click away
     Then I do not see validation message "Vaša správa je povinný údaj"
 
 

@@ -1,6 +1,6 @@
 Feature: Testing banking insurance
 
-    @Regression @Banking @Links
+    @Regression @Banking @Lama
     Scenario: Verification of links inside banking insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -13,12 +13,10 @@ Feature: Testing banking insurance
             | Spolupráca so Slovenskou sporiteľňou                                                    |
             | poistenie poisťovne KOOPERATIVA šité na mieru.                                          |
             | Produkty poisťovne KOOPERATIVA, ktoré ponúka Slovenská sporiteľňa:                      |
-            | Poistenie ŽIVOT                                                                         |
-            | Dokumenty k Poisteniu ŽIVOT:                                                            |
             | Produkty a služby Slovenskej sporiteľne, ktoré ponúka KOOPERATIVA na svojich pobočkách: |
 
         Then I see links for webelements with text
-            | Poistenie ŽIVOT                             |
+            # | Poistenie ŽIVOT                             |
             | Poistenie k úveru                           |
             | Osobná poistka                              |
             | Pohrebné poistenie                          |
@@ -29,20 +27,15 @@ Feature: Testing banking insurance
             | Poistenie Podnikateľ                        |
 
         Then I see links for webelements with text
-            | Poistné podmienky pre poistenie ŽIVOT_VPP 2000_01012023                                            |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA k posteniu ŽIVOT a Poistenie úveru_01012025             |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA_01012024                                                |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA_01012023                                                |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA k poisteniu ŽIVOT a Poistenie k úveru_01012022-31122022 |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA k poisteniu ŽIVOT a Poistenie k úveru_01012022-31122022 |
-            | Verejné vyhlásenie spoločnosti KOOPERATIVA k poisteniu ŽIVOT a Poistenie k úveru_01042020-31122020 |
-            | Dodatok č_ 1 k Verejnému vyhláseniu k poistnej zmluve ŽIVOT a Poistenie k úveru_01042020-31122021  |
-            | Dokument s kľúčovými informáciami pre produkt Život bežne platené_01012024                         |
-            | Dokument s kľúčovými informáciami pre produkt Život jednorázovo platené_01012024                   |
-            | Postup klienta pri asistenčných službách eDoctor_01032022                                          |
+            | Všeobecné poistné podmienky pre poistenie Život_13092024                                                                        |
+            | Dokument s kľúčovými informáciami Život štandard_01022025                                                                       |
+            | Štatút vlastného fondu Fond svetových akcií_062024                                                                              |
+            | Dokument o udržateľnosti produktov_01022024                                                                                     |
+            | Sadzobník poplatkov, úrokov, limitov, obmedzenia na pripoisteniach a cenník úhrad za lekárske služby_pre produkt Život_13092024 |
+            | Manuál pre postup pri výbere a využití DHS asistenčných služieb_13092024                                                        |
 
         Then I see links for webelements with text
-            | eDoctor                     |
+            | ProDoctor                   |
             | webe                        |
             | pobočkách                   |
             | +421 2 5729 9999            |
@@ -56,7 +49,7 @@ Feature: Testing banking insurance
             | neživotného poistenia       |
 
 
-    @Regression @Banking @Lama
+    @Regression @Banking 
     Scenario: Verification of funeral insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds

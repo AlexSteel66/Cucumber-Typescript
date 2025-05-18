@@ -10,6 +10,7 @@ const { Duration } = require('luxon');
 const collectJSONS = require('./collect-jsons');
 
 const REPORT_STYLESHEET = 'style.css';
+const DARK_MODE_JS = './assets/js/darkmode.js';
 const GENERIC_JS = 'generic.js';
 const INDEX_HTML = 'index.html';
 const FEATURE_FOLDER = 'features';
@@ -407,11 +408,19 @@ function generateReport(options) {
       if (step.embeddings !== undefined) {
         step.attachments = [];
         step.embeddings.forEach((embedding, embeddingIndex) => {
+	  /* Decode Base64 for Text-ish attachements */
+	   if(
+           embedding.mime_type === 'text/html' ||
+           embedding.mime_type === 'text/plain'
+	  ) {
+        embedding.data = Buffer.from(embedding.data.toString(), 'base64')
+      }
           /* istanbul ignore else */
           if (
             embedding.mime_type === 'application/json' ||
             (embedding.media && embedding.media.type === 'application/json')
           ) {
+            embedding.data = Buffer.from(embedding.data, 'base64').toString()
             step.json = (step.json ? step.json : []).concat([
               typeof embedding.data === 'string'
                 ? JSON.parse(embedding.data)
@@ -435,6 +444,14 @@ function generateReport(options) {
           ) {
             step.image = (step.image ? step.image : []).concat([
               'data:image/png;base64,' + embedding.data,
+            ]);
+            step.embeddings[embeddingIndex] = {};
+          } else if (
+            embedding.mime_type === 'video/webm' ||
+            (embedding.media && embedding.media.type === 'video/webm')
+          ) {
+            step.video = (step.video ? step.video : []).concat([
+              'data:video/webm;base64,' + embedding.data,
             ]);
             step.embeddings[embeddingIndex] = {};
           } else {
@@ -471,6 +488,7 @@ function generateReport(options) {
         (step.hidden &&
           !step.text &&
           !step.image &&
+          !step.video &&
           _.size(step.attachments) === 0 &&
           step.result.status !== RESULT_STATUS.failed)
       ) {
@@ -595,6 +613,7 @@ function generateReport(options) {
         customStyle: _readTemplateFile(suite.customStyle),
         styles: _readTemplateFile(suite.style),
         useCDN: suite.useCDN,
+        darkmodeScript: _readTemplateFile(DARK_MODE_JS),
         genericScript: _readTemplateFile(GENERIC_JS),
         pageTitle: pageTitle,
         reportName: reportName,
@@ -647,6 +666,7 @@ function generateReport(options) {
           useCDN: suite.useCDN,
           customStyle: _readTemplateFile(suite.customStyle),
           styles: _readTemplateFile(suite.style),
+          darkmodeScript: _readTemplateFile(DARK_MODE_JS),
           genericScript: _readTemplateFile(GENERIC_JS),
           pageTitle: pageTitle,
           reportName: reportName,

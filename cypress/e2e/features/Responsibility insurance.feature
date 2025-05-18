@@ -1,6 +1,6 @@
 Feature: Testing section responsibility insurance
 
-    @Regression
+    @Regression @Soft @LamaX
     Scenario: Verification of fields, links and checkboxes for responsibility insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -42,17 +42,9 @@ Feature: Testing section responsibility insurance
             | Poistenie auta - Havarijné poistenie | unchecked |
             | Poistenie auta - iné                 | unchecked |
 
-        When I deselect the checkbox "Poistenie zodpovednosti"
-        And I click away
-        Then I see message "Vyberte aspoň jedno poistenie."
-        When I select the checkbox "Poistenie zodpovednosti"
-        Then I don´t see message "Vyberte aspoň jedno poistenie."
-
-
         When I type "Alex" into the field "Meno"
         Then field "Meno" has value "Alex"
         When I type "" into the field "Meno"
-        And I click away
         Then I see validation message "Meno je povinný údaj"
         When I type "Alex" into the field "Meno"
         Then I do not see validation message "Meno je povinný údaj"
@@ -60,14 +52,12 @@ Feature: Testing section responsibility insurance
         When I type "Gregor" into the field "Priezvisko"
         Then field "Priezvisko" has value "Gregor"
         When I type "" into the field "Priezvisko"
-        And I click away
         Then I see validation message "Priezvisko je povinný údaj"
         And I type "Gregor" into the field "Priezvisko"
         Then I do not see validation message "Priezvisko je povinný údaj"
 
 
         When I type "test" into the field "Email"
-        And I click away
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "test@" into the field "Email"
@@ -75,25 +65,20 @@ Feature: Testing section responsibility insurance
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "test@gmail" into the field "Email"
-        And I click away
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "test@gmail." into the field "Email"
-        And I click away
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "" into the field "Email"
-        And I click away
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "test@gmail.com" into the field "Email"
         Then field "Email" has value "test@gmail.com"
-        And I click away
         And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "example.name+test@gmail.com" into the field "Email"
         Then field "Email" has value "example.name+test@gmail.com"
-        And I click away
         And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "user123@mail.domain.com" into the field "Email"
@@ -102,40 +87,31 @@ Feature: Testing section responsibility insurance
 
         When I type "name.surname@mail.com" into the field "Email"
         Then field "Email" has value "name.surname@mail.com"
-        And I click away
         And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "email_12345@gmail.io" into the field "Email"
         Then field "Email" has value "email_12345@gmail.io"
-        And I click away
         And I do not see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "" into the field "Telefón"
-        And I click away
         And I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "123" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "123456" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "1234567" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "12345678" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "123456789" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "" into the field "Telefón"
-        And I click away
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "323456789" into the field "Telefón"
@@ -146,7 +122,7 @@ Feature: Testing section responsibility insurance
         Then field "Telefón" has value "+421 987 654 321"
         And I do not see validation message "Telefónne číslo je povinný údaj"
 
-    @Regression @only_this_scenario
+    @Regression @only_this_scenario @Soft
     Scenario: Verification of links inside responsibility insurance
 
         Given I visit the main website

@@ -18,6 +18,7 @@ let runtimeResultsKeys: string[] = [];
 let runtimeResultsValues: string[] = [];
 const runtimeResultsMap = new Map<string, string>();
 
+
 before(function () {
     browserName = Cypress.browser.name;
     browserVersion = Cypress.browser.version;
@@ -44,6 +45,8 @@ afterEach(function () {
             .then(() => {
                 const errorMessage = test.err?.message || 'No error message';
                 const stackTrace = test.err?.stack || 'No stack trace available';
+                Cypress.env('lastScreenshot', screenshotPath);
+                cy.writeFile('cypress/reports/lastScreenshot.json', { screenshotPath })
             });
     }
 });
@@ -87,6 +90,3 @@ function formatOsVersion(osVersion: string): string {
     }
     return osVersion;
 }
-
-
-

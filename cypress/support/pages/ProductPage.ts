@@ -10,7 +10,7 @@ class ProductPage {
     return '//button[@aria-label="Previous slide"]';
   }
 
-  
+
   private get closeDialog() {
     return "//*[@aria-label='Zatvoriť']//ancestor::button";
   }
@@ -45,7 +45,7 @@ class ProductPage {
   public getCloseDialog() {
     return cy.xpath(this.closeDialog);
   }
-  
+
   public getSearchField() {
     return this.searchfield;
   }
@@ -63,24 +63,94 @@ class ProductPage {
   }
 
 
-  getSelectorOfHyperlinkInsideBlock(blockName: string, hyperlinkName: string): string {
-    return `//*[@label='${blockName}']//ancestor::section//*[@label='${hyperlinkName}']`
+
+  getSelectorOfTextArea(textAreaName: string) {
+    return cy.contains(textAreaName).prev('textarea')
   }
 
-  getSelectorOfHyperlinkInsideHighlightedBlock(blockName: string, hyperlinkName: string): string {
-    return `//*[contains(text(),'${blockName}')]//ancestor::section//*[contains(@label, '${hyperlinkName}')]`
+  getSelectorOfFieldInputBasedOnIndex(fieldName: string, index: number) {
+    return cy.contains(fieldName).parent().find('input').eq(index - 1)
   }
 
-  getField(fieldName: string) {
-    return cy.xpath("//input//preceding::label[contains(text(),'" + fieldName + "')]")
+  getSelectorOfValidationMessageOfField(fieldName: string) {
+    return cy.contains(fieldName)
+      .parent()
+      .nextAll('span')
+      .find('span')
+      .first();
   }
 
-  getSelectorOfTextArea(textAreaName: string): string {
-    return `//*[contains(text(),'${textAreaName}')]/preceding::textarea[1]`;
+  getSelectorForSimpleRadioButton(radioButton: string) {
+    return cy.contains(radioButton)
+      .closest('.radio')
+      .find('i');
   }
 
-  getSelectorOfFieldInputBasedOnIndex(fieldName: string, index: number): string {
-    return `(//*[contains(text(),'${fieldName}')]//parent::*//input)[position()=${index}]`;
+  getSelectorOfRectangleRadioButton(radioButton: string, position: number) {
+    return cy.get('.radio-group-options')
+      .contains(radioButton)
+      .eq(position - 1);
+  }
+
+  getSelectorOfRadioButtonPropertyHeader() {
+    return cy.get('.label')
+      .parent('.radio-group');
+  }
+
+  getSelectorFromTextForTimes(webelementText: string) {
+    return cy.contains(webelementText);
+  }
+
+  getSelectorOfDropdown(dropdownName: string) {
+    return cy.contains(dropdownName)
+      .parent()
+      .find('select');
+  }
+
+  getSelectorForRectangleRadioButttons(text) {
+    cy.contains(text).closest('.radio-group-options')
+  }
+
+  getSelectorFromTextInOrder(webelementText, position) {
+    return cy.contains(webelementText).eq(position - 1)
+  }
+
+  getWebelementOfCheckbox(checkboxLabel: string) {
+    return cy.contains('label', checkboxLabel)
+      .parent()
+      .find('input[type="checkbox"]')
+  }
+
+  getWebelementOfFieldInput(fieldName: string) {
+    return cy.contains('label', fieldName).should('be.visible').parent().find('input');
+  }
+
+
+  getWebelementByText(webelementText: string) {
+    return cy.contains(webelementText);
+  }
+
+  getSpanWebelementFromText(webelementText: string) {
+    return cy.contains('span', webelementText).eq(0).closest('a');
+  }
+
+
+  getHyperlinksInsideBlock(blockName: string, hyperlinkName: string) {
+    return cy.contains('section', blockName)
+      .parent()
+      .find('a')
+      .contains(hyperlinkName)
+  }
+
+
+  getHyperlinksInsideHighlightedBlock(blockName: string, hyperlinkName: string) {
+    return cy.contains('section', blockName)
+      .contains('a', hyperlinkName)
+  }
+
+
+  getSelectorOfRadioButton(radioButton: string) {
+    return "(//*[contains(text(),'" + radioButton + "')])//preceding-sibling::span//input"
   }
 
 
@@ -88,53 +158,8 @@ class ProductPage {
     return `//label[contains(text(),'${fieldName}')]/preceding::input[1]`
   }
 
-  getSelectorOfValidationMessageOfField(fieldName: string) {
-    return "//*[contains(text(),'" + fieldName + "')]//parent::div//following::span//span[1]"
-  }
-
-  getSelectorForSimpleRadioButton(radioButton: string) {
-    return "//*[contains(text(),'" + radioButton + "')]//ancestor::*[@class='radio']//i"
-  }
-
-  getSelectorOfRadioButton(radioButton: string) {
-    return "(//*[contains(text(),'" + radioButton + "')])//preceding-sibling::span//input"
-  }
-
-  getSelectorOfRectangleRadioButton(radioButon: string, position: number) {
-    return "(//*[contains(@class, 'radio-group-options')]//*[contains(text(),'" + radioButon + "')])[position()=" + position + "]"
-  }
-
-  getSelectorOfRadioButtonPropertyHeader() {
-    return "//*[contains(@class, 'label')]//parent::*[contains(@class, 'radio-group')]"
-  }
-
-
   getSelectorOfRadioButtonUnderTextBlock() {
     return "//input[@type='radio']//ancestor::label"
-  }
-
-  getSelectorFromTextForTimes(webelementText: string) {
-    return "//*[contains(text(),'" + webelementText + "')]"
-  }
-
-  getSelectorOfDropdown(dropdownName: string) {
-    return "//*[contains(text(),'" + dropdownName + "')]//parent::div//select"
-  }
-
-  getSelectorForRectangleRadioButttons(text: string) {
-    return "//*[contains(text(),'" + text + "')]//ancestor::*[contains(@class, 'radio-group-options')]"
-  }
-
-  getSelectorFromText(webelementText: string) {
-    return "(//*[contains(text(),'" + webelementText + "')])[position()=1]"
-  }
-
-  getSelectorFromTextInOrder(webelementText: string, position: string) {
-    return "(//*[contains(text(), '" + webelementText + "')])[position()=" + position + "]"
-  }
-
-  getSpanSelectorFromText(webelementText: string) {
-    return "(//span[contains(text(),'" + webelementText + "')])[position()=1]//ancestor::a"
   }
 
   getSelectorOfButton(buttonName: string) {
@@ -154,8 +179,9 @@ class ProductPage {
   }
 
   getSelectorOfLink(textOfLink: string) {
-    return "(//*[contains(@href, '" + textOfLink + "')])[position()=1]"
+    return `(//a[contains(@href, '${textOfLink}')])[position()=1]`
   }
+
 
   getSelectorOfLinkAbove(textOfLink: string) {
     return "//*[normalize-space(text()) = '" + textOfLink + "']//ancestor::a"
@@ -166,50 +192,40 @@ class ProductPage {
   }
 
 
-  getSelectorOfCheckbox(checkbox: string) {
-    return "(//*[@type='checkbox']//following::input[@name='" + checkbox + "'])[position()=1]"
-  }
-
   getSelectorOfTheCheckbox(checkbox: string) {
     return "//*[contains(text(),'" + checkbox + "')]//ancestor::label//input"
   }
 
+  getField(fieldName: string) {
+    return cy.xpath("//input//preceding::label[contains(text(),'" + fieldName + "')]")
+  }
+
+
+
 
 
   getTextArea(textAreaName: string) {
-    return cy.xpath(this.getSelectorOfTextArea(textAreaName))
+    return this.getSelectorOfTextArea(textAreaName)
   }
 
   getDropdownWebelement(dropdownName: string) {
-    return cy.xpath(this.getSelectorOfDropdown(dropdownName))
+    return this.getSelectorOfDropdown(dropdownName)
   }
 
   getTheFieldInputBasedOnIndex(fieldName: string, index: number) {
-    return cy.xpath(this.getSelectorOfFieldInputBasedOnIndex(fieldName, index))
+    return (this.getSelectorOfFieldInputBasedOnIndex(fieldName, index))
   }
 
   getSimpleRadioButton(radioButton: string) {
-    return cy.xpath(this.getSelectorForSimpleRadioButton(radioButton))
+    return this.getSelectorForSimpleRadioButton(radioButton)
   }
 
   getRectangleRadioButtonInPosition(radioButton: string, position: number) {
-    return cy.xpath(this.getSelectorOfRectangleRadioButton(radioButton, position))
-  }
-
-  getHyperlinksInsideBlock(blockName: string, hyperlinkName: string) {
-    return cy.xpath(this.getSelectorOfHyperlinkInsideBlock(blockName, hyperlinkName))
-  }
-
-  getHyperlinksInsideHighlightedBlock(blockName: string, hyperlinkName: string) {
-    return cy.xpath(this.getSelectorOfHyperlinkInsideHighlightedBlock(blockName, hyperlinkName))
+    return this.getSelectorOfRectangleRadioButton(radioButton, position)
   }
 
   getWebelementOfLinkUnderneathBlock(block: string, link: string) {
     return cy.xpath(this.getSelectorOfLinkUnderneathBlock(block, link))
-  }
-
-  getWebelementOfCheckbox(checkbox: string) {
-    return cy.xpath(this.getSelectorOfCheckbox(checkbox))
   }
 
   getWebelementOfTheCheckbox(checkbox: string) {
@@ -217,40 +233,27 @@ class ProductPage {
   }
 
   getListOfWebelementsOfTextForTimes(text: string) {
-    return cy.xpath(this.getSelectorFromTextForTimes(text)).then(($elements) => {
-      return $elements.toArray();
+    return this.getSelectorFromTextForTimes(text).then(($elements) => {
+      return Cypress.$($elements).toArray();
     });
   }
 
   getListOfRectangleRadioButtonsForTimes(text: string) {
-    return cy.xpath(this.getSelectorFromTextForTimes(text)).then(($elements) => {
-      return $elements.toArray();
+    return this.getSelectorFromTextForTimes(text).then(($elements) => {
+      return Cypress.$($elements).toArray();
     });
   }
 
   getWebelementOfRadioButtonPropertyHeader() {
-    return cy.xpath(this.getSelectorOfRadioButtonPropertyHeader()
-    );
+    return this.getSelectorOfRadioButtonPropertyHeader()
   }
 
   getRadioButtonWebelement(radioButton: string) {
     return cy.xpath(this.getSelectorOfRadioButton(radioButton))
   }
 
-  getWebelementOfFieldInput(fieldName: string) {
-    return cy.xpath(this.getSelectorOfFieldInput(fieldName))
-  }
-
-  getSpanWebelementFromText(webelementText: string) {
-    return cy.xpath(this.getSpanSelectorFromText(webelementText))
-  }
-
-  getWebelementFromText(webelementText: string) {
-    return cy.xpath(this.getSelectorFromText(webelementText))
-  }
-
   getWebelementFromTextInOrder(webelementText: string, position: string) {
-    return cy.xpath(this.getSelectorFromTextInOrder(webelementText, position))
+    return this.getSelectorFromTextInOrder(webelementText, position)
   }
 
   getWebelementOfDropdownButton(buttonName: string) {

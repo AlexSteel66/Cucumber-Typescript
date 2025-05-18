@@ -4,6 +4,8 @@ import 'cypress-iframe';
 import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
+import { ElementAttributes } from "../ElementAttributes";
+
 
 const page = new ProductPage();
 
@@ -12,7 +14,7 @@ Then('I click on the predefined webelement {string}', function iClickOnPredefine
 });
 
 Then('I see the webelement {string}', function ISeeWebelement(webelementText: string) {
-  page.getWebelementFromText(webelementText)
+  page.getWebelementByText(webelementText)
     .scrollIntoView()
     .should('exist');
 });
@@ -23,20 +25,24 @@ Then('I see the span webelement {string}', function iSeeSpanWebelement(webelemen
     .should('exist');
 });
 
-
 Then('I click onto webelement {string}', function (webelementText: string) {
   return iClickOntoWebelement(webelementText);
 });
 
 function iClickOntoWebelement(webelementText: string) {
   cy.waitForPageLoaded();
-  return page.getWebelementFromText(webelementText)
+  return page.getWebelementByText(webelementText)
     .scrollIntoView()
     .should('exist')
-    .then(($el) => {
-      $el[0].click();
+    .then(($el: JQuery<HTMLElement>) => { 
+      if ($el.length > 0) {
+        cy.wrap($el).click(); 
+      } else {
+        throw new Error(`Element s textom "${webelementText}" nebol nájdený.`);
+      }
     });
 }
+
 
 Then('I click onto {string} occurrence of webelement {string}', function (position: string, webelementText: string) {
   page.getWebelementFromTextInOrder(webelementText, position)
@@ -71,12 +77,14 @@ Then('I see the text area {string}', function (fieldName: string) {
     .should('be.visible');
 });
 
+
 Then('I type {string} into the text area {string}', function (value: string, textAreaName: string) {
   const textAreaInput = page.getTextArea(textAreaName);
   textAreaInput.clear({ force: true });
   if (value.trim() !== '') {
     textAreaInput.type(value, { force: true });
   }
+  cy.get('body').click(0, 0, { force: true });
 });
 
 
@@ -149,13 +157,21 @@ Then('I click onto the field {string}', function (fieldName: string) {
 
 
 Then('I type {string} into the field {string}', function (value: string, fieldName: string) {
-  const fieldInput = page.getWebelementOfFieldInput(fieldName);
-  fieldInput.clear({ force: true });
-  if (value.trim() !== '') {
-    fieldInput.type(value, { force: true });
-  }
-});
+  page.getWebelementOfFieldInput(fieldName)
+    .should('exist')
+    .should('be.visible')
+    .then(($input) => {
+      cy.wrap($input).clear({ force: true });
 
+      if (value.trim() !== '') {
+        cy.wrap($input).type(value, { force: true });
+      }
+
+      cy.wrap($input)
+        .focus()
+        .blur()
+    });
+});
 
 Then('I type {string} into the field {string} with index {int}', function (value: string, fieldName: string, index: number) {
   page.getTheFieldInputBasedOnIndex(fieldName, index).as('fieldInput')
@@ -185,12 +201,12 @@ Then('I do not see the PDF webelement {string}', function (webelementText: strin
 });
 Then('I see another PDF webelement {string}', function (webelementText: string) {
   iSeeText(webelementText)
-    .should('have.attr', 'target', '_blank')
+    .should('have.attr', 'target', ElementAttributes.TARGET_ATTRIBUTEVALUE)
     .should('have.attr', 'href');
 }); 
 
 Then('I see the validation message {string} underneath the field {string}', function (validationMessage: string, fieldName: string) {
-  cy.getText(page.getSelectorOfValidationMessageOfField(fieldName))
+  cy.getText(this.getSelectorOfValidationMessageOfField(fieldName))
     .should('eq', validationMessage);
 });
 
@@ -205,7 +221,7 @@ Then('I do not see validation message {string}', function (validationMessage: st
 
 function iSeeText(webelementText: string) {
   return cy.waitUntil(() =>
-    page.getWebelementFromText(webelementText)
+    page.getWebelementByText(webelementText)
       .scrollIntoView()
       .should('exist')
       .should('be.visible'),
@@ -217,6 +233,6 @@ function iSeeText(webelementText: string) {
 }
 
 function iDontSeeText(webelementText: string) {
-  return page.getWebelementFromText(webelementText)
+  return page.getWebelementByText(webelementText)
     .should('not.exist');
 }

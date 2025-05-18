@@ -22,7 +22,13 @@ import 'cypress-iframe';
 import "@badeball/cypress-cucumber-preprocessor";
 import "cypress-cucumber-attach-screenshots-to-failed-steps";
 import './hooks.ts';
+import "cypress-soft-assertions";
 
 
 
+Cypress.on('uncaught:exception', (err) => {
+    if (err.message.includes('The play() request was interrupted by a call to pause()')) {
+      return false;
+    }
+  });
 

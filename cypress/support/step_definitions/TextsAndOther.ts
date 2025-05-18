@@ -177,7 +177,6 @@ Then('I hover over article {string}', (articleName: string) => {
     .should('be.visible');
 });
 
-
 When('I click onto next slide', () => {
   cy.waitUntil(() => page.getNextSlide().should('exist'), {
     timeout: 5000,
@@ -187,6 +186,7 @@ When('I click onto next slide', () => {
   .click()  
   .then(() => {
     cy.log('Clicked onto next slide successfully.');
+    cy.wait(300)
   });
 });
 
@@ -219,7 +219,7 @@ When('I close this dialog', () => {
 
 function iSeeText(webelementText: string) {
   return cy.waitUntil(() =>
-    page.getWebelementFromText(webelementText)
+    page.getWebelementByText(webelementText)
       .scrollIntoView()
       .should('exist')
       .should('be.visible'),
@@ -231,6 +231,6 @@ function iSeeText(webelementText: string) {
 }
 
 function iDontSeeText(webelementText: string) {
-  return page.getWebelementFromText(webelementText)
+  return page.getWebelementByText(webelementText)
     .should('not.exist');
 }

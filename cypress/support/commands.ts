@@ -45,7 +45,7 @@ Cypress.Commands.add('iClickAway', () => {
 
 Cypress.Commands.add('visitMainWebsite', (): void => {
   const baseUrl = Cypress.config('baseUrl');
-  cy.visit("baseUrl");
+  cy.visit(baseUrl);
 });
 
 Cypress.Commands.add('visitBusinessMax', (): void => {
@@ -89,7 +89,7 @@ Cypress.Commands.add('getValueOfFieldDependingOnItsIndex', (fieldName: string, i
 
 
 Cypress.Commands.add("verifyVisibilityOfElementUponMouseOver", (elementName: string, classNameOfVisibleElement: string) => {
-  productPage.getWebelementFromText(elementName).eq(0).trigger('mouseover')
+  productPage.getWebelementByText(elementName).eq(0).trigger('mouseover')
   cy.get(classNameOfVisibleElement).should('be.visible')
 })
 

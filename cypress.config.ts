@@ -6,16 +6,18 @@ import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild
 export default defineConfig({
   video: false,
   screenshotOnRunFailure: true,
-  screenshotsFolder: "cypress/reports/screenshots",
+  screenshotsFolder: "cypress/screenshots",
   videosFolder: "cypress/videos",
   videoCompression: 32,
   e2e: {
     baseUrl: "https://kooperativa.sk/",
     pageLoadTimeout: 120000,
-    defaultCommandTimeout: 10000,
+    defaultCommandTimeout: 7000,
     requestTimeout: 20000,
     numTestsKeptInMemory: 0,
     chromeWebSecurity: false,
+    experimentalRunAllSpecs: true,
+    testIsolation: false,
     specPattern: "cypress/e2e/features/**/*.feature",
     retries: 0,
     viewportWidth: 1280,
@@ -23,12 +25,15 @@ export default defineConfig({
     env: {
       businessMaxPath: "poistenie/firmy-zivnostnici/biznis-max",
       stepDefinitions: "cypress/support/step_definitions/**/*.{js,ts}",
-      TAGS: "@Regression",
+      // TAGS: "@Latka",
       cucumberJson: {
-        generate: false, 
+        generate: false,
         outputFolder: "cypress/reports/cucumber-json/",
         filePrefix: "",
         fileSuffix: ".cucumber",
+        cucumber: {
+          filterSpecs: true,
+        },
       },
     },
     async setupNodeEvents(on, config) {
@@ -40,6 +45,7 @@ export default defineConfig({
           plugins: [createEsbuildPlugin(config)],
         })
       );
+
       return config;
     },
   },

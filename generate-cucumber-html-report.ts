@@ -1,6 +1,7 @@
-import dayjs from 'dayjs'; 
+import dayjs from 'dayjs';
 import * as report from 'multiple-cucumber-html-reporter';
 import * as fs from 'fs';
+import * as path from 'path';
 
 interface RunInfo {
   osName: string;
@@ -11,7 +12,6 @@ interface RunInfo {
   startedTestsAt: string;
   endedTestsAt: string;
   // nodeVersion: string;
-
 }
 
 const data = fs.readFileSync('cypress/results/results.json', {
@@ -29,9 +29,11 @@ const osName = (): string | undefined => {
   }
 };
 
+const screenshotsDirectory = path.resolve('cypress/screenshots');
+
 report.generate({
   jsonDir: 'cypress/reports/json/',
-  reportPath: 'cypress/reports/html/', // Adjusted path to match the desired output directory
+  reportPath: 'cypress/reports/html/',
   metadata: {
     browser: { name: runInfo.browserName, version: runInfo.browserVersion },
     device: 'Local Test Machine',
@@ -53,5 +55,7 @@ report.generate({
   pageTitle: 'Automation Execution Report',
   openReportInBrowser: true,
   displayDuration: true,
-  screenshotsDirectory: 'cypress/reports/screenshots',
+  screenshotsDirectory, // Nastavenie screenshotov s absolútnymi cestami
+  screenshotPath: screenshotsDirectory, // Cesta k screenshotom v HTML
+  screenshotPattern: '**/*.png', // Pattern pre všetky screenshoty (môžeš prispôsobiť podľa potreby)
 });

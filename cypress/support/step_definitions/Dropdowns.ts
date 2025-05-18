@@ -9,9 +9,7 @@ const page = new ProductPage();
 Then('dropdown {string} has the options', function (dropdownName: string, expectedOptions: string[]) {
   const dropdownSelector = page.getSelectorOfDropdown(dropdownName);
   const actualOptions: string[] = [];
-
-
-  cy.xpath(dropdownSelector)
+  this.dropdownSelector
     .find('option')
     .each(function ($el) {
       cy.wrap($el).invoke('text').then(function (text) {
@@ -28,7 +26,7 @@ Then('the dropdown {string} does not contain the options', function (dropdownNam
   const dropdownSelector = page.getSelectorOfDropdown(dropdownName);
   const actualOptions: string[] = [];
 
-  cy.xpath(dropdownSelector)
+  this.dropdownSelector
     .find('option')
     .each(function ($el) {
       cy.wrap($el).invoke('text').then(function (text) {
@@ -46,7 +44,7 @@ Then('the dropdown {string} does not contain the options', function (dropdownNam
 
 Then('I select the option {string} from the dropdown {string}', function (option: string, dropdownName: string) {
   const dropdownSelector = page.getSelectorOfDropdown(dropdownName);
-  cy.xpath(dropdownSelector)
+  this.dropdownSelector
     .should('be.visible')
     .select(option);
 });
@@ -54,7 +52,7 @@ Then('I select the option {string} from the dropdown {string}', function (option
 
 Then('the dropdown {string} has the value {string}', function (dropdownName: string, expectedValue: string) {
   const dropdownSelector = page.getSelectorOfDropdown(dropdownName);
-  cy.xpath(dropdownSelector)
+  this.dropdownSelector
     .should('be.visible')
     .invoke('val')
     .should('equal', expectedValue);

@@ -1,34 +1,31 @@
 Feature: Testing banking insurance
 
-    @Regression @BusinessMax @Banking
+    @Regression @BusinessMax
     Scenario: Verification of links inside banking insurance
         Given I visit business-max product
         And I click onto the button "Odmietnuť všetky"
         Then I see article "Odcudzenie"
         Then I see article "Vandalizmus"
         Then I see article "Poistenie skla"
+        Then I see article "Zodpovednosť za škodu spôsobenú vadou výrobku"
 
         When I click onto next slide
-        Then I see article "Zodpovednosť za škodu spôsobenú vadou výrobku"
         Then I see article "Lom stroja"
         Then I see article "Preprava zásielky"
-
-        When I click onto next slide
-
         Then I see articles
             | Prerušenie prevádzky    |
             | Prepätie alebo podpätie |
-            | Cudzie veci prevzaté    |
 
         When I click onto next slide
+
         Then I see articles
+            | Cudzie veci prevzaté |
             | Regresy sociálnej a zdravotných poisťovní       |
             | Spätné vystúpenie vody z kanalizačného potrubia |
             | Čisté finančné škody                            |
 
         When I click onto next slide
         Then I see articles
-            | Čisté finančné škody                       |
             | Škody na podzemných a nadzemných vedeniach |
             | Búracie práce                              |
 
