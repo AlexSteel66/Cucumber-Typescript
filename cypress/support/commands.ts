@@ -16,7 +16,6 @@ const productPage = new ProductPage()
 // ***********************************************
 //
 
-
 Cypress.Commands.add('waitForPageLoaded', () => {
   cy.window().then((win) => {
     return new Cypress.Promise<void>((resolve) => {
@@ -92,52 +91,3 @@ Cypress.Commands.add("verifyVisibilityOfElementUponMouseOver", (elementName: str
   productPage.getWebelementByText(elementName).eq(0).trigger('mouseover')
   cy.get(classNameOfVisibleElement).should('be.visible')
 })
-
-
-Cypress.Commands.add('verifyAllLinksInPageAreOk', () => {
-  cy.on('uncaught:exception', (err, runnable) => {
-    console.error(`Uncaught exception occurred: ${err.message || err}`);
-    return false;
-  });
-
-  cy.get('a').each(($el) => {
-    const href = $el.prop('href');
-    
-    if (
-      href === 'http://online.kpas.sk/povinne-zmluvne-poistenie' ||
-      href === 'https://s3.koop.vshosting.cz/prod-kooperativa-dss-media/media/Vitajte%20vo%20svete%20megatrendov_TRENDY%20ESG.mp4?v=1716289218'
-    ) {
-      console.log(`%cLink: ${href} - Skipping this link as per the condition.`, 'color: grey;');
-      return; 
-    }
-
-    if (href) {
-      const startTime = Date.now();
-
-      cy.request({
-        url: href,
-        failOnStatusCode: false,
-        timeout: 20000, 
-      }).then((response) => {
-        const elapsedTime = (Date.now() - startTime) / 1000; 
-        const statusCode = response.status;
-
-        if (elapsedTime > 6) {
-          console.log(
-            `%cLink: ${href} - Failed to load within 6 seconds (Time: ${elapsedTime}s)`,
-            'color: red;'
-          );
-        } else {
-          console.log(
-            `%cLink: ${href} - Status: ${statusCode} (Time: ${elapsedTime}s)`,
-            statusCode === 200 ? 'color: green;' : 'color: orange;'
-          );
-        }
-      }).then(null, () => {
-        console.log(`Link: ${href} - Failed to load or encountered an error.`);
-      });
-    } else {
-      console.warn('%cInvalid or missing href attribute.', 'color: orange;');
-    }
-  });
-});

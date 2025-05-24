@@ -1,6 +1,6 @@
 Feature: Some basic features
 
-  @Regression 
+  @Regression @BasicFeatures
   Scenario: Basic verification of links inside the main page and additonal verification of all hyperlinks
 
     Given I visit the main website
@@ -94,7 +94,7 @@ Feature: Some basic features
 
     And Verify all links are OK
 
-  @Regression
+  @Regression @BasicFeatures
   Scenario: Testing basic verification of fields inside request for the information form
     Given I visit the main website
     When I click onto webelement "Kontakty"

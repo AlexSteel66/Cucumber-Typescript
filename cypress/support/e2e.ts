@@ -26,6 +26,7 @@ import "cypress-soft-assertions";
 
 
 
+
 Cypress.on('uncaught:exception', (err) => {
     if (err.message.includes('The play() request was interrupted by a call to pause()')) {
       return false;

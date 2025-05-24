@@ -1,6 +1,6 @@
 Feature: Testing banking insurance
 
-    @Regression @Banking @Lama
+    @Regression @Banking 
     Scenario: Verification of links inside banking insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -29,7 +29,7 @@ Feature: Testing banking insurance
         Then I see links for webelements with text
             | Všeobecné poistné podmienky pre poistenie Život_13092024                                                                        |
             | Dokument s kľúčovými informáciami Život štandard_01022025                                                                       |
-            | Štatút vlastného fondu Fond svetových akcií_062024                                                                              |
+            | Štatút vlastného fondu Fond svetových akcií_01062024                                                                            |
             | Dokument o udržateľnosti produktov_01022024                                                                                     |
             | Sadzobník poplatkov, úrokov, limitov, obmedzenia na pripoisteniach a cenník úhrad za lekárske služby_pre produkt Život_13092024 |
             | Manuál pre postup pri výbere a využití DHS asistenčných služieb_13092024                                                        |
@@ -49,7 +49,7 @@ Feature: Testing banking insurance
             | neživotného poistenia       |
 
 
-    @Regression @Banking 
+    @Regression @Banking
     Scenario: Verification of funeral insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds

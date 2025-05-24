@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "businessmax": "cross-env TAGS='@BusinessMax' cypress run",
-    "regression": "cross-env TAGS='@Regression' cypress run",
+    "businessmax": "cypress run --env tags=\"@BusinessMax\"",
+    "lama": "cypress run --env tags=\"@Lama\"",
+    "regression": "cypress run --env tags=\"@Regression\"",
+    "links": "cypress run --env tags=\"@Links\"",
 
     "test": "cypress run --browser chrome",
     "convert": "npx ts-node cypress/report-formatter.ts",

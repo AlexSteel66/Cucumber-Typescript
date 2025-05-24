@@ -1,9 +1,10 @@
-import { fi } from "@faker-js/faker";
 import 'cypress-iframe';
 import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
 import { Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
+import { Helpers } from '../Helpers';
 
+const helpers = new Helpers();
 const page = new ProductPage();
 
 Then('I click onto {string} occurrence of webelement {string} and open its link', function (position: string, webelementText: string) {
@@ -57,21 +58,15 @@ Then('I click onto hyperlink {string}', (uiText: string) => {
       .should('have.attr', 'href')
       .and('include', convertedHref)
       .then(() => {
-        iClickOntoLink(convertedHref);
+        helpers.iClickOntoLink(convertedHref);
       });
   });
 });
 
 
 Then('I click onto the link {string}', function (textOfLink: string) {
-  return iClickOntoLink(textOfLink);
+  return helpers.iClickOntoLink(textOfLink);
 });
-
-function iClickOntoLink(textOfLink: string) {
-  return page.getWebelementOfLink(textOfLink)
-    .should('exist')
-    .click({ force: true });
-}
 
 
 Then('I see hyperlink for {string}', (uiText: string) => {
@@ -85,35 +80,13 @@ Then('I see hyperlink for {string}', (uiText: string) => {
 
 
 Then('I see links', (dataTable: any) => {
-  const links: string[] = dataTable.rawTable.map((row: string[]) => row[0]);
+  const links: string[] = dataTable.rawTable.map(([linkText]) => linkText);
 
-  links.forEach((textOfLink) => {
-    cy.log(`Waiting for link '${textOfLink}' to be present and visible.`);
-    cy.waitUntil(() =>
-      page.getWebelementOfLink(textOfLink)
-        .should(($el) => $el.length > 0)
-        .then(($el) => Cypress.dom.isVisible($el))
-      , {
-        timeout: 4000,
-        interval: 500,
-        errorMsg: `Link '${textOfLink}' was not found or is not visible.`
-      }).then(() => {
-        cy.log(`Link '${textOfLink}' is present and visible.`);
-      });
-
-  });
-  cy.on('fail', (error) => {
-    const screenshotPath = `cypress/reports/screenshots/${Cypress.spec.name}.png`;
-    // cy.task('updateReport', {
-    //   testTitle: "Banking insurance verification",
-    //   screenshotPath,
-    //   errorMessage: error.message,
-    //   stackTrace: error.stack,
-    // });
-
-    // throw error;
+  links.forEach((linkText) => {
+    helpers.waitForLinkToBeVisible(linkText);
   });
 });
+
 
 Then('I see links for webelements with text', function (dataTable: any) {
   const uiTexts = dataTable.rawTable.flat();
@@ -131,40 +104,15 @@ Then('I see links for webelements with text', function (dataTable: any) {
       const isPositionFixed = window.getComputedStyle(el).position === 'fixed';
 
       if (isVisible && !isPositionFixed) {
-        handleVisibleElement($el, textOfLink);
+        helpers.handleVisibleElement($el, textOfLink);
       } else if (isPositionFixed) {
-        handleFixedPositionElement($el, textOfLink);
+        helpers.handleFixedPositionElement($el, textOfLink);
       } else {
-        handleInvisibleElement(textOfLink);
+        helpers.handleInvisibleElement(textOfLink);
       }
     });
   });
 });
-
-function handleVisibleElement($el: JQuery<HTMLElement>, textOfLink: string): void {
-  cy.log(`Element '${textOfLink}' is visible.`);
-  cy.wrap($el).should('be.visible');
-  cy.wrap($el).should('have.attr', 'href').then((href) => {
-    cy.log(`Element has href: ${href}`);
-  });
-}
-
-function handleFixedPositionElement($el: JQuery<HTMLElement>, textOfLink: string): void {
-  cy.log(`Element '${textOfLink}' has position fixed, checking if it's offscreen.`);
-  const rect = $el[0].getBoundingClientRect();
-
-  if (rect.top < 0 || rect.bottom > window.innerHeight || rect.left < 0 || rect.right > window.innerWidth) {
-    cy.log(`Element '${textOfLink}' with position fixed is offscreen.`);
-  } else {
-    cy.log(`Element '${textOfLink}' with position fixed is visible on screen.`);
-  }
-}
-
-function handleInvisibleElement(textOfLink: string): void {
-  cy.log(`Element '${textOfLink}' is not visible (because it is hidden due to display: none or other reasons).`);
-}
-
-
 
 Then('I don’t see links for webelements with text', function (dataTable: any) {
   const uiTexts = dataTable.rawTable.flat();
@@ -190,34 +138,13 @@ Then('I click onto the link of webelement with text {string}', function (linkOfT
 
 
 
+
 Then('I see hyperlink for webelements', function (dataTable: any) {
   const uiTexts: string[] = dataTable.rawTable.flat();
   uiTexts.forEach((uiText: string) => {
-    cy.waitUntil(() => {
-      cy.contains('a', uiText)
-        .should('exist')
-        .then(($el: JQuery<HTMLElement>) => {
-          cy.wrap($el).should('have.attr', 'href').then((href) => {
-            cy.log(`Element has href: ${href}`);
-          });
-
-          const isVisible = $el.is(':visible') && window.getComputedStyle($el[0]).display !== 'none';
-
-          if (isVisible) {
-            cy.log(`Element ${uiText} is visible.`);
-            cy.wrap($el).should('be.visible');
-          } else {
-            cy.log(`Element ${uiText} is not visible (because it is hidden due to display: none).`);
-          }
-        });
-      return true;
-    }, {
-      timeout: 10000,
-      interval: 500
-    });
+    helpers.checkHyperlink(uiText);
   });
 });
-
 
 
 Then('Inside the block {string} I see hyperlinks', function (blockName: string, dataTable: any) {
@@ -229,7 +156,7 @@ Then('Inside the block {string} I see hyperlinks', function (blockName: string, 
         const isVisible = $el.is(':visible') && window.getComputedStyle($el[0]).display !== 'none';
 
         if (isVisible) {
-          assertVisibleHyperlink($el, uiText);
+          helpers.assertVisibleHyperlink($el, uiText);
         } else {
           cy.log(`Element ${uiText} is not visible (because it is hidden due to display: none).`);
         }
@@ -269,37 +196,38 @@ Then('I open link {string} and go to {string}', (textOfLink: string, newURL: str
     .then(($link) => {
       ($link as JQuery<HTMLAnchorElement>).removeAttr('target');
     });
-  iClickOntoWebelement(textOfLink);
+  helpers.iClickOntoWebelement(textOfLink);
   cy.url().should('eq', "https://" + newURL);
 });
 
 
 
 Then('Verify all links are OK', function () {
-  cy.verifyAllLinksInPageAreOk();
+cy.on('uncaught:exception', (err) => {
+    console.error(`Uncaught exception occurred: ${err.message || err}`);
+    return false;
+  });
+
+  cy.get('a').each(($el) => {
+    const href = $el.prop('href');
+
+    if (helpers.shouldSkipLink(href)) {
+      console.log(`%cSkipping link: ${href}`, 'color: grey;');
+      return;
+    }
+
+    if (!href) {
+      console.warn('%cInvalid or missing href attribute.', 'color: orange;');
+      return;
+    }
+
+    helpers.checkLinkResponse(href);
+  });
 });
 
 
-function assertVisibleHyperlink($el: JQuery<HTMLElement>, uiText: string): void {
-  cy.log(`Element ${uiText} is visible.`);
-  cy.wrap($el).should('be.visible');
-  cy.wrap($el).should('have.attr', 'href').then((href) => {
-    cy.log(`Element has href: ${href}`);
-  });
-}
 
-function iClickOntoWebelement(webelementText: string) {
-  cy.waitForPageLoaded();
-  return page.getWebelementByText(webelementText)
-    .scrollIntoView()
-    .should('exist')
-    .then(($el: JQuery<HTMLElement>) => {
-      if ($el.length > 0) {
-        cy.wrap($el).click();
-      } else {
-        throw new Error(`Element s textom "${webelementText}" nebol nájdený.`);
-      }
-    });
-}
+
+
 
 

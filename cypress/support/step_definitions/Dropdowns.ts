@@ -1,4 +1,3 @@
-import { fi } from "@faker-js/faker";
 import 'cypress-iframe';
 import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
@@ -22,7 +21,7 @@ Then('dropdown {string} has the options', function (dropdownName: string, expect
 });
 
 
-Then('the dropdown {string} does not contain the options', function (dropdownName: string, unexpectedOptions: string[]) {
+Then('dropdown {string} does not contain the options', function (dropdownName: string, unexpectedOptions: string[]) {
   const dropdownSelector = page.getSelectorOfDropdown(dropdownName);
   const actualOptions: string[] = [];
 

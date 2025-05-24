@@ -1,6 +1,6 @@
 Feature: Testing section responsibility insurance
 
-    @Regression @Soft @LamaX
+    @Regression @ResponsibilityInsurance
     Scenario: Verification of fields, links and checkboxes for responsibility insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -111,7 +111,7 @@ Feature: Testing section responsibility insurance
         When I type "123456789" into the field "Telefón"
         Then I see validation message "Telefónne číslo je povinný údaj"
 
-        When I type "" into the field "Telefón"
+        When I type " " into the field "Telefón"
         Then I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "323456789" into the field "Telefón"
@@ -122,7 +122,7 @@ Feature: Testing section responsibility insurance
         Then field "Telefón" has value "+421 987 654 321"
         And I do not see validation message "Telefónne číslo je povinný údaj"
 
-    @Regression @only_this_scenario @Soft
+    @Regression @ResponsibilityInsurance
     Scenario: Verification of links inside responsibility insurance
 
         Given I visit the main website

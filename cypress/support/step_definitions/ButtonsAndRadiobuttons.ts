@@ -1,10 +1,11 @@
-import { fi } from "@faker-js/faker";
 import 'cypress-iframe';
 import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
 import { ElementAttributes } from "../ElementAttributes";
+import { Helpers } from '../Helpers';
 
+const helpers = new Helpers();
 const page = new ProductPage();
 
 Then('I see the rectangle radio button {string} for {int} times', function (webelementText: string, times: number) {
@@ -30,9 +31,9 @@ Then('I see the rectangle radio button {string} for {int} times', function (webe
   Then('I see the simple radio button {string} is selected', (radioButton: string, state: boolean) => {
     page.getSimpleRadioButton(radioButton).then(($radioButton) => {
       if (state) {
-        cy.wrap($radioButton).should('have.attr', 'class', 'icon icon--radio-true');
+        cy.wrap($radioButton).should('have.attr', 'class', ElementAttributes.RADIOBUTTON_CLASS_ATTRIBUTE_TRUE);
       } else {
-        cy.wrap($radioButton).should('have.attr', 'class', 'icon icon--radio-false');
+        cy.wrap($radioButton).should('have.attr', 'class', ElementAttributes.RADIOBUTTON_CLASS_ATTRIBUTE_FALSE);
       }
     });
   });
@@ -94,83 +95,20 @@ Then('I see the rectangle radio button {string} for {int} times', function (webe
   });
   
 
+
 Then('I click onto the button {string}', function (buttonName: string) {
-  if (buttonName === 'Odmietnuť všetky' || buttonName === 'Žiadosti') {
-    cy.wait(1000);
+  if (['Odmietnuť všetky', 'Žiadosti'].includes(buttonName)) {
+    cy.wait(1300);
   }
 
-  cy.waitUntil(() =>
-    page.getButton(buttonName)
-      .should('exist')
-  , {
+  cy.waitUntil(helpers.waitForButtonToExist(buttonName), {
     timeout: 5000,
     interval: 500
   }).then(() => {
-    page.getButton(buttonName)
-      .scrollIntoView()
-      .then(($el) => {
-        if ($el.length > 0 && Cypress.dom.isVisible($el)) {
-          if (!$el.is(':disabled')) {
-            cy.wrap($el).click({ force: true });
-          } else {
-            cy.log(`Button "${buttonName}" is visible but disabled. No action taken.`);
-          }
-        } else {
-          cy.log(`Button "${buttonName}" not visible or not found. Skipping click.`);
-        }
-      });
+    helpers.clickButtonIfVisibleAndEnabled(buttonName);
   });
 });
 
-
-
-// Then('I click onto the button {string}', function (buttonName: string) {
-//   if (buttonName === 'Odmietnuť všetky') {
-//     cy.wait(2000);
-//   }
-
-//   page.getButton(buttonName).then(($el) => {
-    
-//     if ($el.length > 0 && Cypress.dom.isVisible($el)) {
-//       if (!$el.is(':disabled')) {
-//         cy.wrap($el).scrollIntoView().click({ force: true });
-//       } else {
-//         cy.log(`Button "${buttonName}" is visible but disabled. No action taken.`);
-//       }
-//     } else {
-//       cy.log(`Button "${buttonName}" not visible or not found. Skipping click.`);
-//     }
-//   });
-// });
-
-
-  // Then('I click onto the button {string}', function (buttonName: string) {
-  //   if (buttonName === 'Odmietnuť všetky') {
-  //         cy.wait(2000);
-  //   }
-  //   cy.waitUntil(() =>
-  //     page.getButton(buttonName)
-  //       .should('exist')  
-  //       .scrollIntoView()  
-  //       .should(($el) => {
-  //         expect($el.length).to.be.greaterThan(0);  
-  //         expect(Cypress.dom.isVisible($el)).to.be.true; 
-  //       })
-  //   , {
-  //     timeout: 7000,  
-  //     interval: 500,  
-  //     errorMsg: `Button "${buttonName}" was not found or not visible.`  
-  //   })
-  //   .then(function ($el) {
-  //     if ($el.is(':enabled')) {
-  //       cy.wrap($el).click({ force: true }); 
-  //     } else {
-  //       throw new Error(`Button "${buttonName}" is disabled and cannot be clicked.`);
-  //     }
-  //   });
-  // });
-  
-  
   Then('I see the button {string}', (buttonName: string) => {
     const button = page.getButton(buttonName);
     button.should('exist');
@@ -178,6 +116,7 @@ Then('I click onto the button {string}', function (buttonName: string) {
     button.should('be.visible');
   });
   
+
   Then('I click onto button in cookie dialog {string}', (buttonName: string) => {
     cy.wait(3000);
     cy.get('body').click();

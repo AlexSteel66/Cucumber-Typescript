@@ -5,8 +5,9 @@ import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
 import { ElementAttributes } from "../ElementAttributes";
+import { Helpers } from '../Helpers';
 
-
+const helpers = new Helpers();
 const page = new ProductPage();
 
 Then('I click on the predefined webelement {string}', function iClickOnPredefinedWebelement(webelement: string) {
@@ -38,7 +39,7 @@ function iClickOntoWebelement(webelementText: string) {
       if ($el.length > 0) {
         cy.wrap($el).click(); 
       } else {
-        throw new Error(`Element s textom "${webelementText}" nebol nájdený.`);
+        throw new Error(`Element with the text "${webelementText}" was not found.`);
       }
     });
 }
@@ -190,7 +191,7 @@ Then('I type {string} into the predefined field {string}', function (text: strin
 });
 
 Then('I see the PDF webelement {string}', function (webelementText: string) {
-  iSeeText(webelementText)
+  helpers.iSeeText(webelementText)
     .should('have.attr', 'class', 'pdf')
     .should('have.attr', 'href');
 });
@@ -200,7 +201,7 @@ Then('I do not see the PDF webelement {string}', function (webelementText: strin
   this.iDontSeeText(webelementText);
 });
 Then('I see another PDF webelement {string}', function (webelementText: string) {
-  iSeeText(webelementText)
+  helpers.iSeeText(webelementText)
     .should('have.attr', 'target', ElementAttributes.TARGET_ATTRIBUTEVALUE)
     .should('have.attr', 'href');
 }); 
@@ -212,27 +213,9 @@ Then('I see the validation message {string} underneath the field {string}', func
 
 
 Then('I see validation message {string}', function (validationMessage: string) {
-  iSeeText(validationMessage);
+  helpers.iSeeText(validationMessage);
 });
 
 Then('I do not see validation message {string}', function (validationMessage: string) {
-  iDontSeeText(validationMessage);
+  helpers.iDontSeeText(validationMessage);
 });
-
-function iSeeText(webelementText: string) {
-  return cy.waitUntil(() =>
-    page.getWebelementByText(webelementText)
-      .scrollIntoView()
-      .should('exist')
-      .should('be.visible'),
-    { timeout: 10000, interval: 500 }
-  ).then(() => {
-    cy.log(`The element with text '${webelementText}' is visible on the page.`);
-    return cy.wrap(true);
-  });
-}
-
-function iDontSeeText(webelementText: string) {
-  return page.getWebelementByText(webelementText)
-    .should('not.exist');
-}

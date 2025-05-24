@@ -5,4 +5,6 @@ export class ElementAttributes {
 
     static readonly DATACHECKED = 'data-checked';
     static readonly TARGET_ATTRIBUTEVALUE = '_blank';
+    static readonly RADIOBUTTON_CLASS_ATTRIBUTE_TRUE = 'icon icon--radio-true';
+    static readonly RADIOBUTTON_CLASS_ATTRIBUTE_FALSE = 'icon icon--radio-false';
 }

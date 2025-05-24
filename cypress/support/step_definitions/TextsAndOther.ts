@@ -101,22 +101,16 @@ Then('I scroll to the text {string}', function (text: string) {
     .should('be.visible');         
 });
 
+
+
 Then('I see article {string}', (articleName: string) => {
-  cy.waitUntil(() =>
-    page.getWebelementOfArticle(articleName)
-      .should('exist')  
-      .scrollIntoView()  
-      .should(($el) => {
-        expect($el.length).to.be.greaterThan(0);  
-        expect(Cypress.dom.isVisible($el)).to.be.true; 
-      })
-  , {
-    timeout: 12000,  
-    interval: 1000,  
-    errorMsg: `Article with name '${articleName}' was not found or is not visible.`  
+  cy.waitUntil(() => checkIfArticleIsVisible(articleName), {
+    timeout: 12000,
+    interval: 1000,
+    errorMsg: `Article with name '${articleName}' was not found or is not visible.`
   })
   .then(() => {
-    cy.log('Article with name ' + articleName + ' is visible now.');  
+    cy.log('Article with name ' + articleName + ' is visible now.');
   });
 });
 
@@ -125,13 +119,7 @@ Then('I see articles', (DataTable: any) => {
   DataTable.hashes().forEach((row) => {
     Object.values(row).forEach((articleName: string) => {
       cy.waitUntil(() => 
-        page.getWebelementOfArticle(articleName)
-          .should('exist')  
-          .scrollIntoView() 
-          .should(($el) => {
-            expect($el.length).to.be.greaterThan(0);  
-            expect(Cypress.dom.isVisible($el)).to.be.true;  
-          })
+         checkIfArticleIsVisible(articleName)
       , {
         timeout: 5000,  
         interval: 500,  
@@ -143,6 +131,18 @@ Then('I see articles', (DataTable: any) => {
     });
   });
 });
+
+
+function checkIfArticleIsVisible(articleName: string): Cypress.Chainable<boolean> {
+  return page.getWebelementOfArticle(articleName)
+    .should('exist')
+    .scrollIntoView()
+    .should(($el) => {
+      expect($el.length).to.be.greaterThan(0);
+      expect(Cypress.dom.isVisible($el)).to.be.true;
+    })
+    .then(() => true)
+    }
 
 
 Then('I click onto the article {string}', (articleName: string) => {
