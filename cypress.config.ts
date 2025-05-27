@@ -2,6 +2,7 @@ import { defineConfig } from "cypress";
 import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
 import createBundler from "@bahmutov/cypress-esbuild-preprocessor";
 import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
+import cypressSplit from "cypress-split";
 
 export default defineConfig({
   video: false,
@@ -37,6 +38,7 @@ export default defineConfig({
       },
     },
     async setupNodeEvents(on, config) {
+      cypressSplit(on, config);
       await addCucumberPreprocessorPlugin(on, config);
 
       on(

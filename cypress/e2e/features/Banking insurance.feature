@@ -16,7 +16,6 @@ Feature: Testing banking insurance
             | Produkty a služby Slovenskej sporiteľne, ktoré ponúka KOOPERATIVA na svojich pobočkách: |
 
         Then I see links for webelements with text
-            # | Poistenie ŽIVOT                             |
             | Poistenie k úveru                           |
             | Osobná poistka                              |
             | Pohrebné poistenie                          |

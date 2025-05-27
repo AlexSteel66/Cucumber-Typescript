@@ -22,7 +22,7 @@ import 'cypress-iframe';
 import "@badeball/cypress-cucumber-preprocessor";
 import "cypress-cucumber-attach-screenshots-to-failed-steps";
 import './hooks.ts';
-import "cypress-soft-assertions";
+// import "cypress-soft-assertions";
 
 
 

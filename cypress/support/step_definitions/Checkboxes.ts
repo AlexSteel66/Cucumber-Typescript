@@ -2,7 +2,6 @@ import 'cypress-iframe';
 import 'cypress-wait-until';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
-import "cypress-soft-assertions";
 import { ElementAttributes } from "../ElementAttributes";
 
 

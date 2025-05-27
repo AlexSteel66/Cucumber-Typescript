@@ -1,9 +1,9 @@
 {
-  "browserName": "chrome",
-  "browserVersion": "136.0.7103.114",
+  "browserName": "electron",
+  "browserVersion": "118.0.5993.159",
   "osName": "Win32",
   "osVersion": "Windows NT 10.0; Win64; x64",
   "cypressVersion": "13.17.0",
-  "startedTestsAt": "2025-05-22T22:43:33.261Z",
-  "endedTestsAt": "2025-05-22T22:43:53.258Z"
+  "startedTestsAt": "2025-05-25T14:16:45.277Z",
+  "endedTestsAt": "2025-05-25T14:19:42.486Z"
 }

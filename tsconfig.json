@@ -2,7 +2,10 @@
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "target": "es6",
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "types": [
       "cypress",
       "@badeball/cypress-cucumber-preprocessor",
@@ -13,14 +16,13 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "module": "commonjs",      
-    "moduleResolution": "node", 
+    "module": "commonjs",
+    "moduleResolution": "node",
     "outDir": "dist"
   },
   "include": [
     "cypress/**/*.ts",
     "generate-cucumber-html-report.ts",
-    "types/**/*.d.ts"                
+    "types/**/*.d.ts"
   ]
 }
-  
