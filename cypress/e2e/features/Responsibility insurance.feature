@@ -1,6 +1,6 @@
 Feature: Testing section responsibility insurance
 
-    @Regression @ResponsibilityInsurance
+    @Regression @ResponsibilityInsuranceX
     Scenario: Verification of fields, links and checkboxes for responsibility insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -97,19 +97,19 @@ Feature: Testing section responsibility insurance
         And I see validation message "Telefónne číslo je povinný údaj"
 
         When I type "123" into the field "Telefón"
-        Then I see validation message "Telefónne číslo je povinný údaj"
+        Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
         When I type "123456" into the field "Telefón"
-        Then I see validation message "Telefónne číslo je povinný údaj"
+        Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
         When I type "1234567" into the field "Telefón"
-        Then I see validation message "Telefónne číslo je povinný údaj"
+        Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
         When I type "12345678" into the field "Telefón"
-        Then I see validation message "Telefónne číslo je povinný údaj"
+        Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
         When I type "123456789" into the field "Telefón"
-        Then I see validation message "Telefónne číslo je povinný údaj"
+        Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
         When I type " " into the field "Telefón"
         Then I see validation message "Telefónne číslo je povinný údaj"
@@ -196,5 +196,9 @@ Feature: Testing section responsibility insurance
 
         Then I see links for webelements with text
             | Zľava 10 % pre všetkých na havarijné poistenie                                                  |
-            | Zľava 5 % na rizikové životné poistenie Bezstarostný život                                      |
             | Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok |
+
+
+        Then I don’t see links for webelements with text
+            | Zľava 5 % na rizikové životné poistenie Bezstarostný život |
+

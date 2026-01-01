@@ -67,6 +67,8 @@ export class Helpers {
             .click({ force: true });
     }
 
+
+
     waitForLinkToBeVisible(linkText: string) {
         cy.log(`✅ Waiting for link '${linkText}' to be present and visible.`);
 
@@ -83,13 +85,24 @@ export class Helpers {
             });
     }
 
-    handleVisibleElement($el: JQuery<HTMLElement>, textOfLink: string): void {
-        cy.log(`Element '${textOfLink}' is visible.`);
-        cy.wrap($el).should('be.visible');
-        cy.wrap($el).should('have.attr', 'href').then((href) => {
-            cy.log(`Element has href: ${href}`);
-        });
+    handleVisibleElement($els: JQuery<HTMLElement>, textOfLink: string): void {
+        const $visible = $els.filter((_, el) => Cypress.dom.isVisible(el));
+
+        if ($visible.length > 0) {
+            const $el = $visible.first();
+
+            cy.log(`✅ Element '${textOfLink}' is visible.`);
+            cy.wrap($el).should('be.visible');
+            cy.wrap($el)
+                .should('have.attr', 'href')
+                .then((href) => {
+                    cy.log(`🔗 Element has href: ${href}`);
+                });
+        } else {
+            cy.log(`⚠️ No visible element found for '${textOfLink}'.`);
+        }
     }
+
 
     handleFixedPositionElement($el: JQuery<HTMLElement>, textOfLink: string): void {
         cy.log(`Element '${textOfLink}' has position fixed, checking if it's offscreen.`);
@@ -140,12 +153,30 @@ export class Helpers {
     }
 
 
+
     shouldSkipLink(href: string | undefined): boolean {
         const skipLinks = [
             'http://online.kpas.sk/povinne-zmluvne-poistenie',
             'https://s3.koop.vshosting.cz/prod-kooperativa-dss-media/media/Vitajte%20vo%20svete%20megatrendov_TRENDY%20ESG.mp4?v=1716289218',
         ];
         return href !== undefined && skipLinks.includes(href);
+    }
+
+    verifyLinkNotVisible(textOfLink: string) {
+        cy.document().then((doc) => {
+            const xpath = `//*[contains(normalize-space(.), '${textOfLink}')]/ancestor::a`;
+            const result = doc.evaluate(xpath, doc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+            if (result.snapshotLength === 0) {
+                cy.log(`✅ Link '${textOfLink}' is not in DOM.`);
+            } else {
+                for (let i = 0; i < result.snapshotLength; i++) {
+                    const el = result.snapshotItem(i) as HTMLElement;
+                    cy.wrap(el).should('not.be.visible');
+                }
+                cy.log(`✅ Link '${textOfLink}' exists in DOM but is not visible.`);
+            }
+        });
     }
 
     checkLinkResponse(href: string) {

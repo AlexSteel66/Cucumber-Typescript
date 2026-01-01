@@ -114,17 +114,26 @@ Then('I see links for webelements with text', function (dataTable: any) {
   });
 });
 
+
 Then('I don’t see links for webelements with text', function (dataTable: any) {
-  const uiTexts = dataTable.rawTable.flat();
   const links: string[] = dataTable.rawTable.map((row: string[]) => row[0]);
+
   links.forEach((textOfLink) => {
-    page.getWebelementOfLinkAbove(textOfLink)
-      .should('not.exist')
-      .then(() => {
-        cy.log(`Link '${textOfLink}' is not present.`);
-      });
+    helpers.verifyLinkNotVisible(textOfLink);
   });
 });
+
+// Then('I don’t see links for webelements with text', function (dataTable: any) {
+//   const uiTexts = dataTable.rawTable.flat();
+//   const links: string[] = dataTable.rawTable.map((row: string[]) => row[0]);
+//   links.forEach((textOfLink) => {
+//     page.getWebelementOfLinkAbove(textOfLink)
+//       .should('not.be.visible')
+//       .then(() => {
+//         cy.log(`Link '${textOfLink}' is not present.`);
+//       });
+//   });
+// });
 
 
 Then('I click onto the link of webelement with text {string}', function (linkOfText: string) {

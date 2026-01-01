@@ -1,6 +1,6 @@
 Feature: Testing banking insurance
 
-    @Regression @Banking 
+    @Regression @Banking
     Scenario: Verification of links inside banking insurance
         Given I visit the main website
         Then I wait for 1500 milliseconds
@@ -26,17 +26,14 @@ Feature: Testing banking insurance
             | Poistenie Podnikateľ                        |
 
         Then I see links for webelements with text
-            | Všeobecné poistné podmienky pre poistenie Život_13092024                                                                        |
-            | Dokument s kľúčovými informáciami Život štandard_01022025                                                                       |
-            | Štatút vlastného fondu Fond svetových akcií_01062024                                                                            |
-            | Dokument o udržateľnosti produktov_01022024                                                                                     |
-            | Sadzobník poplatkov, úrokov, limitov, obmedzenia na pripoisteniach a cenník úhrad za lekárske služby_pre produkt Život_13092024 |
-            | Manuál pre postup pri výbere a využití DHS asistenčných služieb_13092024                                                        |
+            | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020       |
+            | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 |
+            | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023                               |
+            | Poistné podmienky pre Pohrebné poistenie_PSS_01042018                                         |
+            | Postup klienta pri asistenčných službách eDoctor_01032022                                     |
+            | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020       |
 
         Then I see links for webelements with text
-            | ProDoctor                   |
-            | webe                        |
-            | pobočkách                   |
             | +421 2 5729 9999            |
             | Napíšte nám                 |
             | 0850 200 200                |
@@ -76,6 +73,7 @@ Feature: Testing banking insurance
             | Postup klienta pri asistenčných službách eDoctor_01032022                                          |
 
         Then I see these texts
+
             | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020       |
             | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 |
             | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023                               |
@@ -83,9 +81,9 @@ Feature: Testing banking insurance
             | Postup klienta pri asistenčných službách eDoctor_01032022                                     |
             | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020       |
 
+
         Then I see links for webelements with text
             | eDoctor                     |
-            | webe                        |
             | pobočkách                   |
             | +421 2 5729 9999            |
             | Napíšte nám                 |
