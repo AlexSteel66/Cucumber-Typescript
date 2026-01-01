@@ -19,6 +19,7 @@ export class Helpers {
             });
     }
 
+    
     waitForButtonToExist(buttonName: string): () => Cypress.Chainable<boolean> {
         return () =>
             page.getButton(buttonName)
