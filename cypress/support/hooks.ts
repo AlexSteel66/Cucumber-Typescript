@@ -1,92 +1,116 @@
-let browserName: string;
-let browserVersion: string;
-let osName: string;
-let osVersion: string;
-let cypressVersion: string;
-let startedTestsAt: string;
-let endedTestsAt: string;
+import { TestReport, ReportScenario, ReportStep, StepStatus } from './reports/hierarchicalReport';
+import fs from 'fs';
+import path from 'path';
 
-const browserNameKey: string = "browserName";
-const browserVersionKey: string = "browserVersion";
-const osNameKey: string = "osName";
-const osVersionKey: string = "osVersion";
-const cypressVersionKey: string = "cypressVersion";
-const startedTestsAtKey: string = "startedTestsAt";
-const endedTestsAtKey: string = "endedTestsAt";
+const testReport: TestReport = { scenarios: [] };
+let currentScenario: ReportScenario;
 
-let runtimeResultsKeys: string[] = [];
-let runtimeResultsValues: string[] = [];
-const runtimeResultsMap = new Map<string, string>();
-
-
-before(function () {
-    browserName = Cypress.browser.name;
-    browserVersion = Cypress.browser.version;
-    osName = navigator.platform;
-    osVersion = navigator.appVersion;
-    cypressVersion = Cypress.version;
-    startedTestsAt = new Date().toISOString();
-
-    cy.log(`Browser: ${browserName} v${browserVersion}`);
-    cy.log(`OS: ${osName} ${osVersion}`);
-    cy.log(`Cypress Version: ${cypressVersion}`);
-    cy.log(`Started Tests At: ${startedTestsAt}`);
+// ------------------ BEFORE SUITE ------------------
+before(() => {
+  console.log('===== Test suite starting =====');
 });
 
+// ------------------ BEFORE EACH SCENARIO ------------------
+beforeEach(function () {
+  const test = this.currentTest!;
+  currentScenario = {
+    feature: test.titlePath?.[0] || 'Unknown feature',
+    name: test.title || 'Unknown scenario',
+    status: 'PASSED',
+    steps: [],
+    startTime: new Date().toISOString(),
+  };
 
+  // Príklad: beforeEach krok
+  currentScenario.steps.push({
+    text: 'beforeEach hook: initializing scenario',
+    status: 'PASSED',
+    timestamp: new Date().toISOString(),
+  });
+});
+
+// ------------------ AFTER EACH SCENARIO ------------------
 afterEach(function () {
-    const test = this.currentTest as Mocha.Test;
-    if (test.state === 'failed') {
-        const timestamp = new Date().toISOString().replace(/[-:.]/g, "");
-        const screenshotName = `${test.title}-${timestamp}`;
-        const screenshotPath = `cypress/reports/screenshots/${screenshotName}.png`;
+  const test = this.currentTest!;
+  const step: ReportStep = {
+    text: 'afterEach hook: scenario finished',
+    status: 'PASSED', // prednastavené, prepíšeme nižšie
+    timestamp: new Date().toISOString(),
+  };
 
-        cy.screenshot(screenshotName)
-            .then(() => {
-                const errorMessage = test.err?.message || 'No error message';
-                const stackTrace = test.err?.stack || 'No stack trace available';
-                Cypress.env('lastScreenshot', screenshotPath);
-                cy.writeFile('cypress/reports/lastScreenshot.json', { screenshotPath })
-            });
+  // ------------------ Spracovanie statusu ------------------
+  if (test.state === 'failed') {
+    step.status = 'FAILED';
+  } else if (test.pending) {
+    step.status = 'SKIPPED';
+  } else if (currentScenario.steps.some(s => s.status === 'SOFT_FAILED')) {
+    // Ak už predtým existoval soft fail krok, scenár bude soft failed
+    step.status = 'SOFT_FAILED';
+  } else {
+    step.status = 'PASSED';
+  }
+
+  // ------------------ Screenshot pri zlyhaní ------------------
+  if (step.status === 'FAILED') {
+    const timestamp = new Date().toISOString().replace(/[-:.]/g, "");
+    const screenshotName = `${test.title}-${timestamp}`;
+    const screenshotPath = `cypress/reports/screenshots/${screenshotName}.png`;
+    step.screenshot = screenshotPath;
+
+    // Cypress screenshot musí byť spustený cez cy.then() pre bezpečné ukladanie
+    cy.screenshot(screenshotName, { capture: 'runner' }).then(() => {
+      currentScenario.steps.push(step);
+
+      // Po pridaní kroku vyhodnotíme status scenára
+      finalizeScenarioStatus();
+    });
+  } else {
+    // Ak nie je failed, rovno pridáme krok
+    currentScenario.steps.push(step);
+    finalizeScenarioStatus();
+  }
+
+  // ------------------ Funkcia na vyhodnotenie statusu scenára ------------------
+  function finalizeScenarioStatus() {
+    if (currentScenario.steps.some(s => s.status === 'FAILED')) {
+      currentScenario.status = 'FAILED';
+    } else if (currentScenario.steps.some(s => s.status === 'SOFT_FAILED')) {
+      currentScenario.status = 'SOFT_FAILED';
+    } else if (currentScenario.steps.every(s => s.status === 'SKIPPED')) {
+      currentScenario.status = 'SKIPPED';
+    } else {
+      currentScenario.status = 'PASSED';
     }
+
+    currentScenario.endTime = new Date().toISOString();
+    currentScenario.duration =
+      new Date(currentScenario.endTime).getTime() - new Date(currentScenario.startTime!).getTime();
+
+    // Pridanie scenára do hlavného reportu
+    if (!currentScenario.steps.some(s => s.status === 'FAILED' && !s.screenshot)) {
+      testReport.scenarios.push(currentScenario);
+    }
+  }
 });
 
+// ------------------ AFTER SUITE ------------------
+after(() => {
+  console.log('===== Test suite finished =====');
 
+  // Celkový čas test suite
+  testReport.startTime = testReport.scenarios[0]?.startTime;
+  testReport.endTime = new Date().toISOString();
+  testReport.duration =
+    new Date(testReport.endTime).getTime() - new Date(testReport.startTime!).getTime();
 
-after(function () {
-    endedTestsAt = new Date().toISOString()
-    console.log('AfterAll hook is running');
-    osVersion = formatOsVersion(osVersion);
+  // Environment info
+  testReport.nodeVersion = process.version;
+  testReport.os = navigator.platform;
+  (testReport as any).cypressVersion = Cypress.version; // voliteľné pole
 
-    runtimeResultsValues.push(browserName, browserVersion, osName, osVersion, cypressVersion, startedTestsAt, endedTestsAt)
-    runtimeResultsKeys.push(browserNameKey, browserVersionKey, osNameKey, osVersionKey, cypressVersionKey, startedTestsAtKey, endedTestsAtKey)
-
-    runtimeResultsKeys.forEach((key, index) => {
-        const value = runtimeResultsValues[index];
-        runtimeResultsMap.set(key, value);
-    });
-
-    cy.log("Runtime Results Map:");
-    runtimeResultsMap.forEach((value, key) => {
-        cy.log(`${key}: ${value}`);
-    });
-
-    const reportPath = './cypress/results/results.json';
-    writeMapToJsonFile(reportPath, runtimeResultsMap);
-}
-
-);
-
-function writeMapToJsonFile(reportPath: string, runtimeResultsMap: Map<string, string>): void {
-    const runtimeResultsObject: Record<string, string> = Object.fromEntries(runtimeResultsMap);
-    cy.writeFile(reportPath, JSON.stringify(runtimeResultsObject, null, 2));
-    cy.log(`Runtime results successfully written to: ${reportPath}`);
-}
-
-function formatOsVersion(osVersion: string): string {
-    const pattern = /\(Windows NT 10\.0; Win64; x64\)/;
-    if (pattern.test(osVersion)) {
-        return "Windows NT 10.0; Win64; x64";
-    }
-    return osVersion;
-}
+  // Zapis JSON reportu
+  const reportPath = path.resolve('cypress/reports/hierarchicalReport.json');
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+  fs.writeFileSync(reportPath, JSON.stringify(testReport, null, 2));
+  console.log(`Hierarchical report written to: ${reportPath}`);
+});
