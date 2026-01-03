@@ -1,4 +1,5 @@
 import ProductPage from "./pages/ProductPage";
+import { addSoftAssertion } from './softAssertions';
 
 const page = new ProductPage();
 export class Helpers {
@@ -27,18 +28,24 @@ export class Helpers {
                 .then(() => true);
     }
 
-    iSeeText(webelementText: string) {
-        return cy.waitUntil(() =>
-            page.getWebelementByText(webelementText)
-                .scrollIntoView()
-                .should('exist')
-                .should('be.visible'),
-            { timeout: 10000, interval: 500 }
-        ).then(() => {
-            cy.log(`The element with text '${webelementText}' is visible on the page.`);
-            return cy.wrap(true);
-        });
-    }
+iSeeText(webelementText: string, gherkinStep: string) {
+  return page.getListOfWebelementsFromText(webelementText)
+    .then($elements => {
+
+      if ($elements.length > 0 && $elements.is(':visible')) {
+        cy.log(`✅ Validation message '${webelementText}' is visible`);
+      } else {
+        const msg =
+          `Expected at least 1 visible element with text '${webelementText}', ` +
+          `but found ${$elements.length}.`;
+
+        cy.log(`🟠 SOFT ASSERT: ${msg}`);
+        addSoftAssertion(gherkinStep, msg);
+      }
+
+    });
+}
+
 
     iDontSeeText(webelementText: string) {
         return page.getWebelementByText(webelementText)

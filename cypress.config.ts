@@ -26,7 +26,7 @@ export default defineConfig({
     env: {
       businessMaxPath: "poistenie/firmy-zivnostnici/biznis-max",
       stepDefinitions: "cypress/support/step_definitions/**/*.{js,ts}",
-      // TAGS: "@ResponsibilityInsuranceX",
+      TAGS: "@BasicFeatures1",
       cucumberJson: {
         generate: false,
         outputFolder: "cypress/reports/cucumber-json/",

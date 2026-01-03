@@ -191,7 +191,8 @@ Then('I type {string} into the predefined field {string}', function (text: strin
 });
 
 Then('I see the PDF webelement {string}', function (webelementText: string) {
-  helpers.iSeeText(webelementText)
+  const stepText = this.pickleStep?.text || `Then I see message '${webelementText}'`;
+  helpers.iSeeText(webelementText, stepText)
     .should('have.attr', 'class', 'pdf')
     .should('have.attr', 'href');
 });
@@ -200,8 +201,10 @@ Then('I see the PDF webelement {string}', function (webelementText: string) {
 Then('I do not see the PDF webelement {string}', function (webelementText: string) {
   this.iDontSeeText(webelementText);
 });
+
 Then('I see another PDF webelement {string}', function (webelementText: string) {
-  helpers.iSeeText(webelementText)
+  const stepText = this.pickleStep?.text || `Then I see message '${webelementText}'`;
+  helpers.iSeeText(webelementText, stepText)
     .should('have.attr', 'target', ElementAttributes.TARGET_ATTRIBUTEVALUE)
     .should('have.attr', 'href');
 }); 
@@ -213,7 +216,8 @@ Then('I see the validation message {string} underneath the field {string}', func
 
 
 Then('I see validation message {string}', function (validationMessage: string) {
-  helpers.iSeeText(validationMessage);
+  const stepText = this.pickleStep?.text || `Then I see message '${validationMessage}'`;
+  return helpers.iSeeText(validationMessage, stepText);
 });
 
 Then('I do not see validation message {string}', function (validationMessage: string) {

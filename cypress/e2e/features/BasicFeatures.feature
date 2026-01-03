@@ -94,7 +94,7 @@ Feature: Some basic features
 
     And Verify all links are OK
 
-  @Regression @BasicFeatures
+  @Regression @BasicFeatures1
   Scenario: Testing basic verification of fields inside request for the information form
     Given I visit the main website
     When I click onto webelement "Kontakty"
@@ -177,7 +177,7 @@ Feature: Some basic features
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
     When I type "test@" into the field "Email"
-    Then I see validation message "Prosím, zadajte platnú emailovú adresu"
+    Then I see validation message "Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP"
 
     When I type "test@gmail" into the field "Email"
     Then I see validation message "Prosím, zadajte platnú emailovú adresu"

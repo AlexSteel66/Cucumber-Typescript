@@ -238,6 +238,16 @@ class ProductPage {
     });
   }
 
+getListOfWebelementsFromText(text: string) {
+  return cy.document().then(doc => {
+    const elements = Array.from(
+      doc.querySelectorAll('*')
+    ).filter(el => el.textContent?.includes(text));
+
+    return Cypress.$(elements);
+  });
+}
+
   getListOfRectangleRadioButtonsForTimes(text: string) {
     return this.getSelectorFromTextForTimes(text).then(($elements) => {
       return Cypress.$($elements).toArray();

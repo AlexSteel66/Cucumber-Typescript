@@ -83,7 +83,7 @@ Then('I see the rectangle radio button {string} for {int} times', function (webe
     page.getRadioButtonWebelement(radioButtonName)
       .should('exist')
       .should('be.visible')
-      .better('have.attr', ElementAttributes.CHECKED);
+      .should('have.attr', ElementAttributes.CHECKED);
   });
   
   

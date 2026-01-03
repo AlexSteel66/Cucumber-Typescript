@@ -1,6 +1,7 @@
 import { fi } from "@faker-js/faker";
 import 'cypress-iframe';
 import 'cypress-wait-until';
+import { addSoftAssertion } from '../softAssertions';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
 
@@ -23,15 +24,16 @@ Then('I wait for {int} milliseconds', function (milliseconds: number) {
 
 
 Then('I see message {string}', function (message: string) {
-  iSeeText(message);
+    const stepText = this.pickleStep?.text || `Then I see message '${message}'`;
+    iSeeText(message, stepText);
 });
 
-Then('I see message {string}', function (message: string) {
-  cy.waitUntil(() => 
-    cy.get('body').contains(message).should('be.visible')
-  );
-  cy.log(`The message '${message}' is visible on the page.`);
-});
+// Then('I see message {string}', function (message: string) {
+//   cy.waitUntil(() => 
+//     cy.get('body').contains(message).should('be.visible')
+//   );
+//   cy.log(`The message '${message}' is visible on the page.`);
+// });
 
 Then('I don´t see message {string}', function (message: string) {
   iDontSeeText(message);
@@ -39,7 +41,8 @@ Then('I don´t see message {string}', function (message: string) {
 
 
 Then('I see the text {string}', function (webelementText: string) {
-  return iSeeText(webelementText);
+   const stepText = this.pickleStep?.text || `Then I see message '${webelementText}'`;
+   return iSeeText(webelementText, stepText);
 });
 
 
@@ -217,18 +220,47 @@ When('I close this dialog', () => {
   });
 });
 
-function iSeeText(webelementText: string) {
-  return cy.waitUntil(() =>
-    page.getWebelementByText(webelementText)
-      .scrollIntoView()
-      .should('exist')
-      .should('be.visible'),
-    { timeout: 10000, interval: 500 }
-  ).then(() => {
-    cy.log(`The element with text '${webelementText}' is visible on the page.`);
-    return cy.wrap(true);
-  });
+
+function iSeeText(webelementText: string, gherkinStep: string) {
+  return page.getListOfWebelementsFromText(webelementText)
+    .then($elements => {
+
+      if ($elements.length === 1 && $elements.is(':visible')) {
+        cy.log(`✅ Validation message '${webelementText}' is visible`);
+      } else {
+        const msg =
+          `Expected exactly 1 visible element with text '${webelementText}', ` +
+          `but found ${$elements.length}.`;
+
+        cy.log(`🟠 SOFT ASSERT: ${msg}`);
+        addSoftAssertion(gherkinStep, msg);
+      }
+    });
 }
+
+
+// function iSeeText(webelementText: string, gherkinStep: string) {
+//   // Cypress-native retry na celý chain
+//   return cy
+//     .wrap(null, { log: false }) // začiatok chainu
+//     .then(() => {
+//       // zavoláme Page Object metódu
+//       return page.getWebelementByText(webelementText)
+//         .then(($el = Cypress.$()) => {
+//           // soft check: existuje a je viditeľný
+//           if ($el.length > 0 && $el.is(':visible')) {
+//             cy.log(`✅ The element with text '${webelementText}' is visible.`);
+//             return true;
+//           } else {
+//             const msg = `❌ Element with text '${webelementText}' not found or not visible within timeout.`;
+//             cy.log(`🟠 SOFT ASSERT: ${msg}`);
+//             addSoftAssertion(gherkinStep, msg);
+//             return false;
+//           }
+//         });
+//     });
+// }
+
 
 function iDontSeeText(webelementText: string) {
   return page.getWebelementByText(webelementText)
