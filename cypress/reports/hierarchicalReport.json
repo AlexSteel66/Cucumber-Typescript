@@ -1,0 +1,118 @@
+{
+  "nodeVersion": "unknown",
+  "os": "unknown",
+  "scenarios": [
+    {
+      "feature": "Testing banking insurance",
+      "scenario": "Verification of links inside banking insurance",
+      "steps": [
+        {
+          "message": "Scenario \"Verification of links inside banking insurance\" executed",
+          "status": "PASSED",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "feature": "Testing banking insurance",
+      "scenario": "Verification of funeral insurance",
+      "steps": [
+        {
+          "message": "Scenario \"Verification of funeral insurance\" executed",
+          "status": "PASSED",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "feature": "Some basic features",
+      "scenario": "Basic verification of links inside the main page and additonal verification of all hyperlinks",
+      "steps": [
+        {
+          "message": "Scenario \"Basic verification of links inside the main page and additonal verification of all hyperlinks\" executed",
+          "status": "PASSED",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "feature": "Some basic features",
+      "scenario": "Testing basic verification of fields inside request for the information form",
+      "steps": [
+        {
+          "message": "Scenario \"Testing basic verification of fields inside request for the information form\" executed",
+          "status": "FAILED",
+          "messages": [
+            "Timed out retrying after 7000ms: Expected to find element: `(//*[contains(text(),'Žiadosť o zmenu v poistnej zmluve')]//ancestor::button)[position()=1]`, but never found it.",
+            "AssertionError: Timed out retrying after 7000ms: Expected to find element: `(//*[contains(text(),'Žiadosť o zmenu v poistnej zmluve')]//ancestor::button)[position()=1]`, but never found it.\n    at eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19256:51)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18690:16)"
+          ]
+        },
+        {
+          "message": "Screenshot attached",
+          "status": "FAILED",
+          "screenshot": "cypress/screenshots/BasicFeatures.feature/Testing_basic_verification_of_fields_inside_request_for_the_information_form-1767616239144.png"
+        }
+      ]
+    },
+    {
+      "feature": "Testing Business-max",
+      "scenario": "Verification of articles for business-max product",
+      "steps": [
+        {
+          "message": "Scenario \"Verification of articles for business-max product\" executed",
+          "status": "FAILED",
+          "messages": [
+            "Timed out retrying after 7000ms: expected false to be true",
+            "AssertionError: Timed out retrying after 7000ms: expected false to be true\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Biznis-max.feature:19757:51)"
+          ]
+        },
+        {
+          "message": "Screenshot attached",
+          "status": "FAILED",
+          "screenshot": "cypress/screenshots/Biznis-max.feature/Verification_of_articles_for_business-max_product-1767616253494.png"
+        }
+      ]
+    },
+    {
+      "feature": "Testing section responsibility insurance",
+      "scenario": "Verification of fields, links and checkboxes for responsibility insurance",
+      "steps": [
+        {
+          "message": "Scenario \"Verification of fields, links and checkboxes for responsibility insurance\" executed",
+          "status": "FAILED",
+          "messages": [
+            "expected '323456789' to equal '+421 323 456 789'",
+            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19523:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17976:62)"
+          ]
+        },
+        {
+          "message": "Screenshot attached",
+          "status": "FAILED",
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_fields,_links_and_checkboxes_for_responsibility_insurance-1767616304473.png"
+        }
+      ]
+    },
+    {
+      "feature": "Testing section responsibility insurance",
+      "scenario": "Verification of links inside responsibility insurance",
+      "steps": [
+        {
+          "message": "Scenario \"Verification of links inside responsibility insurance\" executed",
+          "status": "FAILED",
+          "messages": [
+            "Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.",
+            "AssertionError: Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19829:62)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18690:16)"
+          ]
+        },
+        {
+          "message": "Screenshot attached",
+          "status": "FAILED",
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_links_inside_responsibility_insurance-1767616343900.png"
+        }
+      ]
+    }
+  ],
+  "startTime": "2026-01-05T12:30:56.694Z",
+  "endTime": "2026-01-05T12:32:23.910Z",
+  "duration": 87216
+}

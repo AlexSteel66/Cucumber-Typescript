@@ -1,7 +1,7 @@
-Feature: Testing banking insurance
+Feature: Testing Business-max
 
     @Regression @BusinessMax
-    Scenario: Verification of links inside banking insurance
+    Scenario: Verification of articles for business-max product
         Given I visit business-max product
         And I click onto the button "Odmietnuť všetky"
         Then I see article "Odcudzenie"
