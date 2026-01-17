@@ -8,12 +8,6 @@ import { reportStep} from '../reports/hierarchicalReport';
 
 const page = new ProductPage();
 
-// Given('I visit the main website', () => {
-//   cy.visitMainWebsite();
-//   cy.waitForPageLoaded();
-//   reportStep('I visit the main website', 'PASSED');
-// });
-
 Given('I visit the main website',
    () => { cy.visitMainWebsite();
      cy.waitForPageLoaded();
@@ -24,21 +18,6 @@ Given('I visit business-max product', () => {
   cy.waitForPageLoaded();
   reportStep('I visit business-max product', 'PASSED');
 });
-
-// Given('I visit the main website', () => {
-//   cy.step('I visit the main website', () => {
-//     cy.visitMainWebsite();
-//   });
-// });
-
-// Given('I visit business-max product', () => {
-//   cy.step('I visit business-max product', () => {
-//     cy.visitBusinessMax();
-//     cy.waitForPageLoaded();
-//   });
-// });
-
-
 
 
 Then('I wait for {int} milliseconds', (milliseconds: number) => {

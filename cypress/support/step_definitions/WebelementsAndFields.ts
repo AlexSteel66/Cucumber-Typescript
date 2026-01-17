@@ -267,10 +267,13 @@ Then(
   }
 );
 
+
 Then('I see validation message {string}', (validationMessage: string) => {
+  cy.get('body').click(0, 0); 
+  cy.wait(200);
   helpers.iSeeText(validationMessage, `I see validation message ${validationMessage}`)
-    .then(() => reportStep(`I see validation message ${validationMessage}`, 'PASSED'));
 });
+
 
 Then('I do not see validation message {string}', (validationMessage: string) => {
   helpers.iDontSeeText(validationMessage)

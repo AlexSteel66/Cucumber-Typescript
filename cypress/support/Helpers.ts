@@ -1,5 +1,7 @@
 import ProductPage from "./pages/ProductPage";
 import { addSoftAssertion } from './softAssertions';
+import { reportStep } from './reports/hierarchicalReport';
+
 
 const page = new ProductPage();
 export class Helpers {
@@ -28,21 +30,18 @@ export class Helpers {
                 .then(() => true);
     }
 
+
 iSeeText(webelementText: string, gherkinStep: string) {
   return page.getListOfWebelementsFromText(webelementText)
     .then($elements => {
-
       if ($elements.length > 0 && $elements.is(':visible')) {
         cy.log(`✅ Validation message '${webelementText}' is visible`);
+        reportStep(gherkinStep, 'PASSED');
       } else {
-        const msg =
-          `Expected at least 1 visible element with text '${webelementText}', ` +
-          `but found ${$elements.length}.`;
-
+        const msg = `Expected at least 1 visible element with text '${webelementText}', but found ${$elements.length}.`;
         cy.log(`🟠 SOFT ASSERT: ${msg}`);
         addSoftAssertion(gherkinStep, msg);
       }
-
     });
 }
 

@@ -71,7 +71,7 @@ Feature: Testing section responsibility insurance
         Then I see validation message "Prosím, zadajte platnú emailovú adresu"
 
         When I type "" into the field "Email"
-        Then I see validation message "Prosím, zadajte platnú emailovú adresu"
+        Then I see validation message "Email je povinný údaj"
 
         When I type "test@gmail.com" into the field "Email"
         Then field "Email" has value "test@gmail.com"

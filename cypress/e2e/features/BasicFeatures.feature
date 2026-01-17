@@ -212,30 +212,30 @@ Feature: Some basic features
     And I see validation message "Telefónne číslo je povinný údaj"
 
     When I type "123" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "123456" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "1234567" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "12345678" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "123456789" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "" into the field "Telefón"
-    Then I see validation message "Telefónne číslo je povinný údaj"
+    Then I see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "323456789" into the field "Telefón"
     Then field "Telefón" has value "+421 323 456 789"
-    And I do not see validation message "Telefónne číslo je povinný údaj"
+    And I do not see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "987654321" into the field "Telefón"
     Then field "Telefón" has value "+421 987 654 321"
-    And I do not see validation message "Telefónne číslo je povinný údaj"
+    And I do not see validation message "Číslo musí byť uvedené v medzinárodnom formáte a bez medzier."
 
     When I type "" into the text area "Správa"
     Then I see validation message "Vaša správa je povinný údaj"
