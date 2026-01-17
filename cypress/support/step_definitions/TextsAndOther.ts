@@ -4,21 +4,42 @@ import 'cypress-wait-until';
 import { addSoftAssertion } from '../softAssertions';
 import ProductPage from "../pages/ProductPage";
 import {Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
-import { reportStep } from '../reports/hierarchicalReport';
+import { reportStep} from '../reports/hierarchicalReport';
 
 const page = new ProductPage();
 
-Given('I visit the main website', () => {
-  cy.visitMainWebsite();
-  cy.waitForPageLoaded();
-  reportStep('I visit the main website', 'PASSED');
-});
+// Given('I visit the main website', () => {
+//   cy.visitMainWebsite();
+//   cy.waitForPageLoaded();
+//   reportStep('I visit the main website', 'PASSED');
+// });
+
+Given('I visit the main website',
+   () => { cy.visitMainWebsite();
+     cy.waitForPageLoaded();
+     reportStep('I visit the main website', 'PASSED'); });
 
 Given('I visit business-max product', () => {
   cy.visitBusinessMax();
   cy.waitForPageLoaded();
   reportStep('I visit business-max product', 'PASSED');
 });
+
+// Given('I visit the main website', () => {
+//   cy.step('I visit the main website', () => {
+//     cy.visitMainWebsite();
+//   });
+// });
+
+// Given('I visit business-max product', () => {
+//   cy.step('I visit business-max product', () => {
+//     cy.visitBusinessMax();
+//     cy.waitForPageLoaded();
+//   });
+// });
+
+
+
 
 Then('I wait for {int} milliseconds', (milliseconds: number) => {
   cy.wait(milliseconds);
@@ -50,7 +71,8 @@ Then('I see these texts', (dataTable: any) => {
     });
   });
 
-  reportStep('I see these texts', 'PASSED');
+  // Zapíš presné texty do reportu
+  reportStep(`I see these texts: ${texts.join(' | ')}`, 'PASSED');
 });
 
 Then('I click away', () => {

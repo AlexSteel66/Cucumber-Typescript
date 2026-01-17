@@ -89,6 +89,7 @@ Then('I see links', (dataTable: any) => {
   reportStep('I see all listed links', 'PASSED');
 });
 
+
 Then('I see links for webelements with text', (dataTable: any) => {
   const links: string[] = dataTable.rawTable.map(row => row[0]);
 

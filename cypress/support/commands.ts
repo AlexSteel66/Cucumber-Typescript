@@ -2,6 +2,8 @@
 /// <reference types="cypress-xpath" /> 
 
 import 'cypress-iframe';
+import { reportStepAuto, reportStep, currentScenario, StepStatus, startScenario } from './reports/hierarchicalReport';
+
 import ProductPage from './pages/ProductPage';
 const productPage = new ProductPage()
 
@@ -91,3 +93,20 @@ Cypress.Commands.add("verifyVisibilityOfElementUponMouseOver", (elementName: str
   productPage.getWebelementByText(elementName).eq(0).trigger('mouseover')
   cy.get(classNameOfVisibleElement).should('be.visible')
 })
+
+
+
+
+
+Cypress.Commands.add('step', (message: string, fn: () => void) => {
+  // vykonanie kroku
+  cy.then(() => {
+    try {
+      fn();
+      reportStepAuto(message); // zapis do reportu
+    } catch (err: any) {
+      reportStep(message, 'FAILED', { messages: [err.message, err.stack] });
+      throw err; // aby Cypress zaznamenal fail
+    }
+  });
+});
