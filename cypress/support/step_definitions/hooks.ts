@@ -36,6 +36,12 @@ Cypress.on('fail', function (error) {
 // ===================== BEFORE TEST SUITE =====================
 before(() => {
   console.log('===== Test suite starting =====');
+
+    cy.task<{ nodeVersion: string; os: string }>('getNodeInfo').then(info => {
+    testReport.nodeVersion = info.nodeVersion;
+    testReport.os = info.os;
+  });
+
   testReport.startTime = new Date().toISOString();
 });
 

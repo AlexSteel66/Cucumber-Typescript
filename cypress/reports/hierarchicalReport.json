@@ -1,6 +1,6 @@
 {
-  "nodeVersion": "unknown",
-  "os": "unknown",
+  "nodeVersion": "v22.13.0",
+  "os": "win32",
   "scenarios": [
     {
       "feature": "Testing banking insurance",
@@ -523,7 +523,7 @@
         {
           "message": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/BasicFeatures.feature/Testing_basic_verification_of_fields_inside_request_for_the_information_form-1768652161294.png"
+          "screenshot": "cypress/screenshots/BasicFeatures.feature/Testing_basic_verification_of_fields_inside_request_for_the_information_form-1768654819603.png"
         }
       ]
     },
@@ -558,7 +558,7 @@
         {
           "message": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Biznis-max.feature/Verification_of_articles_for_business-max_product-1768652179295.png"
+          "screenshot": "cypress/screenshots/Biznis-max.feature/Verification_of_articles_for_business-max_product-1768654841440.png"
         }
       ]
     },
@@ -837,7 +837,7 @@
         {
           "message": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_fields,_links_and_checkboxes_for_responsibility_insurance-1768652254937.png"
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_fields,_links_and_checkboxes_for_responsibility_insurance-1768654931960.png"
         }
       ]
     },
@@ -932,12 +932,12 @@
         {
           "message": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_links_inside_responsibility_insurance-1768652307933.png"
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_links_inside_responsibility_insurance-1768654999423.png"
         }
       ]
     }
   ],
-  "startTime": "2026-01-17T12:16:23.055Z",
-  "endTime": "2026-01-17T12:18:27.946Z",
-  "duration": 124891
+  "startTime": "2026-01-17T13:00:49.740Z",
+  "endTime": "2026-01-17T13:03:19.427Z",
+  "duration": 149687
 }

@@ -54,13 +54,20 @@ export default defineConfig({
 
       // ------------------- TASKY -------------------
       on('task', {
+        // Nový task na získanie Node info
+        getNodeInfo() {
+          return {
+            nodeVersion: process.version,
+            os: process.platform,
+          };
+        },
+
         // Uloženie hierarchického reportu JSON
         saveReport(report) {
           try {
             const reportPath = path.resolve('cypress/reports/hierarchicalReport.json');
             fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 
-            // Kontrola existujúceho reportu
             let existingReport = null;
             if (fs.existsSync(reportPath)) {
               try {
@@ -71,7 +78,6 @@ export default defineConfig({
               }
             }
 
-            // Ak existuje, doplni nové scenáre
             if (existingReport && Array.isArray(existingReport.scenarios)) {
               report.scenarios = [...existingReport.scenarios, ...report.scenarios];
             }
@@ -84,7 +90,6 @@ export default defineConfig({
           return null;
         },
 
-        // Uloženie screenshotu pri FAIL kroku (Base64)
         saveScreenshot({ src, path: screenshotPath }: { src: string; path: string }) {
           try {
             if (!src) {
