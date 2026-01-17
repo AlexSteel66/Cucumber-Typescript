@@ -19,12 +19,8 @@ import './commands';
 import 'cypress-mochawesome-reporter/register';
 import 'cypress-xpath';
 import 'cypress-iframe';
-import "@badeball/cypress-cucumber-preprocessor";
-import "cypress-cucumber-attach-screenshots-to-failed-steps";
-import './hooks.ts';
-// import "cypress-soft-assertions";
 
-
+import { reportStep } from './reports/hierarchicalReport';
 
 
 Cypress.on('uncaught:exception', (err) => {
@@ -32,4 +28,7 @@ Cypress.on('uncaught:exception', (err) => {
       return false;
     }
   });
+
+
+
 

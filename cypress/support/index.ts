@@ -3,7 +3,7 @@ import 'cypress-wait-until';
 import 'cypress-mochawesome-reporter/register';
 import "cypress-cucumber-attach-screenshots-to-failed-steps";
 import './commands';
-import './hooks.ts';
+import './step_definitions/hooks';
 
 const COOKIE_NAME = "cookie_notice";
 // The value meaning that user has accepted the cookie policy

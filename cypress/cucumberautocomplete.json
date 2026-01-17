@@ -1,0 +1,7 @@
+{
+    "featurePath": "cypress/e2e/features/**/*.feature",
+    "steps": [
+        "cypress/support/step_definitions/**/*.ts"
+    ],
+    "language": "en"
+}
