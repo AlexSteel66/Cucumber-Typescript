@@ -28,6 +28,7 @@ export default defineConfig({
     env: {
       businessMaxPath: 'poistenie/firmy-zivnostnici/biznis-max',
       stepDefinitions: 'cypress/support/step_definitions/**/*.{js,ts}',
+      // TAGS: "@ResponsibilityInsuranceX",
       cucumberJson: {
         generate: false,
         outputFolder: 'cypress/reports/cucumber-json/',
@@ -38,13 +39,9 @@ export default defineConfig({
     },
 
     async setupNodeEvents(on, config) {
-      // Split plugin
       cypressSplit(on, config);
-
-      // Cucumber preprocessor
       await addCucumberPreprocessorPlugin(on, config);
 
-      // File preprocessor
       on(
         'file:preprocessor',
         createBundler({
@@ -52,9 +49,7 @@ export default defineConfig({
         })
       );
 
-      // ------------------- TASKY -------------------
       on('task', {
-        // Nový task na získanie Node info
         getNodeInfo() {
           return {
             nodeVersion: process.version,
@@ -62,7 +57,6 @@ export default defineConfig({
           };
         },
 
-        // Uloženie hierarchického reportu JSON
         saveReport(report) {
           try {
             const reportPath = path.resolve('cypress/reports/hierarchicalReport.json');

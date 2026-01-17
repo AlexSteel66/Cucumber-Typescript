@@ -7,39 +7,39 @@
       "scenario": "Verification of links inside banking insurance",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 1500 milliseconds",
+          "step": "I wait for 1500 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto hyperlink Bankopoistenie",
+          "step": "I click onto hyperlink Bankopoistenie",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I see these texts: Bankopoistenie | Poistné produkty | Spolupráca so Slovenskou sporiteľňou | poistenie poisťovne KOOPERATIVA šité na mieru. | Produkty poisťovne KOOPERATIVA, ktoré ponúka Slovenská sporiteľňa: | Produkty a služby Slovenskej sporiteľne, ktoré ponúka KOOPERATIVA na svojich pobočkách:",
+          "step": "I see these texts: Bankopoistenie | Poistné produkty | Spolupráca so Slovenskou sporiteľňou | poistenie poisťovne KOOPERATIVA šité na mieru. | Produkty poisťovne KOOPERATIVA, ktoré ponúka Slovenská sporiteľňa: | Produkty a služby Slovenskej sporiteľne, ktoré ponúka KOOPERATIVA na svojich pobočkách:",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "Scenario \"Verification of links inside banking insurance\" executed",
+          "step": "Scenario \"Verification of links inside banking insurance\" executed",
           "status": "PASSED",
           "messages": []
         }
@@ -50,43 +50,43 @@
       "scenario": "Verification of funeral insurance",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 1500 milliseconds",
+          "step": "I wait for 1500 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto hyperlink Bankopoistenie",
+          "step": "I click onto hyperlink Bankopoistenie",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the link of webelement with text Pohrebné poistenie",
+          "step": "I click onto the link of webelement with text Pohrebné poistenie",
           "status": "PASSED"
         },
         {
-          "message": "I see these texts: Dokumenty k Pohrebnému poisteniu: | Pohrebné poistenie | Bankové produkty | Ako nahlásiť škodovú udalosť",
+          "step": "I see these texts: Dokumenty k Pohrebnému poisteniu: | Pohrebné poistenie | Bankové produkty | Ako nahlásiť škodovú udalosť",
           "status": "PASSED"
         },
         {
-          "message": "I do not see links for webelements with text",
+          "step": "I do not see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "I see these texts: Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020 | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023 | Poistné podmienky pre Pohrebné poistenie_PSS_01042018 | Postup klienta pri asistenčných službách eDoctor_01032022 | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020",
+          "step": "I see these texts: Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020 | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023 | Poistné podmienky pre Pohrebné poistenie_PSS_01042018 | Postup klienta pri asistenčných službách eDoctor_01032022 | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "Scenario \"Verification of funeral insurance\" executed",
+          "step": "Scenario \"Verification of funeral insurance\" executed",
           "status": "PASSED",
           "messages": []
         }
@@ -97,71 +97,71 @@
       "scenario": "Basic verification of links inside the main page and additonal verification of all hyperlinks",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 1000 milliseconds",
+          "step": "I wait for 1000 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I see hyperlink for all webelements",
+          "step": "I see hyperlink for all webelements",
           "status": "PASSED"
         },
         {
-          "message": "I don’t see these texts",
+          "step": "I don’t see these texts",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Auto I see hyperlinks",
+          "step": "Inside the block Auto I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Život I see hyperlinks",
+          "step": "Inside the block Život I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Majetok I see hyperlinks",
+          "step": "Inside the block Majetok I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Zodpovednosť I see hyperlinks",
+          "step": "Inside the block Zodpovednosť I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Cestovanie I see hyperlinks",
+          "step": "Inside the block Cestovanie I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Firmy a živnostníci I see hyperlinks",
+          "step": "Inside the block Firmy a živnostníci I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Asistenčné služby I see hyperlinks",
+          "step": "Inside the block Asistenčné služby I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Bankopoistenie I see hyperlinks",
+          "step": "Inside the block Bankopoistenie I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the highlighted block Rýchle linky I see hyperlinks",
+          "step": "Inside the highlighted block Rýchle linky I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the highlighted block Dôležité odkazy I see hyperlinks",
+          "step": "Inside the highlighted block Dôležité odkazy I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Verify all links are OK",
+          "step": "Verify all links are OK",
           "status": "PASSED"
         },
         {
-          "message": "Scenario \"Basic verification of links inside the main page and additonal verification of all hyperlinks\" executed",
+          "step": "Scenario \"Basic verification of links inside the main page and additonal verification of all hyperlinks\" executed",
           "status": "PASSED",
           "messages": []
         }
@@ -172,340 +172,340 @@
       "scenario": "Testing basic verification of fields inside request for the information form",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I click onto webelement Kontakty",
+          "step": "I click onto webelement Kontakty",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 3500 milliseconds",
+          "step": "I wait for 3500 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Cestovanie\"",
+          "step": "I click onto the button \"Cestovanie\"",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Žiadosti\"",
+          "step": "I click onto the button \"Žiadosti\"",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
+          "step": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
           "status": "PASSED"
         },
         {
-          "message": "I see the following fields",
+          "step": "I see the following fields",
           "status": "PASSED"
         },
         {
-          "message": "I do not see the following fields",
+          "step": "I do not see the following fields",
           "status": "PASSED"
         },
         {
-          "message": "I see the text area Správa",
+          "step": "I see the text area Správa",
           "status": "PASSED"
         },
         {
-          "message": "I select the radiobutton \"Spoločnosť\"",
+          "step": "I select the radiobutton \"Spoločnosť\"",
           "status": "PASSED"
         },
         {
-          "message": "I see the following fields",
+          "step": "I see the following fields",
           "status": "PASSED"
         },
         {
-          "message": "I do not see the following fields",
+          "step": "I do not see the following fields",
           "status": "PASSED"
         },
         {
-          "message": "I see the text area Správa",
+          "step": "I see the text area Správa",
           "status": "PASSED"
         },
         {
-          "message": "I select the radiobutton \"Fyzická osoba\"",
+          "step": "I select the radiobutton \"Fyzická osoba\"",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Alex\" into the field Meno",
+          "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "field Meno has value Alex",
+          "step": "field Meno has value Alex",
           "status": "PASSED"
         },
         {
-          "message": "I type \" \" into the field Meno",
+          "step": "I type \" \" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Meno je povinný údaj",
+          "step": "I see validation message Meno je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Alex\" into the field Meno",
+          "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Meno je povinný údaj",
+          "step": "I do not see validation message Meno je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Gregor\" into the field Priezvisko",
+          "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "field Priezvisko has value Gregor",
+          "step": "field Priezvisko has value Gregor",
           "status": "PASSED"
         },
         {
-          "message": "I type \" \" into the field Priezvisko",
+          "step": "I type \" \" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Priezvisko je povinný údaj",
+          "step": "I see validation message Priezvisko je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Gregor\" into the field Priezvisko",
+          "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Priezvisko je povinný údaj",
+          "step": "I do not see validation message Priezvisko je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"1234567\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"1234567\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123456789\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"123456789\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"abcdefgh\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"abcdefgh\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"12345678\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"12345678\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 12345678",
+          "step": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 12345678",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"1234567890\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"1234567890\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 1234567890",
+          "step": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 1234567890",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
+          "step": "I type \"\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
+          "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test\" into the field Email",
+          "step": "I type \"test\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@\" into the field Email",
+          "step": "I type \"test@\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP",
           "status": "SOFT_FAILED",
           "messages": [
             "Expected at least 1 visible element with text 'Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP', but found 0."
           ]
         },
         {
-          "message": "I type \"test@gmail\" into the field Email",
+          "step": "I type \"test@gmail\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@gmail.\" into the field Email",
+          "step": "I type \"test@gmail.\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Email",
+          "step": "I type \"\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "SOFT_FAILED",
           "messages": [
             "Expected at least 1 visible element with text 'Prosím, zadajte platnú emailovú adresu', but found 0."
           ]
         },
         {
-          "message": "I type \"test@gmail.com\" into the field Email",
+          "step": "I type \"test@gmail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value test@gmail.com",
+          "step": "field Email has value test@gmail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"example.name+test@gmail.com\" into the field Email",
+          "step": "I type \"example.name+test@gmail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value example.name+test@gmail.com",
+          "step": "field Email has value example.name+test@gmail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"user123@mail.domain.com\" into the field Email",
+          "step": "I type \"user123@mail.domain.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value user123@mail.domain.com",
+          "step": "field Email has value user123@mail.domain.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"name.surname@mail.com\" into the field Email",
+          "step": "I type \"name.surname@mail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value name.surname@mail.com",
+          "step": "field Email has value name.surname@mail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"email_12345@gmail.io\" into the field Email",
+          "step": "I type \"email_12345@gmail.io\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value email_12345@gmail.io",
+          "step": "field Email has value email_12345@gmail.io",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Telefón",
+          "step": "I type \"\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Telefónne číslo je povinný údaj",
+          "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123\" into the field Telefón",
+          "step": "I type \"123\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123456\" into the field Telefón",
+          "step": "I type \"123456\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"1234567\" into the field Telefón",
+          "step": "I type \"1234567\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"12345678\" into the field Telefón",
+          "step": "I type \"12345678\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123456789\" into the field Telefón",
+          "step": "I type \"123456789\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Telefón",
+          "step": "I type \"\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "SOFT_FAILED",
           "messages": [
             "Expected at least 1 visible element with text 'Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.', but found 0."
           ]
         },
         {
-          "message": "I type \"323456789\" into the field Telefón",
+          "step": "I type \"323456789\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "field \"Telefón\" has value \"+421 323 456 789\"",
+          "step": "field \"Telefón\" has value \"+421 323 456 789\"",
           "status": "FAILED",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
@@ -513,7 +513,7 @@
           ]
         },
         {
-          "message": "Scenario \"Testing basic verification of fields inside request for the information form\" executed",
+          "step": "Scenario \"Testing basic verification of fields inside request for the information form\" executed",
           "status": "FAILED",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
@@ -521,9 +521,9 @@
           ]
         },
         {
-          "message": "Screenshot attached",
+          "step": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/BasicFeatures.feature/Testing_basic_verification_of_fields_inside_request_for_the_information_form-1768654819603.png"
+          "screenshot": "cypress/screenshots/BasicFeatures.feature/Testing_basic_verification_of_fields_inside_request_for_the_information_form-1768659279879.png"
         }
       ]
     },
@@ -532,15 +532,15 @@
       "scenario": "Verification of articles for business-max product",
       "steps": [
         {
-          "message": "I visit business-max product",
+          "step": "I visit business-max product",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I see article \"Odcudzenie\"",
+          "step": "I see article \"Odcudzenie\"",
           "status": "FAILED",
           "messages": [
             "Timed out retrying after 7000ms: expected false to be true",
@@ -548,7 +548,7 @@
           ]
         },
         {
-          "message": "Scenario \"Verification of articles for business-max product\" executed",
+          "step": "Scenario \"Verification of articles for business-max product\" executed",
           "status": "FAILED",
           "messages": [
             "Timed out retrying after 7000ms: expected false to be true",
@@ -556,9 +556,9 @@
           ]
         },
         {
-          "message": "Screenshot attached",
+          "step": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Biznis-max.feature/Verification_of_articles_for_business-max_product-1768654841440.png"
+          "screenshot": "cypress/screenshots/Biznis-max.feature/Verification_of_articles_for_business-max_product-1768659301483.png"
         }
       ]
     },
@@ -567,259 +567,259 @@
       "scenario": "Verification of fields, links and checkboxes for responsibility insurance",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 1500 milliseconds",
+          "step": "I wait for 1500 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto hyperlink Poistenie",
+          "step": "I click onto hyperlink Poistenie",
           "status": "PASSED"
         },
         {
-          "message": "I see all listed links",
+          "step": "I see all listed links",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the simple link zodpovednost",
+          "step": "I click onto the simple link zodpovednost",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
+          "step": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
+          "step": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "I see following checkboxes in expected states",
+          "step": "I see following checkboxes in expected states",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Alex\" into the field Meno",
+          "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "field Meno has value Alex",
+          "step": "field Meno has value Alex",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Meno",
+          "step": "I type \"\" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Meno je povinný údaj",
+          "step": "I see validation message Meno je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Alex\" into the field Meno",
+          "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Meno je povinný údaj",
+          "step": "I do not see validation message Meno je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Gregor\" into the field Priezvisko",
+          "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "field Priezvisko has value Gregor",
+          "step": "field Priezvisko has value Gregor",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Priezvisko",
+          "step": "I type \"\" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Priezvisko je povinný údaj",
+          "step": "I see validation message Priezvisko je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"Gregor\" into the field Priezvisko",
+          "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Priezvisko je povinný údaj",
+          "step": "I do not see validation message Priezvisko je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test\" into the field Email",
+          "step": "I type \"test\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@\" into the field Email",
+          "step": "I type \"test@\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I click away",
+          "step": "I click away",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@gmail\" into the field Email",
+          "step": "I type \"test@gmail\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@gmail.\" into the field Email",
+          "step": "I type \"test@gmail.\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Email",
+          "step": "I type \"\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Email je povinný údaj",
+          "step": "I see validation message Email je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"test@gmail.com\" into the field Email",
+          "step": "I type \"test@gmail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value test@gmail.com",
+          "step": "field Email has value test@gmail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"example.name+test@gmail.com\" into the field Email",
+          "step": "I type \"example.name+test@gmail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value example.name+test@gmail.com",
+          "step": "field Email has value example.name+test@gmail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"user123@mail.domain.com\" into the field Email",
+          "step": "I type \"user123@mail.domain.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value user123@mail.domain.com",
+          "step": "field Email has value user123@mail.domain.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"name.surname@mail.com\" into the field Email",
+          "step": "I type \"name.surname@mail.com\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value name.surname@mail.com",
+          "step": "field Email has value name.surname@mail.com",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"email_12345@gmail.io\" into the field Email",
+          "step": "I type \"email_12345@gmail.io\" into the field Email",
           "status": "PASSED"
         },
         {
-          "message": "field Email has value email_12345@gmail.io",
+          "step": "field Email has value email_12345@gmail.io",
           "status": "PASSED"
         },
         {
-          "message": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
+          "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED"
         },
         {
-          "message": "I type \"\" into the field Telefón",
+          "step": "I type \"\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Telefónne číslo je povinný údaj",
+          "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123\" into the field Telefón",
+          "step": "I type \"123\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123456\" into the field Telefón",
+          "step": "I type \"123456\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"1234567\" into the field Telefón",
+          "step": "I type \"1234567\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"12345678\" into the field Telefón",
+          "step": "I type \"12345678\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \"123456789\" into the field Telefón",
+          "step": "I type \"123456789\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
+          "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED"
         },
         {
-          "message": "I type \" \" into the field Telefón",
+          "step": "I type \" \" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "I see validation message Telefónne číslo je povinný údaj",
+          "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED"
         },
         {
-          "message": "I type \"323456789\" into the field Telefón",
+          "step": "I type \"323456789\" into the field Telefón",
           "status": "PASSED"
         },
         {
-          "message": "field \"Telefón\" has value \"+421 323 456 789\"",
+          "step": "field \"Telefón\" has value \"+421 323 456 789\"",
           "status": "FAILED",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
@@ -827,7 +827,7 @@
           ]
         },
         {
-          "message": "Scenario \"Verification of fields, links and checkboxes for responsibility insurance\" executed",
+          "step": "Scenario \"Verification of fields, links and checkboxes for responsibility insurance\" executed",
           "status": "FAILED",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
@@ -835,9 +835,9 @@
           ]
         },
         {
-          "message": "Screenshot attached",
+          "step": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_fields,_links_and_checkboxes_for_responsibility_insurance-1768654931960.png"
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_fields,_links_and_checkboxes_for_responsibility_insurance-1768659380249.png"
         }
       ]
     },
@@ -846,75 +846,75 @@
       "scenario": "Verification of links inside responsibility insurance",
       "steps": [
         {
-          "message": "I visit the main website",
+          "step": "I visit the main website",
           "status": "PASSED"
         },
         {
-          "message": "I wait for 1500 milliseconds",
+          "step": "I wait for 1500 milliseconds",
           "status": "PASSED"
         },
         {
-          "message": "I click onto hyperlink Poistenie",
+          "step": "I click onto hyperlink Poistenie",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the simple link zodpovednost",
+          "step": "I click onto the simple link zodpovednost",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
+          "step": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
+          "step": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
           "status": "PASSED"
         },
         {
-          "message": "I click onto the button \"Odmietnuť všetky\"",
+          "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Auto I see hyperlinks",
+          "step": "Inside the block Auto I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Život I see hyperlinks",
+          "step": "Inside the block Život I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Majetok I see hyperlinks",
+          "step": "Inside the block Majetok I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Zodpovednosť I see hyperlinks",
+          "step": "Inside the block Zodpovednosť I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Cestovanie I see hyperlinks",
+          "step": "Inside the block Cestovanie I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Asistenčné služby I see hyperlinks",
+          "step": "Inside the block Asistenčné služby I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the block Bankopoistenie I see hyperlinks",
+          "step": "Inside the block Bankopoistenie I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the highlighted block Rýchle linky I see hyperlinks",
+          "step": "Inside the highlighted block Rýchle linky I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "Inside the highlighted block Dôležité odkazy I see hyperlinks",
+          "step": "Inside the highlighted block Dôležité odkazy I see hyperlinks",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "PASSED"
         },
         {
-          "message": "I see links for webelements with text",
+          "step": "I see links for webelements with text",
           "status": "FAILED",
           "messages": [
             "Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.",
@@ -922,7 +922,7 @@
           ]
         },
         {
-          "message": "Scenario \"Verification of links inside responsibility insurance\" executed",
+          "step": "Scenario \"Verification of links inside responsibility insurance\" executed",
           "status": "FAILED",
           "messages": [
             "Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.",
@@ -930,14 +930,14 @@
           ]
         },
         {
-          "message": "Screenshot attached",
+          "step": "Screenshot attached",
           "status": "FAILED",
-          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_links_inside_responsibility_insurance-1768654999423.png"
+          "screenshot": "cypress/screenshots/Responsibility insurance.feature/Verification_of_links_inside_responsibility_insurance-1768659435856.png"
         }
       ]
     }
   ],
-  "startTime": "2026-01-17T13:00:49.740Z",
-  "endTime": "2026-01-17T13:03:19.427Z",
-  "duration": 149687
+  "startTime": "2026-01-17T14:15:07.118Z",
+  "endTime": "2026-01-17T14:17:15.861Z",
+  "duration": 128743
 }

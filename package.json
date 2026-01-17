@@ -6,6 +6,8 @@
     "businessmax": "cypress run --env tags=\"@BusinessMax\"",
     "regression": "cypress run --env tags=\"@Regression\"",
     "basic": "cypress run --env tags=\"@BasicFeatures1\"",
+    "resp": "cypress run --env tags=\"@ResponsibilityInsuranceX\"",
+
 
     "regression:1": "cypress run --env tags='@Regression' --spec \"cypress/e2e/features/Testing banking insurance.feature\"",
     "regression:2": "cypress run --env tags='@Regression' --spec \"cypress/e2e/features/Some basic features.feature\"",
