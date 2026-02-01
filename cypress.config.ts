@@ -6,6 +6,7 @@ import cypressSplit from 'cypress-split';
 import fs from 'fs';
 import path from 'path';
 
+
 export default defineConfig({
   video: false,
   screenshotOnRunFailure: true,
