@@ -108,8 +108,9 @@ Then('I see links for webelements with text', (dataTable: any) => {
     });
   });
 
-  reportStep('I see links for webelements with text', 'PASSED');
+  reportStep(`I see links for webelements with text: ${links.join(' | ')}`, 'PASSED');
 });
+
 
 Then('I don’t see links for webelements with text', (dataTable: any) => {
   const links: string[] = dataTable.rawTable.map(row => row[0]);
