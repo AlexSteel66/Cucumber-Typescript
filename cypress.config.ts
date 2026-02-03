@@ -5,11 +5,12 @@ import createEsbuildPlugin from '@badeball/cypress-cucumber-preprocessor/esbuild
 import cypressSplit from 'cypress-split';
 import fs from 'fs';
 import path from 'path';
-
+import { ExecutionFinalizer } from './cypress/support/reports/ExecutionFinalizer';
+import { Scenario, TestReport } from './cypress/support/reports/hierarchicalReport';
 
 export default defineConfig({
   video: false,
-  screenshotOnRunFailure: true,
+  screenshotOnRunFailure: false,
   screenshotsFolder: 'cypress/screenshots',
   videosFolder: 'cypress/videos',
   videoCompression: 32,
@@ -29,17 +30,10 @@ export default defineConfig({
     env: {
       businessMaxPath: 'poistenie/firmy-zivnostnici/biznis-max',
       stepDefinitions: 'cypress/support/step_definitions/**/*.{js,ts}',
-      // TAGS: "@ResponsibilityInsuranceX",
-      cucumberJson: {
-        generate: false,
-        outputFolder: 'cypress/reports/cucumber-json/',
-        filePrefix: '',
-        fileSuffix: '.cucumber',
-        cucumber: { filterSpecs: true },
-      },
     },
 
     async setupNodeEvents(on, config) {
+      // Cucumber + Split pluginy
       cypressSplit(on, config);
       await addCucumberPreprocessorPlugin(on, config);
 
@@ -50,6 +44,7 @@ export default defineConfig({
         })
       );
 
+      // ===================== TASKY =====================
       on('task', {
         getNodeInfo() {
           return {
@@ -58,45 +53,38 @@ export default defineConfig({
           };
         },
 
-        saveReport(report) {
+        appendScenarioToReport(scenario: Scenario) {
           try {
             const reportPath = path.resolve('cypress/reports/hierarchicalReport.json');
             fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 
-            let existingReport = null;
+            let report: TestReport = { nodeVersion: process.version, os: process.platform, scenarios: [] };
             if (fs.existsSync(reportPath)) {
               try {
                 const raw = fs.readFileSync(reportPath, 'utf-8');
-                existingReport = JSON.parse(raw);
-              } catch (e) {
-                console.warn('⚠️ Could not parse existing report, overwriting.');
+                report = JSON.parse(raw);
+              } catch {
+                console.warn('⚠️ Existing report could not be parsed, starting fresh.');
               }
             }
 
-            if (existingReport && Array.isArray(existingReport.scenarios)) {
-              report.scenarios = [...existingReport.scenarios, ...report.scenarios];
-            }
+            if (!report.scenarios) report.scenarios = [];
+            report.scenarios.push(scenario);
 
             fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
-            console.log(`✅ Hierarchical report written to: ${reportPath}`);
+            console.log(`✅ Scenario "${scenario.scenario}" appended to report.`);
           } catch (err) {
-            console.error('❌ Error saving hierarchical report:', err);
+            console.error('❌ Error appending scenario to report:', err);
           }
           return null;
         },
 
-        saveScreenshot({ src, path: screenshotPath }: { src: string; path: string }) {
+        finalizeReport() {
           try {
-            if (!src) {
-              console.warn(`⚠️ saveScreenshot called without src: ${screenshotPath}`);
-              return null;
-            }
-
-            fs.mkdirSync(path.dirname(screenshotPath), { recursive: true });
-            fs.writeFileSync(screenshotPath, Buffer.from(src, 'base64'));
-            console.log(`📸 Screenshot saved: ${screenshotPath}`);
+            const reportPath = path.resolve('cypress/reports/hierarchicalReport.json');
+            ExecutionFinalizer.finalizeExecution(reportPath);
           } catch (err) {
-            console.error('❌ Error saving screenshot:', err);
+            console.error('❌ Error finalizing report:', err);
           }
           return null;
         },

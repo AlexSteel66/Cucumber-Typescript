@@ -27,26 +27,25 @@
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: Poistenie k úveru | Osobná poistka | Pohrebné poistenie | Dlhodobé cestovné poistenie k osobným účtom | Cestovné poistenie k platobným kartám | Cestovné poistenie k balíku Premium | Poistenie majetku DOMOV | Poistenie Podnikateľ",
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020 | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023 | Poistné podmienky pre Pohrebné poistenie_PSS_01042018 | Postup klienta pri asistenčných službách eDoctor_01032022 | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020",
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: +421 2 5729 9999 | Napíšte nám | 0850 200 200 | +421 2 5729 9983 | Slovenskej sporiteľne, a.s. | životného a pohrebného | neživotného poistenia | životného a pohrebného | neživotného poistenia",
           "status": "PASSED"
         },
         {
           "step": "Scenario \"Verification of links inside banking insurance\" executed",
-          "status": "PASSED",
-          "messages": []
+          "status": "PASSED"
         }
       ],
-      "testStartTime": "2026-02-01T11:51:47.958Z",
-      "testEndTime": "2026-02-01T11:52:06.481Z",
-      "testDuration": "0:18"
+      "testStartTime": "2026-02-03T19:20:10.715Z",
+      "testEndTime": "2026-02-03T19:20:22.960Z",
+      "testDuration": "0:12"
     },
     {
       "feature": "Testing banking insurance",
@@ -85,18 +84,17 @@
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: eDoctor | pobočkách | +421 2 5729 9999 | Napíšte nám | 0850 200 200 | +421 2 5729 9983 | Slovenskej sporiteľne, a.s. | životného a pohrebného | neživotného poistenia | životného a pohrebného | neživotného poistenia",
           "status": "PASSED"
         },
         {
           "step": "Scenario \"Verification of funeral insurance\" executed",
-          "status": "PASSED",
-          "messages": []
+          "status": "PASSED"
         }
       ],
-      "testStartTime": "2026-02-01T11:52:06.536Z",
-      "testEndTime": "2026-02-01T11:52:20.275Z",
-      "testDuration": "0:13"
+      "testStartTime": "2026-02-03T19:20:23.000Z",
+      "testEndTime": "2026-02-03T19:20:31.582Z",
+      "testDuration": "0:08"
     },
     {
       "feature": "Some basic features",
@@ -121,23 +119,16 @@
         {
           "step": "I see hyperlink for webelements",
           "status": "FAILED",
+          "screenshot": "cypress/screenshots/Some_basic_features/Basic_verification_of_links_inside_the_main_page_and_additonal_verification_of_all_hyperlinks/failed/I_see_hyperlink_for_webelements-1770146448199.png",
           "messages": [
             "Timed out retrying after 7000ms: Expected to find content: 'Prvá appka na hlásenie poistných udalostí' within the selector: 'a' but never did.",
-            "AssertionError: Timed out retrying after 7000ms: Expected to find content: 'Prvá appka na hlásenie poistných udalostí' within the selector: 'a' but never did.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19407:38)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18690:16)"
-          ]
-        },
-        {
-          "step": "Scenario \"Basic verification of links inside the main page and additonal verification of all hyperlinks\" executed",
-          "status": "FAILED",
-          "messages": [
-            "Timed out retrying after 7000ms: Expected to find content: 'Prvá appka na hlásenie poistných udalostí' within the selector: 'a' but never did.",
-            "AssertionError: Timed out retrying after 7000ms: Expected to find content: 'Prvá appka na hlásenie poistných udalostí' within the selector: 'a' but never did.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19407:38)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18690:16)"
+            "AssertionError: Timed out retrying after 7000ms: Expected to find content: 'Prvá appka na hlásenie poistných udalostí' within the selector: 'a' but never did.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19419:38)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:18690:16)"
           ]
         }
       ],
-      "testStartTime": "2026-02-01T11:52:24.954Z",
-      "testEndTime": "2026-02-01T11:52:39.126Z",
-      "testDuration": "0:14"
+      "testStartTime": "2026-02-03T19:20:35.441Z",
+      "testEndTime": "2026-02-03T19:20:49.008Z",
+      "testDuration": "0:13"
     },
     {
       "feature": "Some basic features",
@@ -322,6 +313,7 @@
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP",
           "status": "SOFT_FAILED",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresuPPPPPPPPPPPPPPPPPPP-1770146492205.png",
           "messages": [
             "Expected at least 1 visible element with text 'Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP', but found 0."
           ]
@@ -349,6 +341,7 @@
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "SOFT_FAILED",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresu-1770146500049.png",
           "messages": [
             "Expected at least 1 visible element with text 'Prosím, zadajte platnú emailovú adresu', but found 0."
           ]
@@ -468,6 +461,7 @@
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "SOFT_FAILED",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message___slo_mus__by__uveden__v_medzin_rodnom_form_te_a_bez_medzier_-1770146535392.png",
           "messages": [
             "Expected at least 1 visible element with text 'Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.', but found 0."
           ]
@@ -479,23 +473,16 @@
         {
           "step": "field \"Telefón\" has value \"+421 323 456 789\"",
           "status": "FAILED",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/failed/field__Telef_n__has_value___421_323_456_789_-1770146539861.png",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
-            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19568:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17976:62)"
-          ]
-        },
-        {
-          "step": "Scenario \"Testing basic verification of fields inside request for the information form\" executed",
-          "status": "FAILED",
-          "messages": [
-            "expected '323456789' to equal '+421 323 456 789'",
-            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19568:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17976:62)"
+            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:19580:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\BasicFeatures.feature:17976:62)"
           ]
         }
       ],
-      "testStartTime": "2026-02-01T11:52:39.251Z",
-      "testEndTime": "2026-02-01T11:54:11.796Z",
-      "testDuration": "1:32"
+      "testStartTime": "2026-02-03T19:20:49.259Z",
+      "testEndTime": "2026-02-03T19:22:20.887Z",
+      "testDuration": "1:31"
     },
     {
       "feature": "Testing Business-max",
@@ -512,23 +499,16 @@
         {
           "step": "I see article \"Odcudzenie\"",
           "status": "FAILED",
+          "screenshot": "cypress/screenshots/Testing_Business_max/Verification_of_articles_for_business_max_product/failed/I_see_article__Odcudzenie_-1770146560081.png",
           "messages": [
             "Timed out retrying after 7000ms: expected false to be true",
-            "AssertionError: Timed out retrying after 7000ms: expected false to be true\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Biznis-max.feature:19807:51)"
-          ]
-        },
-        {
-          "step": "Scenario \"Verification of articles for business-max product\" executed",
-          "status": "FAILED",
-          "messages": [
-            "Timed out retrying after 7000ms: expected false to be true",
-            "AssertionError: Timed out retrying after 7000ms: expected false to be true\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Biznis-max.feature:19807:51)"
+            "AssertionError: Timed out retrying after 7000ms: expected false to be true\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Biznis-max.feature:19819:51)"
           ]
         }
       ],
-      "testStartTime": "2026-02-01T11:54:17.332Z",
-      "testEndTime": "2026-02-01T11:54:30.154Z",
-      "testDuration": "0:12"
+      "testStartTime": "2026-02-03T19:22:26.326Z",
+      "testEndTime": "2026-02-03T19:22:40.489Z",
+      "testDuration": "0:14"
     },
     {
       "feature": "Testing section responsibility insurance",
@@ -559,7 +539,7 @@
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: Úvod | O poistení | Pripoistenia | Otázky a odpovede | Dokumenty | Chcem poistenie zodpovednosti",
           "status": "PASSED"
         },
         {
@@ -789,23 +769,16 @@
         {
           "step": "field \"Telefón\" has value \"+421 323 456 789\"",
           "status": "FAILED",
+          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_fields__links_and_checkboxes_for_responsibility_insurance/failed/field__Telef_n__has_value___421_323_456_789_-1770146647826.png",
           "messages": [
             "expected '323456789' to equal '+421 323 456 789'",
-            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19568:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17976:62)"
-          ]
-        },
-        {
-          "step": "Scenario \"Verification of fields, links and checkboxes for responsibility insurance\" executed",
-          "status": "FAILED",
-          "messages": [
-            "expected '323456789' to equal '+421 323 456 789'",
-            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19568:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17976:62)"
+            "AssertionError: expected '323456789' to equal '+421 323 456 789'\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19580:39)\n    at Registry.runStepDefininition (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:10414:48)\n    at Object.fn (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17980:43)\n    at runStepWithLogGroup (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17430:29)\n    at Context.eval (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:17976:62)"
           ]
         }
       ],
-      "testStartTime": "2026-02-01T11:54:34.193Z",
-      "testEndTime": "2026-02-01T11:55:40.273Z",
-      "testDuration": "1:06"
+      "testStartTime": "2026-02-03T19:22:45.000Z",
+      "testEndTime": "2026-02-03T19:24:08.690Z",
+      "testDuration": "1:23"
     },
     {
       "feature": "Testing section responsibility insurance",
@@ -876,32 +849,25 @@
           "status": "PASSED"
         },
         {
-          "step": "I see links for webelements with text",
+          "step": "I see links for webelements with text: Zľava 10 % pre všetkých na havarijné poistenie | Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok",
           "status": "PASSED"
         },
         {
           "step": "I see links for webelements with text",
           "status": "FAILED",
+          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_links_inside_responsibility_insurance/failed/I_see_links_for_webelements_with_text-1770146707015.png",
           "messages": [
             "Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.",
-            "AssertionError: Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19879:62)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18690:16)"
-          ]
-        },
-        {
-          "step": "Scenario \"Verification of links inside responsibility insurance\" executed",
-          "status": "FAILED",
-          "messages": [
-            "Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.",
-            "AssertionError: Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19879:62)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18690:16)"
+            "AssertionError: Timed out retrying after 7000ms: Expected to find element: `//*[normalize-space(text()) = 'Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok']//ancestor::a`, but never found it.\n    at cy.waitUntil.timeout (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:19891:62)\n    at resolveValue (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18682:26)\n    at Context.waitUntil (https://kooperativa.sk/__cypress/tests?p=cypress\\e2e\\features\\Responsibility%20insurance.feature:18690:16)"
           ]
         }
       ],
-      "testStartTime": "2026-02-01T11:55:40.980Z",
-      "testEndTime": "2026-02-01T11:56:31.154Z",
-      "testDuration": "0:50"
+      "testStartTime": "2026-02-03T19:24:09.992Z",
+      "testEndTime": "2026-02-03T19:25:07.659Z",
+      "testDuration": "0:57"
     }
   ],
-  "scenarioStartTime": "2026-02-01T11:54:34.131Z",
-  "scenarioEndTime": "2026-02-01T11:56:31.157Z",
-  "scenarioDuration": "1:57"
+  "executionStartTime": "2026-02-03T19:20:10.715Z",
+  "executionEndTime": "2026-02-03T19:25:07.659Z",
+  "executionDuration": "4:56"
 }

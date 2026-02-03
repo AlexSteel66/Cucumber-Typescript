@@ -11,10 +11,13 @@ import {
 } from '../reports/hierarchicalReport';
 
 import { formatDuration } from '../reports/TimeUtils';
-import { Before, After, BeforeStep, AfterStep } from '@badeball/cypress-cucumber-preprocessor';
+import { BeforeStep, AfterStep } from '@badeball/cypress-cucumber-preprocessor';
+
+const toSafeName = (value: string) =>
+  value.replace(/[^a-zA-Z0-9]/g, '_');
 
 // ======================================================
-// STEP HOOKS
+// STEP CONTEXT
 // ======================================================
 
 BeforeStep(function ({ pickleStep }) {
@@ -36,7 +39,7 @@ Cypress.on('fail', function (error) {
     messages: [error.message, error.stack || ''],
   });
 
-  throw error; // Cypress musí vedieť, že test padol
+  throw error;
 });
 
 // ======================================================
@@ -45,10 +48,10 @@ Cypress.on('fail', function (error) {
 
 beforeEach(function () {
   const test = this.currentTest!;
-  const featureName = test.parent?.title || 'Unknown feature';
-  const scenarioName = test.title || 'Unknown scenario';
-
-  startScenario(featureName, scenarioName);
+  startScenario(
+    test.parent?.title || 'Unknown feature',
+    test.title || 'Unknown scenario'
+  );
 });
 
 // ======================================================
@@ -57,10 +60,10 @@ beforeEach(function () {
 
 afterEach(function () {
   const test = this.currentTest!;
-  const featureName = test.parent?.title || 'Unknown feature';
-  const scenarioName = test.title || 'Unknown scenario';
+  const feature = test.parent?.title || 'Unknown feature';
+  const scenario = test.title || 'Unknown scenario';
 
-  ensureScenario(featureName, scenarioName);
+  ensureScenario(feature, scenario);
 
   const status: StepStatus =
     test.state === 'failed'
@@ -69,59 +72,52 @@ afterEach(function () {
       ? 'SKIPPED'
       : 'PASSED';
 
-  // ===================== TEST TIME =====================
+  // ===== TEST TIME =====
   if (currentScenario) {
-    if (!currentScenario.testStartTime) {
-      currentScenario.testStartTime = new Date().toISOString();
-    }
-
     currentScenario.testEndTime = new Date().toISOString();
     currentScenario.testDuration = formatDuration(
-      currentScenario.testStartTime,
+      currentScenario.testStartTime!,
       currentScenario.testEndTime
     );
   }
 
   // ====================================================
-  // FAILED SCENARIO → ONE SCREENSHOT ONLY
+  // FAILED → screenshot na KROK
   // ====================================================
 
   if (status === 'FAILED' && currentScenario) {
-    const screenshotFileName =
-      `${scenarioName.replace(/[^a-zA-Z0-9]/g, '_')}-${Date.now()}`;
+    const failedStep = [...currentScenario.steps]
+      .reverse()
+      .find(s => s.status === 'FAILED');
 
-    cy.screenshot(`${featureName}/${screenshotFileName}`, {
-      capture: 'runner',
-    }).then(() => {
-      const screenshotPath =
-        `cypress/screenshots/${featureName}/${screenshotFileName}.png`;
+    if (failedStep) {
+      const safeFeature = toSafeName(feature);
+      const safeScenario = toSafeName(scenario);
+      const safeStep = toSafeName(failedStep.step);
+      const timestamp = Date.now();
 
-      // 🔥 pripoj screenshot k POSLEDNÉMU FAILED STEPU
-      const lastFailedStep = [...currentScenario.steps]
-        .reverse()
-        .find(step => step.status === 'FAILED');
+      const screenshotRelativePath =
+        `cypress/screenshots/${safeFeature}/${safeScenario}/failed/${safeStep}-${timestamp}.png`;
 
-      if (lastFailedStep) {
-        lastFailedStep.screenshot = screenshotPath;
-      }
+      const screenshotCypressPath =
+        `${safeFeature}/${safeScenario}/failed/${safeStep}-${timestamp}`;
 
-      cy.task('appendScenarioToReport', currentScenario);
-      finalizeScenario();
-    });
+      cy.screenshot(screenshotCypressPath, { capture: 'runner' }).then(() => {
+        failedStep.screenshot = screenshotRelativePath;
+        cy.task('appendScenarioToReport', currentScenario);
+        finalizeScenario();
+      });
 
-    return;
+      return;
+    }
   }
 
   // ====================================================
-  // PASSED / SKIPPED SCENARIO
+  // PASSED / SKIPPED
   // ====================================================
 
-  reportStep(`Scenario "${scenarioName}" executed`, status);
-
-  if (currentScenario) {
-    cy.task('appendScenarioToReport', currentScenario);
-  }
-
+  reportStep(`Scenario "${scenario}" executed`, status);
+  cy.task('appendScenarioToReport', currentScenario);
   finalizeScenario();
 });
 
