@@ -7,22 +7,19 @@ import {
   StepStatus,
   currentScenario,
   currentStepName,
+  scenarioToJSON,
 } from '../reports/hierarchicalReport';
-
 import { formatDuration } from '../reports/TimeUtils';
 import { BeforeStep, AfterStep } from '@badeball/cypress-cucumber-preprocessor';
 
 // ======================================================
 // UTILS
 // ======================================================
-
-const toSafeName = (value: string) =>
-  value.replace(/[^a-zA-Z0-9]/g, '_');
+const toSafeName = (value: string) => value.replace(/[^a-zA-Z0-9]/g, '_');
 
 // ======================================================
 // STEP START
 // ======================================================
-
 BeforeStep(function ({ pickleStep }) {
   // jednotný zdroj pravdy – timestamp v ms
   (pickleStep as any).__startTime = Date.now();
@@ -31,22 +28,18 @@ BeforeStep(function ({ pickleStep }) {
 // ======================================================
 // STEP END
 // ======================================================
-
 AfterStep(function ({ pickleStep }) {
-  const rawStartTime = (pickleStep as any).__startTime ?? Date.now();
   const rawEndTime = Date.now();
+  (pickleStep as any).__endTime = rawEndTime;
 
-  // reportStep stále používa interné raw časy, aby normalizeStepsTimeline fungovalo presne
-  reportStep(pickleStep.text, 'PASSED', {
-    rawStartTime,
-    rawEndTime,
-  });
+  if (!(pickleStep as any).__startTime) {
+    (pickleStep as any).__startTime = rawEndTime;
+  }
 });
 
 // ======================================================
 // GLOBAL FAIL
 // ======================================================
-
 Cypress.on('fail', function (error) {
   if (currentScenario && currentScenario.steps.length > 0) {
     // najbližší neuzavretý krok (bez rawEndTime)
@@ -59,19 +52,15 @@ Cypress.on('fail', function (error) {
       lastOpenStep.rawEndTime = Date.now();
     } else {
       // ak žiadny neexistuje, pridáme krok ako fallback
-      reportStep('Unknown step', 'FAILED', {
-        rawEndTime: Date.now(),
-      });
+      reportStep('Unknown step', 'FAILED', { rawEndTime: Date.now() });
     }
   }
-
   throw error;
 });
 
 // ======================================================
 // BEFORE EACH SCENARIO
 // ======================================================
-
 beforeEach(function () {
   const test = this.currentTest!;
   startScenario(
@@ -83,7 +72,6 @@ beforeEach(function () {
 // ======================================================
 // AFTER EACH SCENARIO
 // ======================================================
-
 afterEach(function () {
   const test = this.currentTest!;
   const feature = test.parent?.title || 'Unknown feature';
@@ -91,12 +79,11 @@ afterEach(function () {
 
   ensureScenario(feature, scenario);
 
-  const testStatus: StepStatus =
-    test.state === 'failed'
-      ? 'FAILED'
-      : test.pending
-      ? 'SKIPPED'
-      : 'PASSED';
+  const testStatus: StepStatus = test.state === 'failed'
+    ? 'FAILED'
+    : test.pending
+    ? 'SKIPPED'
+    : 'PASSED';
 
   if (currentScenario) {
     currentScenario.testEndTime = new Date().toISOString();
@@ -119,7 +106,7 @@ afterEach(function () {
   }
 
   const finalize = () => {
-    cy.task('appendScenarioToReport', currentScenario);
+    cy.task('appendScenarioToReport', scenarioToJSON(currentScenario));
     finalizeScenario();
   };
 
@@ -129,13 +116,16 @@ afterEach(function () {
       .find(s => s.status === 'FAILED');
 
     if (failedStep) {
-      const screenshotPath =
-        `${toSafeName(feature)}/${toSafeName(scenario)}/failed/${toSafeName(failedStep.step)}-${Date.now()}`;
+      const screenshotPath = `${toSafeName(feature)}/${toSafeName(
+        scenario
+      )}/failed/${toSafeName(failedStep.step)}-${Date.now()}`;
 
-      return cy.screenshot(screenshotPath).then(() => {
-        failedStep.screenshot = `cypress/screenshots/${screenshotPath}.png`;
-        finalize();
-      });
+      return cy
+        .screenshot(screenshotPath)
+        .then(() => {
+          failedStep.screenshot = `cypress/screenshots/${screenshotPath}.png`;
+          finalize();
+        });
     }
   }
 
@@ -145,7 +135,6 @@ afterEach(function () {
 // ======================================================
 // AFTER ALL
 // ======================================================
-
 after(() => {
   cy.task('finalizeReport');
 });

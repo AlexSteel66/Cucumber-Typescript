@@ -146,8 +146,26 @@ export function normalizeStepsTimeline(scenario: Scenario) {
     const startMs = step.rawStartTime!;
     const endMs = step.rawEndTime!;
 
-    step.duration = formatDurationMs(endMs - startMs);
+    // duration ako číslo
+    const durationSec = Math.max(1, Math.round((endMs - startMs) / 1000));
+
+    // uloženie čísla do objektu
+    step.duration = durationSec as any;
+
     step.startTime = new Date(startMs).toISOString();
     step.endTime = new Date(endMs).toISOString();
   }
+}
+
+// ===================== EXPORT DO JSON =====================
+
+// keď zapisuješ report do súboru, formátuj duration s " s"
+export function scenarioToJSON(scenario: Scenario) {
+  return {
+    ...scenario,
+    steps: scenario.steps.map(step => ({
+      ...step,
+      duration: step.duration !== undefined ? `${step.duration} s` : undefined
+    })),
+  };
 }
