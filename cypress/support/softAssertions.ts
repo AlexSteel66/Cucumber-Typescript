@@ -30,7 +30,6 @@ export const addSoftAssertion = (step: string, message: string) => {
 
   cy.screenshot(screenshotCypressPath, { capture: 'runner' }).then(() => {
     reportStep(step, 'SOFT_FAILED', {
-      messages: [message],
       screenshot: screenshotRelativePath,
     });
   });

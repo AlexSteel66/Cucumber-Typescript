@@ -33,12 +33,13 @@ BeforeStep(function ({ pickleStep }) {
 // ======================================================
 
 AfterStep(function ({ pickleStep }) {
-  const rawStartTime = (pickleStep as any).__startTime;
+  const rawStartTime = (pickleStep as any).__startTime ?? Date.now();
   const rawEndTime = Date.now();
 
+  // reportStep stále používa interné raw časy, aby normalizeStepsTimeline fungovalo presne
   reportStep(pickleStep.text, 'PASSED', {
-    rawStartTime, // number
-    rawEndTime,   // number
+    rawStartTime,
+    rawEndTime,
   });
 });
 
@@ -66,7 +67,6 @@ Cypress.on('fail', function (error) {
 
   throw error;
 });
-
 
 // ======================================================
 // BEFORE EACH SCENARIO
@@ -108,6 +108,14 @@ afterEach(function () {
 
     // 🔥 POST-PROCESSING ČASOVEJ OSI KROKOV
     normalizeStepsTimeline(currentScenario);
+
+    // odstránime interné polia pred zápisom do JSON
+    currentScenario.steps.forEach(step => {
+      delete (step as any).rawStartTime;
+      delete (step as any).rawEndTime;
+      delete (step as any).__startTime;
+      delete (step as any).__endTime;
+    });
   }
 
   const finalize = () => {
