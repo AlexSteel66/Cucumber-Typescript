@@ -18,20 +18,28 @@ export class ExecutionFinalizer {
 
     if (!report.scenarios || !report.scenarios.length) return;
 
-    // zobereme všetky testStartTime a testEndTime zo všetkých scenárov
+    // zoberieme všetky testStartTime a testEndTime zo všetkých scenárov
     const allStartTimes = report.scenarios
       .map((s: any) => s.testStartTime)
       .filter(Boolean)
       .sort();
+
     const allEndTimes = report.scenarios
       .map((s: any) => s.testEndTime)
       .filter(Boolean)
       .sort();
 
-    if (!allStartTimes.length || !allEndTimes.length) return;
+    if (!allStartTimes.length) return;
 
+    // Start je stále prvý test
     this.executionStartTime = allStartTimes[0];
-    this.executionEndTime = allEndTimes[allEndTimes.length - 1];
+
+    // End je posledný test, alebo aktuálny čas ak exekúcia bola prerušena
+    this.executionEndTime = allEndTimes.length
+      ? allEndTimes[allEndTimes.length - 1]
+      : new Date().toISOString();
+
+    // Trvanie medzi start a end
     this.executionDuration = formatDuration(this.executionStartTime, this.executionEndTime);
 
     console.log('=== Global Execution Summary ===');
@@ -39,7 +47,7 @@ export class ExecutionFinalizer {
     console.log(`End:   ${this.executionEndTime}`);
     console.log(`Duration: ${this.executionDuration}`);
 
-    // voliteľne: zapíš späť do JSON reportu
+    // zapíš späť do JSON reportu
     report.executionStartTime = this.executionStartTime;
     report.executionEndTime = this.executionEndTime;
     report.executionDuration = this.executionDuration;

@@ -7,8 +7,10 @@ export type StepStatus = 'PASSED' | 'FAILED' | 'SOFT_FAILED' | 'SKIPPED';
 export interface Step {
   step: string;
   status: StepStatus;
+  startTime?: string;
+  endTime?: string;
+  duration?: string;
   screenshot?: string;
-  messages?: string[];
 }
 
 export interface Scenario {
@@ -19,6 +21,8 @@ export interface Scenario {
   testStartTime?: string;
   testEndTime?: string;
   testDuration?: string; // m:ss
+  testStatus?: StepStatus; // uložené na konci
+
 }
 
 export interface TestReport {
@@ -43,11 +47,13 @@ export const testReport: TestReport = {
 
 export let currentScenario: Scenario | null = null;
 export let currentStepName = '';
+export let currentStepStartTime: string | null = null;
 
 // ===================== STEP CONTEXT =====================
 
 export function setCurrentStep(stepName: string) {
   currentStepName = stepName;
+  currentStepStartTime = new Date().toISOString();
 }
 
 export function clearCurrentStep() {
@@ -74,14 +80,6 @@ export function ensureScenario(feature: string, scenario: string) {
 }
 
 export function finalizeScenario() {
-  if (currentScenario?.testStartTime) {
-    currentScenario.testEndTime = new Date().toISOString();
-    currentScenario.testDuration = formatDuration(
-      currentScenario.testStartTime,
-      currentScenario.testEndTime
-    );
-  }
-
   currentScenario = null;
 }
 
@@ -95,6 +93,9 @@ export function reportStep(
     messages?: string[];
     feature?: string;
     scenario?: string;
+    startTime?: string;
+    endTime?: string;
+    duration?: string;
   }
 ) {
   if (!currentScenario) {
@@ -106,13 +107,16 @@ export function reportStep(
     }
   }
 
+  const endTime = opts?.endTime ?? new Date().toISOString();
+  const startTime = opts?.startTime ?? endTime;
+  const duration = opts?.duration ?? formatDuration(startTime, endTime);
+
   currentScenario!.steps.push({
     step,
     status,
+    startTime,
+    endTime,
+    duration,
     screenshot: opts?.screenshot,
-    messages: opts?.messages,
   });
 }
-
-
-
