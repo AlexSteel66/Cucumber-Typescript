@@ -1,4 +1,4 @@
-import { formatDuration } from '../reports/TimeUtils';
+// hierarchicalReport.ts
 
 // ===================== TYPES =====================
 
@@ -7,10 +7,14 @@ export type StepStatus = 'PASSED' | 'FAILED' | 'SOFT_FAILED' | 'SKIPPED';
 export interface Step {
   step: string;
   status: StepStatus;
-  startTime?: string;
-  endTime?: string;
-  duration?: string;
+  startTime?: string;      // ISO string for report
+  endTime?: string;        // ISO string for report
+  duration?: string;       // formatted as m:ss
   screenshot?: string;
+
+  // interné, na presné meranie
+  rawStartTime?: number;   // timestamp in ms
+  rawEndTime?: number;     // timestamp in ms
 }
 
 export interface Scenario {
@@ -21,8 +25,7 @@ export interface Scenario {
   testStartTime?: string;
   testEndTime?: string;
   testDuration?: string; // m:ss
-  testStatus?: StepStatus; // uložené na konci
-
+  testStatus?: StepStatus;
 }
 
 export interface TestReport {
@@ -47,18 +50,6 @@ export const testReport: TestReport = {
 
 export let currentScenario: Scenario | null = null;
 export let currentStepName = '';
-export let currentStepStartTime: string | null = null;
-
-// ===================== STEP CONTEXT =====================
-
-export function setCurrentStep(stepName: string) {
-  currentStepName = stepName;
-  currentStepStartTime = new Date().toISOString();
-}
-
-export function clearCurrentStep() {
-  currentStepName = '';
-}
 
 // ===================== SCENARIO MANAGEMENT =====================
 
@@ -69,7 +60,6 @@ export function startScenario(feature: string, scenario: string) {
     steps: [],
     testStartTime: new Date().toISOString(),
   };
-
   testReport.scenarios.push(currentScenario);
 }
 
@@ -86,37 +76,78 @@ export function finalizeScenario() {
 // ===================== STEP MANAGEMENT =====================
 
 export function reportStep(
-  step: string,
+  stepName: string,
   status: StepStatus,
   opts?: {
     screenshot?: string;
-    messages?: string[];
-    feature?: string;
-    scenario?: string;
     startTime?: string;
     endTime?: string;
-    duration?: string;
+    rawStartTime?: number;
+    rawEndTime?: number;
   }
 ) {
-  if (!currentScenario) {
-    if (opts?.feature && opts?.scenario) {
-      ensureScenario(opts.feature, opts.scenario);
-    } else {
-      console.warn(`⚠️ Tried to report step without a currentScenario: "${step}"`);
-      return;
+  if (!currentScenario) return;
+
+  const step: Step = {
+    step: stepName,
+    status,
+    startTime: opts?.startTime,
+    endTime: opts?.endTime,
+    rawStartTime: opts?.rawStartTime,
+    rawEndTime: opts?.rawEndTime,
+    duration: undefined,
+    screenshot: opts?.screenshot,
+  };
+
+  currentScenario.steps.push(step);
+}
+
+// ===================== TIME UTILITIES =====================
+
+function formatDurationMs(ms: number): string {
+  const totalSeconds = Math.max(1, Math.round(ms / 1000));
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+export function formatDuration(startTime: string, endTime: string): string {
+  const start = new Date(startTime).getTime();
+  const end = new Date(endTime).getTime();
+  return formatDurationMs(end - start);
+}
+
+// ===================== NORMALIZE STEPS TIMELINE =====================
+
+export function normalizeStepsTimeline(scenario: Scenario) {
+  if (!scenario.steps || scenario.steps.length === 0) return;
+
+  // 1️⃣ doplnenie rawEndTime a rawStartTime, ak chýba
+  for (let i = 0; i < scenario.steps.length; i++) {
+    const step = scenario.steps[i];
+
+    if (!step.rawStartTime) {
+      step.rawStartTime = i === 0
+        ? new Date(scenario.testStartTime!).getTime()
+        : scenario.steps[i - 1].rawEndTime;
+    }
+
+    if (!step.rawEndTime) {
+      step.rawEndTime = step.rawStartTime! + 1000; // aspoň 1s ak neexistuje
     }
   }
 
-  const endTime = opts?.endTime ?? new Date().toISOString();
-  const startTime = opts?.startTime ?? endTime;
-  const duration = opts?.duration ?? formatDuration(startTime, endTime);
+  // 2️⃣ zoradenie podľa rawStartTime
+  scenario.steps.sort((a, b) => (a.rawStartTime! - b.rawStartTime!));
 
-  currentScenario!.steps.push({
-    step,
-    status,
-    startTime,
-    endTime,
-    duration,
-    screenshot: opts?.screenshot,
-  });
+  // 3️⃣ vypočítanie duration a prevod na ISO string
+  for (let i = 0; i < scenario.steps.length; i++) {
+    const step = scenario.steps[i];
+    const startMs = step.rawStartTime!;
+    const endMs = step.rawEndTime!;
+
+    step.duration = formatDurationMs(endMs - startMs);
+    step.startTime = new Date(startMs).toISOString();
+    step.endTime = new Date(endMs).toISOString();
+  }
 }

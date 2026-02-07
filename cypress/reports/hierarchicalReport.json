@@ -9,119 +9,151 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:53.838Z",
-          "endTime": "2026-02-07T13:21:53.838Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:15.379Z",
+          "endTime": "2026-02-07T19:02:16.379Z",
+          "rawStartTime": 1770490935379,
+          "rawEndTime": 1770490936379,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:53.835Z",
-          "endTime": "2026-02-07T13:21:58.078Z",
+          "startTime": "2026-02-07T19:02:15.404Z",
+          "endTime": "2026-02-07T19:02:19.015Z",
+          "rawStartTime": 1770490935404,
+          "rawEndTime": 1770490939015,
           "duration": "0:04"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:58.213Z",
-          "endTime": "2026-02-07T13:21:58.213Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:19.015Z",
+          "endTime": "2026-02-07T19:02:20.015Z",
+          "rawStartTime": 1770490939015,
+          "rawEndTime": 1770490940015,
+          "duration": "0:01"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:58.206Z",
-          "endTime": "2026-02-07T13:21:59.725Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:02:19.113Z",
+          "endTime": "2026-02-07T19:02:20.634Z",
+          "rawStartTime": 1770490939113,
+          "rawEndTime": 1770490940634,
+          "duration": "0:02"
         },
         {
           "step": "I click onto hyperlink Bankopoistenie",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:59.830Z",
-          "endTime": "2026-02-07T13:21:59.830Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:20.634Z",
+          "endTime": "2026-02-07T19:02:21.634Z",
+          "rawStartTime": 1770490940634,
+          "rawEndTime": 1770490941634,
+          "duration": "0:01"
         },
         {
           "step": "I click onto hyperlink \"Bankopoistenie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:21:59.775Z",
-          "endTime": "2026-02-07T13:22:01.773Z",
+          "startTime": "2026-02-07T19:02:20.665Z",
+          "endTime": "2026-02-07T19:02:22.362Z",
+          "rawStartTime": 1770490940665,
+          "rawEndTime": 1770490942362,
+          "duration": "0:02"
+        },
+        {
+          "step": "I click onto the button \"Odmietnuť všetky\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:02:22.362Z",
+          "endTime": "2026-02-07T19:02:23.362Z",
+          "rawStartTime": 1770490942362,
+          "rawEndTime": 1770490943362,
           "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:01.914Z",
-          "endTime": "2026-02-07T13:22:01.914Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I click onto the button \"Odmietnuť všetky\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:01.908Z",
-          "endTime": "2026-02-07T13:22:03.328Z",
+          "startTime": "2026-02-07T19:02:22.477Z",
+          "endTime": "2026-02-07T19:02:23.839Z",
+          "rawStartTime": 1770490942477,
+          "rawEndTime": 1770490943839,
           "duration": "0:01"
         },
         {
           "step": "I see these texts: Bankopoistenie | Poistné produkty | Spolupráca so Slovenskou sporiteľňou | poistenie poisťovne KOOPERATIVA šité na mieru. | Produkty poisťovne KOOPERATIVA, ktoré ponúka Slovenská sporiteľňa: | Produkty a služby Slovenskej sporiteľne, ktoré ponúka KOOPERATIVA na svojich pobočkách:",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:03.427Z",
-          "endTime": "2026-02-07T13:22:03.427Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:23.839Z",
+          "endTime": "2026-02-07T19:02:24.839Z",
+          "rawStartTime": 1770490943839,
+          "rawEndTime": 1770490944839,
+          "duration": "0:01"
         },
         {
           "step": "I see these texts",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:03.419Z",
-          "endTime": "2026-02-07T13:22:03.779Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:23.957Z",
+          "endTime": "2026-02-07T19:02:24.182Z",
+          "rawStartTime": 1770490943957,
+          "rawEndTime": 1770490944182,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text: Poistenie k úveru | Osobná poistka | Pohrebné poistenie | Dlhodobé cestovné poistenie k osobným účtom | Cestovné poistenie k platobným kartám | Cestovné poistenie k balíku Premium | Poistenie majetku DOMOV | Poistenie Podnikateľ",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:03.953Z",
-          "endTime": "2026-02-07T13:22:03.953Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:24.182Z",
+          "endTime": "2026-02-07T19:02:25.182Z",
+          "rawStartTime": 1770490944182,
+          "rawEndTime": 1770490945182,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:03.940Z",
-          "endTime": "2026-02-07T13:22:05.168Z",
+          "startTime": "2026-02-07T19:02:24.220Z",
+          "endTime": "2026-02-07T19:02:25.138Z",
+          "rawStartTime": 1770490944220,
+          "rawEndTime": 1770490945138,
           "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text: Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020 | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023 | Poistné podmienky pre Pohrebné poistenie_PSS_01042018 | Postup klienta pri asistenčných službách eDoctor_01032022 | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:05.417Z",
-          "endTime": "2026-02-07T13:22:05.417Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:25.138Z",
+          "endTime": "2026-02-07T19:02:26.138Z",
+          "rawStartTime": 1770490945138,
+          "rawEndTime": 1770490946138,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:05.411Z",
-          "endTime": "2026-02-07T13:22:05.809Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:25.312Z",
+          "endTime": "2026-02-07T19:02:25.873Z",
+          "rawStartTime": 1770490945312,
+          "rawEndTime": 1770490945873,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text: +421 2 5729 9999 | Napíšte nám | 0850 200 200 | +421 2 5729 9983 | Slovenskej sporiteľne, a.s. | životného a pohrebného | neživotného poistenia | životného a pohrebného | neživotného poistenia",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:06.068Z",
-          "endTime": "2026-02-07T13:22:06.068Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:25.873Z",
+          "endTime": "2026-02-07T19:02:26.873Z",
+          "rawStartTime": 1770490945873,
+          "rawEndTime": 1770490946873,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:06.057Z",
-          "endTime": "2026-02-07T13:22:07.457Z",
+          "startTime": "2026-02-07T19:02:26.035Z",
+          "endTime": "2026-02-07T19:02:27.449Z",
+          "rawStartTime": 1770490946035,
+          "rawEndTime": 1770490947449,
           "duration": "0:01"
         }
       ],
-      "testStartTime": "2026-02-07T13:21:53.803Z",
-      "testEndTime": "2026-02-07T13:22:07.628Z",
-      "testDuration": "0:13",
+      "testStartTime": "2026-02-07T19:02:15.379Z",
+      "testEndTime": "2026-02-07T19:02:27.574Z",
+      "testDuration": "0:12",
       "testStatus": "PASSED"
     },
     {
@@ -131,132 +163,168 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:07.717Z",
-          "endTime": "2026-02-07T13:22:07.717Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:27.626Z",
+          "endTime": "2026-02-07T19:02:28.626Z",
+          "rawStartTime": 1770490947626,
+          "rawEndTime": 1770490948626,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:07.714Z",
-          "endTime": "2026-02-07T13:22:09.494Z",
+          "startTime": "2026-02-07T19:02:27.643Z",
+          "endTime": "2026-02-07T19:02:29.482Z",
+          "rawStartTime": 1770490947643,
+          "rawEndTime": 1770490949482,
+          "duration": "0:02"
+        },
+        {
+          "step": "I wait for 1500 milliseconds",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:02:29.482Z",
+          "endTime": "2026-02-07T19:02:30.482Z",
+          "rawStartTime": 1770490949482,
+          "rawEndTime": 1770490950482,
           "duration": "0:01"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:09.571Z",
-          "endTime": "2026-02-07T13:22:09.571Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I wait for 1500 milliseconds",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:09.567Z",
-          "endTime": "2026-02-07T13:22:11.084Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:02:29.578Z",
+          "endTime": "2026-02-07T19:02:31.093Z",
+          "rawStartTime": 1770490949578,
+          "rawEndTime": 1770490951093,
+          "duration": "0:02"
         },
         {
           "step": "I click onto hyperlink Bankopoistenie",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:11.190Z",
-          "endTime": "2026-02-07T13:22:11.190Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:31.093Z",
+          "endTime": "2026-02-07T19:02:32.093Z",
+          "rawStartTime": 1770490951093,
+          "rawEndTime": 1770490952093,
+          "duration": "0:01"
         },
         {
           "step": "I click onto hyperlink \"Bankopoistenie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:11.151Z",
-          "endTime": "2026-02-07T13:22:11.871Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:31.126Z",
+          "endTime": "2026-02-07T19:02:31.931Z",
+          "rawStartTime": 1770490951126,
+          "rawEndTime": 1770490951931,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:11.939Z",
-          "endTime": "2026-02-07T13:22:11.939Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:31.931Z",
+          "endTime": "2026-02-07T19:02:32.931Z",
+          "rawStartTime": 1770490951931,
+          "rawEndTime": 1770490952931,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:11.934Z",
-          "endTime": "2026-02-07T13:22:13.301Z",
+          "startTime": "2026-02-07T19:02:31.998Z",
+          "endTime": "2026-02-07T19:02:33.345Z",
+          "rawStartTime": 1770490951998,
+          "rawEndTime": 1770490953345,
           "duration": "0:01"
         },
         {
           "step": "I click onto the link of webelement with text Pohrebné poistenie",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.559Z",
-          "endTime": "2026-02-07T13:22:13.559Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:33.345Z",
+          "endTime": "2026-02-07T19:02:34.345Z",
+          "rawStartTime": 1770490953345,
+          "rawEndTime": 1770490954345,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the link of webelement with text \"Pohrebné poistenie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.361Z",
-          "endTime": "2026-02-07T13:22:13.562Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:33.405Z",
+          "endTime": "2026-02-07T19:02:33.589Z",
+          "rawStartTime": 1770490953405,
+          "rawEndTime": 1770490953589,
+          "duration": "0:01"
         },
         {
           "step": "I see these texts: Dokumenty k Pohrebnému poisteniu: | Pohrebné poistenie | Bankové produkty | Ako nahlásiť škodovú udalosť",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.626Z",
-          "endTime": "2026-02-07T13:22:13.626Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:33.589Z",
+          "endTime": "2026-02-07T19:02:34.589Z",
+          "rawStartTime": 1770490953589,
+          "rawEndTime": 1770490954589,
+          "duration": "0:01"
         },
         {
           "step": "I see these texts",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.621Z",
-          "endTime": "2026-02-07T13:22:13.846Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:33.650Z",
+          "endTime": "2026-02-07T19:02:33.943Z",
+          "rawStartTime": 1770490953650,
+          "rawEndTime": 1770490953943,
+          "duration": "0:01"
         },
         {
           "step": "I do not see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.952Z",
-          "endTime": "2026-02-07T13:22:13.952Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:33.943Z",
+          "endTime": "2026-02-07T19:02:34.943Z",
+          "rawStartTime": 1770490953943,
+          "rawEndTime": 1770490954943,
+          "duration": "0:01"
         },
         {
           "step": "I don’t see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:13.945Z",
-          "endTime": "2026-02-07T13:22:14.422Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:34.003Z",
+          "endTime": "2026-02-07T19:02:34.389Z",
+          "rawStartTime": 1770490954003,
+          "rawEndTime": 1770490954389,
+          "duration": "0:01"
         },
         {
           "step": "I see these texts: Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie bežne platené_01012020 | Dokument o dôležitých zmluvných podmienkach - Pohrebné poistenie jednorazovo platené_01012020 | Poistné podmienky pre Pohrebné poistenie SLSP_VPP 2100_01012023 | Poistné podmienky pre Pohrebné poistenie_PSS_01042018 | Postup klienta pri asistenčných službách eDoctor_01032022 | Informácia pre spotrebiteľa pred uzavretím zmluvy na diaľku Pohrebné poistenie_01012020",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:14.458Z",
-          "endTime": "2026-02-07T13:22:14.458Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:34.389Z",
+          "endTime": "2026-02-07T19:02:35.389Z",
+          "rawStartTime": 1770490954389,
+          "rawEndTime": 1770490955389,
+          "duration": "0:01"
         },
         {
           "step": "I see these texts",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:14.450Z",
-          "endTime": "2026-02-07T13:22:14.859Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:34.414Z",
+          "endTime": "2026-02-07T19:02:34.776Z",
+          "rawStartTime": 1770490954414,
+          "rawEndTime": 1770490954776,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text: eDoctor | pobočkách | +421 2 5729 9999 | Napíšte nám | 0850 200 200 | +421 2 5729 9983 | Slovenskej sporiteľne, a.s. | životného a pohrebného | neživotného poistenia | životného a pohrebného | neživotného poistenia",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:14.892Z",
-          "endTime": "2026-02-07T13:22:14.892Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:34.776Z",
+          "endTime": "2026-02-07T19:02:35.776Z",
+          "rawStartTime": 1770490954776,
+          "rawEndTime": 1770490955776,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:14.885Z",
-          "endTime": "2026-02-07T13:22:16.182Z",
+          "startTime": "2026-02-07T19:02:34.806Z",
+          "endTime": "2026-02-07T19:02:36.058Z",
+          "rawStartTime": 1770490954806,
+          "rawEndTime": 1770490956058,
           "duration": "0:01"
         }
       ],
-      "testStartTime": "2026-02-07T13:22:07.690Z",
-      "testEndTime": "2026-02-07T13:22:16.417Z",
+      "testStartTime": "2026-02-07T19:02:27.626Z",
+      "testEndTime": "2026-02-07T19:02:36.355Z",
       "testDuration": "0:08",
       "testStatus": "PASSED"
     },
@@ -267,63 +335,70 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:20.103Z",
-          "endTime": "2026-02-07T13:22:20.103Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:40.389Z",
+          "endTime": "2026-02-07T19:02:41.389Z",
+          "rawStartTime": 1770490960389,
+          "rawEndTime": 1770490961389,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:20.100Z",
-          "endTime": "2026-02-07T13:22:23.093Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:02:40.413Z",
+          "endTime": "2026-02-07T19:02:43.552Z",
+          "rawStartTime": 1770490960413,
+          "rawEndTime": 1770490963552,
+          "duration": "0:03"
         },
         {
           "step": "I wait for 1000 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:23.257Z",
-          "endTime": "2026-02-07T13:22:23.257Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:43.552Z",
+          "endTime": "2026-02-07T19:02:44.552Z",
+          "rawStartTime": 1770490963552,
+          "rawEndTime": 1770490964552,
+          "duration": "0:01"
         },
         {
           "step": "I wait for 1000 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:23.250Z",
-          "endTime": "2026-02-07T13:22:24.268Z",
+          "startTime": "2026-02-07T19:02:43.593Z",
+          "endTime": "2026-02-07T19:02:44.605Z",
+          "rawStartTime": 1770490963593,
+          "rawEndTime": 1770490964605,
           "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:24.316Z",
-          "endTime": "2026-02-07T13:22:24.316Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:44.605Z",
+          "endTime": "2026-02-07T19:02:45.605Z",
+          "rawStartTime": 1770490964605,
+          "rawEndTime": 1770490965605,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:24.311Z",
-          "endTime": "2026-02-07T13:22:25.828Z",
+          "startTime": "2026-02-07T19:02:44.626Z",
+          "endTime": "2026-02-07T19:02:46.066Z",
+          "rawStartTime": 1770490964626,
+          "rawEndTime": 1770490966066,
           "duration": "0:01"
         },
         {
           "step": "I see hyperlink for all webelements",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:25.915Z",
-          "endTime": "2026-02-07T13:22:25.915Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see hyperlink for webelements",
           "status": "FAILED",
-          "startTime": "2026-02-07T13:22:33.804Z",
-          "endTime": "2026-02-07T13:22:33.804Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Some_basic_features/Basic_verification_of_links_inside_the_main_page_and_additonal_verification_of_all_hyperlinks/failed/I_see_hyperlink_for_webelements-1770470554011.png"
+          "startTime": "2026-02-07T19:02:46.066Z",
+          "endTime": "2026-02-07T19:02:53.841Z",
+          "rawStartTime": 1770490966066,
+          "rawEndTime": 1770490973841,
+          "duration": "0:08",
+          "screenshot": "cypress/screenshots/Some_basic_features/Basic_verification_of_links_inside_the_main_page_and_additonal_verification_of_all_hyperlinks/failed/I_see_hyperlink_for_all_webelements-1770490974018.png"
         }
       ],
-      "testStartTime": "2026-02-07T13:22:20.070Z",
-      "testEndTime": "2026-02-07T13:22:34.011Z",
+      "testStartTime": "2026-02-07T19:02:40.389Z",
+      "testEndTime": "2026-02-07T19:02:54.018Z",
       "testDuration": "0:13",
       "testStatus": "FAILED"
     },
@@ -334,1152 +409,1469 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:35.239Z",
-          "endTime": "2026-02-07T13:22:35.239Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:02:59.473Z",
+          "endTime": "2026-02-07T19:03:00.473Z",
+          "rawStartTime": 1770490979473,
+          "rawEndTime": 1770490980473,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:35.236Z",
-          "endTime": "2026-02-07T13:22:36.993Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:02:59.531Z",
+          "endTime": "2026-02-07T19:03:01.416Z",
+          "rawStartTime": 1770490979531,
+          "rawEndTime": 1770490981416,
+          "duration": "0:02"
         },
         {
           "step": "I click onto webelement Kontakty",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:40.689Z",
-          "endTime": "2026-02-07T13:22:40.689Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:01.416Z",
+          "endTime": "2026-02-07T19:03:02.416Z",
+          "rawStartTime": 1770490981416,
+          "rawEndTime": 1770490982416,
+          "duration": "0:01"
         },
         {
           "step": "I click onto webelement \"Kontakty\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:37.202Z",
-          "endTime": "2026-02-07T13:22:40.693Z",
-          "duration": "0:03"
+          "startTime": "2026-02-07T19:03:01.540Z",
+          "endTime": "2026-02-07T19:03:03.507Z",
+          "rawStartTime": 1770490981540,
+          "rawEndTime": 1770490983507,
+          "duration": "0:02"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:40.772Z",
-          "endTime": "2026-02-07T13:22:40.772Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:03.507Z",
+          "endTime": "2026-02-07T19:03:04.507Z",
+          "rawStartTime": 1770490983507,
+          "rawEndTime": 1770490984507,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:40.754Z",
-          "endTime": "2026-02-07T13:22:42.166Z",
+          "startTime": "2026-02-07T19:03:03.749Z",
+          "endTime": "2026-02-07T19:03:05.139Z",
+          "rawStartTime": 1770490983749,
+          "rawEndTime": 1770490985139,
           "duration": "0:01"
         },
         {
           "step": "I wait for 3500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:42.192Z",
-          "endTime": "2026-02-07T13:22:42.192Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:05.139Z",
+          "endTime": "2026-02-07T19:03:06.139Z",
+          "rawStartTime": 1770490985139,
+          "rawEndTime": 1770490986139,
+          "duration": "0:01"
         },
         {
           "step": "I wait for 3500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:42.189Z",
-          "endTime": "2026-02-07T13:22:45.703Z",
-          "duration": "0:03"
+          "startTime": "2026-02-07T19:03:05.217Z",
+          "endTime": "2026-02-07T19:03:08.732Z",
+          "rawStartTime": 1770490985217,
+          "rawEndTime": 1770490988732,
+          "duration": "0:04"
         },
         {
           "step": "I click onto the button \"Cestovanie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:45.846Z",
-          "endTime": "2026-02-07T13:22:45.846Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:08.732Z",
+          "endTime": "2026-02-07T19:03:09.732Z",
+          "rawStartTime": 1770490988732,
+          "rawEndTime": 1770490989732,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Cestovanie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:45.843Z",
-          "endTime": "2026-02-07T13:22:46.159Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:08.866Z",
+          "endTime": "2026-02-07T19:03:09.193Z",
+          "rawStartTime": 1770490988866,
+          "rawEndTime": 1770490989193,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Žiadosti\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:46.318Z",
-          "endTime": "2026-02-07T13:22:46.318Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:09.193Z",
+          "endTime": "2026-02-07T19:03:10.193Z",
+          "rawStartTime": 1770490989193,
+          "rawEndTime": 1770490990193,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Žiadosti\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:46.313Z",
-          "endTime": "2026-02-07T13:22:47.868Z",
+          "startTime": "2026-02-07T19:03:09.327Z",
+          "endTime": "2026-02-07T19:03:10.901Z",
+          "rawStartTime": 1770490989327,
+          "rawEndTime": 1770490990901,
+          "duration": "0:02"
+        },
+        {
+          "step": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:10.901Z",
+          "endTime": "2026-02-07T19:03:11.901Z",
+          "rawStartTime": 1770490990901,
+          "rawEndTime": 1770490991901,
           "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:48.003Z",
-          "endTime": "2026-02-07T13:22:48.003Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I click onto the button \"Žiadosť o zmenu v poistnej zmluve\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:47.999Z",
-          "endTime": "2026-02-07T13:22:51.696Z",
-          "duration": "0:03"
+          "startTime": "2026-02-07T19:03:10.999Z",
+          "endTime": "2026-02-07T19:03:16.319Z",
+          "rawStartTime": 1770490990999,
+          "rawEndTime": 1770490996319,
+          "duration": "0:05"
         },
         {
           "step": "I see the following fields",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:52.008Z",
-          "endTime": "2026-02-07T13:22:52.008Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:16.319Z",
+          "endTime": "2026-02-07T19:03:17.319Z",
+          "rawStartTime": 1770490996319,
+          "rawEndTime": 1770490997319,
+          "duration": "0:01"
         },
         {
           "step": "I see the following fields",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:51.996Z",
-          "endTime": "2026-02-07T13:22:52.954Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I do not see the following fields",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.363Z",
-          "endTime": "2026-02-07T13:22:53.363Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I do not see the following fields",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.356Z",
-          "endTime": "2026-02-07T13:22:53.397Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see the text area Správa",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.652Z",
-          "endTime": "2026-02-07T13:22:53.652Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see the text area \"Správa\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.437Z",
-          "endTime": "2026-02-07T13:22:53.657Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I select the radiobutton \"Spoločnosť\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.684Z",
-          "endTime": "2026-02-07T13:22:53.684Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I select the radiobutton \"Spoločnosť\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.681Z",
-          "endTime": "2026-02-07T13:22:53.955Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see the following fields",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:54.003Z",
-          "endTime": "2026-02-07T13:22:54.003Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see the following fields",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:22:53.986Z",
-          "endTime": "2026-02-07T13:22:55.018Z",
+          "startTime": "2026-02-07T19:03:16.353Z",
+          "endTime": "2026-02-07T19:03:16.896Z",
+          "rawStartTime": 1770490996353,
+          "rawEndTime": 1770490996896,
           "duration": "0:01"
         },
         {
           "step": "I do not see the following fields",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.334Z",
-          "endTime": "2026-02-07T13:22:55.334Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:16.896Z",
+          "endTime": "2026-02-07T19:03:17.896Z",
+          "rawStartTime": 1770490996896,
+          "rawEndTime": 1770490997896,
+          "duration": "0:01"
         },
         {
           "step": "I do not see the following fields",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.325Z",
-          "endTime": "2026-02-07T13:22:55.359Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:16.930Z",
+          "endTime": "2026-02-07T19:03:16.956Z",
+          "rawStartTime": 1770490996930,
+          "rawEndTime": 1770490996956,
+          "duration": "0:01"
         },
         {
           "step": "I see the text area Správa",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.686Z",
-          "endTime": "2026-02-07T13:22:55.686Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:16.956Z",
+          "endTime": "2026-02-07T19:03:17.956Z",
+          "rawStartTime": 1770490996956,
+          "rawEndTime": 1770490997956,
+          "duration": "0:01"
         },
         {
           "step": "I see the text area \"Správa\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.450Z",
-          "endTime": "2026-02-07T13:22:55.689Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:16.974Z",
+          "endTime": "2026-02-07T19:03:17.148Z",
+          "rawStartTime": 1770490996974,
+          "rawEndTime": 1770490997148,
+          "duration": "0:01"
+        },
+        {
+          "step": "I select the radiobutton \"Spoločnosť\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:17.148Z",
+          "endTime": "2026-02-07T19:03:18.148Z",
+          "rawStartTime": 1770490997148,
+          "rawEndTime": 1770490998148,
+          "duration": "0:01"
+        },
+        {
+          "step": "I select the radiobutton \"Spoločnosť\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:17.207Z",
+          "endTime": "2026-02-07T19:03:17.417Z",
+          "rawStartTime": 1770490997207,
+          "rawEndTime": 1770490997417,
+          "duration": "0:01"
+        },
+        {
+          "step": "I see the following fields",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:17.417Z",
+          "endTime": "2026-02-07T19:03:18.417Z",
+          "rawStartTime": 1770490997417,
+          "rawEndTime": 1770490998417,
+          "duration": "0:01"
+        },
+        {
+          "step": "I see the following fields",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:17.434Z",
+          "endTime": "2026-02-07T19:03:18.191Z",
+          "rawStartTime": 1770490997434,
+          "rawEndTime": 1770490998191,
+          "duration": "0:01"
+        },
+        {
+          "step": "I do not see the following fields",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:18.191Z",
+          "endTime": "2026-02-07T19:03:19.191Z",
+          "rawStartTime": 1770490998191,
+          "rawEndTime": 1770490999191,
+          "duration": "0:01"
+        },
+        {
+          "step": "I do not see the following fields",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:18.444Z",
+          "endTime": "2026-02-07T19:03:18.471Z",
+          "rawStartTime": 1770490998444,
+          "rawEndTime": 1770490998471,
+          "duration": "0:01"
+        },
+        {
+          "step": "I see the text area Správa",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:18.471Z",
+          "endTime": "2026-02-07T19:03:19.471Z",
+          "rawStartTime": 1770490998471,
+          "rawEndTime": 1770490999471,
+          "duration": "0:01"
+        },
+        {
+          "step": "I see the text area \"Správa\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:03:18.586Z",
+          "endTime": "2026-02-07T19:03:18.763Z",
+          "rawStartTime": 1770490998586,
+          "rawEndTime": 1770490998763,
+          "duration": "0:01"
         },
         {
           "step": "I select the radiobutton \"Fyzická osoba\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.719Z",
-          "endTime": "2026-02-07T13:22:55.719Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:18.763Z",
+          "endTime": "2026-02-07T19:03:19.763Z",
+          "rawStartTime": 1770490998763,
+          "rawEndTime": 1770490999763,
+          "duration": "0:01"
         },
         {
           "step": "I select the radiobutton \"Fyzická osoba\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.714Z",
-          "endTime": "2026-02-07T13:22:55.960Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:18.909Z",
+          "endTime": "2026-02-07T19:03:19.120Z",
+          "rawStartTime": 1770490998909,
+          "rawEndTime": 1770490999120,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:56.882Z",
-          "endTime": "2026-02-07T13:22:56.882Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:19.120Z",
+          "endTime": "2026-02-07T19:03:20.120Z",
+          "rawStartTime": 1770490999120,
+          "rawEndTime": 1770491000120,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:55.986Z",
-          "endTime": "2026-02-07T13:22:56.886Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:19.144Z",
+          "endTime": "2026-02-07T19:03:20.192Z",
+          "rawStartTime": 1770490999144,
+          "rawEndTime": 1770491000192,
+          "duration": "0:01"
         },
         {
           "step": "field Meno has value Alex",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:57.286Z",
-          "endTime": "2026-02-07T13:22:57.286Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:20.192Z",
+          "endTime": "2026-02-07T19:03:21.192Z",
+          "rawStartTime": 1770491000192,
+          "rawEndTime": 1770491001192,
+          "duration": "0:01"
         },
         {
           "step": "field \"Meno\" has value \"Alex\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:57.068Z",
-          "endTime": "2026-02-07T13:22:57.289Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:20.395Z",
+          "endTime": "2026-02-07T19:03:20.581Z",
+          "rawStartTime": 1770491000395,
+          "rawEndTime": 1770491000581,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:58.000Z",
-          "endTime": "2026-02-07T13:22:58.000Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:20.581Z",
+          "endTime": "2026-02-07T19:03:21.581Z",
+          "rawStartTime": 1770491000581,
+          "rawEndTime": 1770491001581,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:57.369Z",
-          "endTime": "2026-02-07T13:22:58.003Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:20.616Z",
+          "endTime": "2026-02-07T19:03:21.139Z",
+          "rawStartTime": 1770491000616,
+          "rawEndTime": 1770491001139,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Meno je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:58.582Z",
-          "endTime": "2026-02-07T13:22:58.582Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:21.139Z",
+          "endTime": "2026-02-07T19:03:22.139Z",
+          "rawStartTime": 1770491001139,
+          "rawEndTime": 1770491002139,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Meno je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:58.079Z",
-          "endTime": "2026-02-07T13:22:58.588Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:21.195Z",
+          "endTime": "2026-02-07T19:03:21.633Z",
+          "rawStartTime": 1770491001195,
+          "rawEndTime": 1770491001633,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:59.759Z",
-          "endTime": "2026-02-07T13:22:59.759Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:21.633Z",
+          "endTime": "2026-02-07T19:03:22.633Z",
+          "rawStartTime": 1770491001633,
+          "rawEndTime": 1770491002633,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:22:58.618Z",
-          "endTime": "2026-02-07T13:22:59.774Z",
+          "startTime": "2026-02-07T19:03:21.653Z",
+          "endTime": "2026-02-07T19:03:22.493Z",
+          "rawStartTime": 1770491001653,
+          "rawEndTime": 1770491002493,
           "duration": "0:01"
         },
         {
           "step": "I do not see validation message Meno je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:00.268Z",
-          "endTime": "2026-02-07T13:23:00.268Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:22.493Z",
+          "endTime": "2026-02-07T19:03:23.493Z",
+          "rawStartTime": 1770491002493,
+          "rawEndTime": 1770491003493,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Meno je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:00.183Z",
-          "endTime": "2026-02-07T13:23:00.273Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:22.737Z",
+          "endTime": "2026-02-07T19:03:22.797Z",
+          "rawStartTime": 1770491002737,
+          "rawEndTime": 1770491002797,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:01.481Z",
-          "endTime": "2026-02-07T13:23:01.481Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:22.797Z",
+          "endTime": "2026-02-07T19:03:23.797Z",
+          "rawStartTime": 1770491002797,
+          "rawEndTime": 1770491003797,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:00.300Z",
-          "endTime": "2026-02-07T13:23:01.488Z",
+          "startTime": "2026-02-07T19:03:22.861Z",
+          "endTime": "2026-02-07T19:03:23.640Z",
+          "rawStartTime": 1770491002861,
+          "rawEndTime": 1770491003640,
           "duration": "0:01"
         },
         {
           "step": "field Priezvisko has value Gregor",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:02.241Z",
-          "endTime": "2026-02-07T13:23:02.241Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:23.640Z",
+          "endTime": "2026-02-07T19:03:24.640Z",
+          "rawStartTime": 1770491003640,
+          "rawEndTime": 1770491004640,
+          "duration": "0:01"
         },
         {
           "step": "field \"Priezvisko\" has value \"Gregor\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:01.821Z",
-          "endTime": "2026-02-07T13:23:02.250Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:23.813Z",
+          "endTime": "2026-02-07T19:03:24.010Z",
+          "rawStartTime": 1770491003813,
+          "rawEndTime": 1770491004010,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:03.544Z",
-          "endTime": "2026-02-07T13:23:03.544Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:24.010Z",
+          "endTime": "2026-02-07T19:03:25.010Z",
+          "rawStartTime": 1770491004010,
+          "rawEndTime": 1770491005010,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:02.788Z",
-          "endTime": "2026-02-07T13:23:03.547Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:24.132Z",
+          "endTime": "2026-02-07T19:03:24.745Z",
+          "rawStartTime": 1770491004132,
+          "rawEndTime": 1770491004745,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Priezvisko je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:04.250Z",
-          "endTime": "2026-02-07T13:23:04.250Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:24.745Z",
+          "endTime": "2026-02-07T19:03:25.745Z",
+          "rawStartTime": 1770491004745,
+          "rawEndTime": 1770491005745,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Priezvisko je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:03.662Z",
-          "endTime": "2026-02-07T13:23:04.260Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:24.844Z",
+          "endTime": "2026-02-07T19:03:25.320Z",
+          "rawStartTime": 1770491004844,
+          "rawEndTime": 1770491005320,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:06.134Z",
-          "endTime": "2026-02-07T13:23:06.134Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:25.320Z",
+          "endTime": "2026-02-07T19:03:26.320Z",
+          "rawStartTime": 1770491005320,
+          "rawEndTime": 1770491006320,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:04.338Z",
-          "endTime": "2026-02-07T13:23:06.141Z",
+          "startTime": "2026-02-07T19:03:25.520Z",
+          "endTime": "2026-02-07T19:03:26.392Z",
+          "rawStartTime": 1770491005520,
+          "rawEndTime": 1770491006392,
           "duration": "0:01"
         },
         {
           "step": "I do not see validation message Priezvisko je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:06.861Z",
-          "endTime": "2026-02-07T13:23:06.861Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:26.392Z",
+          "endTime": "2026-02-07T19:03:27.392Z",
+          "rawStartTime": 1770491006392,
+          "rawEndTime": 1770491007392,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Priezvisko je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:06.753Z",
-          "endTime": "2026-02-07T13:23:06.868Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:26.496Z",
+          "endTime": "2026-02-07T19:03:26.552Z",
+          "rawStartTime": 1770491006496,
+          "rawEndTime": 1770491006552,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:08.513Z",
-          "endTime": "2026-02-07T13:23:08.513Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:26.552Z",
+          "endTime": "2026-02-07T19:03:27.552Z",
+          "rawStartTime": 1770491006552,
+          "rawEndTime": 1770491007552,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:06.924Z",
-          "endTime": "2026-02-07T13:23:08.520Z",
+          "startTime": "2026-02-07T19:03:26.631Z",
+          "endTime": "2026-02-07T19:03:27.505Z",
+          "rawStartTime": 1770491006631,
+          "rawEndTime": 1770491007505,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:09.549Z",
-          "endTime": "2026-02-07T13:23:09.549Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:27.505Z",
+          "endTime": "2026-02-07T19:03:28.505Z",
+          "rawStartTime": 1770491007505,
+          "rawEndTime": 1770491008505,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:08.954Z",
-          "endTime": "2026-02-07T13:23:09.559Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:27.780Z",
+          "endTime": "2026-02-07T19:03:28.316Z",
+          "rawStartTime": 1770491007780,
+          "rawEndTime": 1770491008316,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:11.132Z",
-          "endTime": "2026-02-07T13:23:11.132Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:28.316Z",
+          "endTime": "2026-02-07T19:03:29.316Z",
+          "rawStartTime": 1770491008316,
+          "rawEndTime": 1770491009316,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:09.590Z",
-          "endTime": "2026-02-07T13:23:11.136Z",
+          "startTime": "2026-02-07T19:03:28.339Z",
+          "endTime": "2026-02-07T19:03:29.445Z",
+          "rawStartTime": 1770491008339,
+          "rawEndTime": 1770491009445,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:11.878Z",
-          "endTime": "2026-02-07T13:23:11.878Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:29.445Z",
+          "endTime": "2026-02-07T19:03:30.445Z",
+          "rawStartTime": 1770491009445,
+          "rawEndTime": 1770491010445,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:11.318Z",
-          "endTime": "2026-02-07T13:23:11.889Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:29.679Z",
+          "endTime": "2026-02-07T19:03:30.141Z",
+          "rawStartTime": 1770491009679,
+          "rawEndTime": 1770491010141,
+          "duration": "0:01"
         },
         {
           "step": "I type \"abcdefgh\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:13.344Z",
-          "endTime": "2026-02-07T13:23:13.344Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:30.141Z",
+          "endTime": "2026-02-07T19:03:31.141Z",
+          "rawStartTime": 1770491010141,
+          "rawEndTime": 1770491011141,
+          "duration": "0:01"
         },
         {
           "step": "I type \"abcdefgh\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:12.145Z",
-          "endTime": "2026-02-07T13:23:13.349Z",
+          "startTime": "2026-02-07T19:03:30.163Z",
+          "endTime": "2026-02-07T19:03:31.289Z",
+          "rawStartTime": 1770491010163,
+          "rawEndTime": 1770491011289,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:14.242Z",
-          "endTime": "2026-02-07T13:23:14.242Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:31.289Z",
+          "endTime": "2026-02-07T19:03:32.289Z",
+          "rawStartTime": 1770491011289,
+          "rawEndTime": 1770491012289,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:13.630Z",
-          "endTime": "2026-02-07T13:23:14.256Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:31.464Z",
+          "endTime": "2026-02-07T19:03:32.062Z",
+          "rawStartTime": 1770491011464,
+          "rawEndTime": 1770491012062,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:15.680Z",
-          "endTime": "2026-02-07T13:23:15.680Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:32.062Z",
+          "endTime": "2026-02-07T19:03:33.062Z",
+          "rawStartTime": 1770491012062,
+          "rawEndTime": 1770491013062,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:14.285Z",
-          "endTime": "2026-02-07T13:23:15.683Z",
+          "startTime": "2026-02-07T19:03:32.277Z",
+          "endTime": "2026-02-07T19:03:33.554Z",
+          "rawStartTime": 1770491012277,
+          "rawEndTime": 1770491013554,
           "duration": "0:01"
         },
         {
           "step": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 12345678",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:16.296Z",
-          "endTime": "2026-02-07T13:23:16.296Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:33.554Z",
+          "endTime": "2026-02-07T19:03:34.554Z",
+          "rawStartTime": 1770491013554,
+          "rawEndTime": 1770491014554,
+          "duration": "0:01"
         },
         {
           "step": "field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\" has value \"12345678\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:15.984Z",
-          "endTime": "2026-02-07T13:23:16.307Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:33.738Z",
+          "endTime": "2026-02-07T19:03:34.120Z",
+          "rawStartTime": 1770491013738,
+          "rawEndTime": 1770491014120,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:16.460Z",
-          "endTime": "2026-02-07T13:23:16.460Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:34.120Z",
+          "endTime": "2026-02-07T19:03:35.120Z",
+          "rawStartTime": 1770491014120,
+          "rawEndTime": 1770491015120,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:16.343Z",
-          "endTime": "2026-02-07T13:23:16.464Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:34.350Z",
+          "endTime": "2026-02-07T19:03:34.434Z",
+          "rawStartTime": 1770491014350,
+          "rawEndTime": 1770491014434,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567890\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:17.930Z",
-          "endTime": "2026-02-07T13:23:17.930Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:34.434Z",
+          "endTime": "2026-02-07T19:03:35.434Z",
+          "rawStartTime": 1770491014434,
+          "rawEndTime": 1770491015434,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567890\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:16.491Z",
-          "endTime": "2026-02-07T13:23:17.936Z",
+          "startTime": "2026-02-07T19:03:34.511Z",
+          "endTime": "2026-02-07T19:03:35.739Z",
+          "rawStartTime": 1770491014511,
+          "rawEndTime": 1770491015739,
           "duration": "0:01"
         },
         {
           "step": "field Číslo poistnej zmluvy / Číslo návrhu zmluvy has value 1234567890",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:18.233Z",
-          "endTime": "2026-02-07T13:23:18.233Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:35.739Z",
+          "endTime": "2026-02-07T19:03:36.739Z",
+          "rawStartTime": 1770491015739,
+          "rawEndTime": 1770491016739,
+          "duration": "0:01"
         },
         {
           "step": "field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\" has value \"1234567890\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:17.959Z",
-          "endTime": "2026-02-07T13:23:18.240Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:35.863Z",
+          "endTime": "2026-02-07T19:03:36.125Z",
+          "rawStartTime": 1770491015863,
+          "rawEndTime": 1770491016125,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:18.611Z",
-          "endTime": "2026-02-07T13:23:18.611Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:36.125Z",
+          "endTime": "2026-02-07T19:03:37.125Z",
+          "rawStartTime": 1770491016125,
+          "rawEndTime": 1770491017125,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:18.521Z",
-          "endTime": "2026-02-07T13:23:18.616Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:36.202Z",
+          "endTime": "2026-02-07T19:03:36.279Z",
+          "rawStartTime": 1770491016202,
+          "rawEndTime": 1770491016279,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Číslo poistnej zmluvy / Číslo návrhu zmluvy",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:19.676Z",
-          "endTime": "2026-02-07T13:23:19.676Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:36.279Z",
+          "endTime": "2026-02-07T19:03:37.279Z",
+          "rawStartTime": 1770491016279,
+          "rawEndTime": 1770491017279,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Číslo poistnej zmluvy / Číslo návrhu zmluvy\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:18.644Z",
-          "endTime": "2026-02-07T13:23:19.682Z",
+          "startTime": "2026-02-07T19:03:36.348Z",
+          "endTime": "2026-02-07T19:03:37.187Z",
+          "rawStartTime": 1770491016348,
+          "rawEndTime": 1770491017187,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo zmluvy musí mať 8 alebo 10 číslic",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:21.037Z",
-          "endTime": "2026-02-07T13:23:21.037Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:37.187Z",
+          "endTime": "2026-02-07T19:03:38.187Z",
+          "rawStartTime": 1770491017187,
+          "rawEndTime": 1770491018187,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo zmluvy musí mať 8 alebo 10 číslic\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:20.188Z",
-          "endTime": "2026-02-07T13:23:21.052Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:37.558Z",
+          "endTime": "2026-02-07T19:03:38.094Z",
+          "rawStartTime": 1770491017558,
+          "rawEndTime": 1770491018094,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:22.508Z",
-          "endTime": "2026-02-07T13:23:22.508Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:38.094Z",
+          "endTime": "2026-02-07T19:03:39.094Z",
+          "rawStartTime": 1770491018094,
+          "rawEndTime": 1770491019094,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:21.291Z",
-          "endTime": "2026-02-07T13:23:22.511Z",
+          "startTime": "2026-02-07T19:03:38.117Z",
+          "endTime": "2026-02-07T19:03:39.256Z",
+          "rawStartTime": 1770491018117,
+          "rawEndTime": 1770491019256,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:23.288Z",
-          "endTime": "2026-02-07T13:23:23.288Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:39.256Z",
+          "endTime": "2026-02-07T19:03:40.256Z",
+          "rawStartTime": 1770491019256,
+          "rawEndTime": 1770491020256,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:22.690Z",
-          "endTime": "2026-02-07T13:23:23.295Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:39.430Z",
+          "endTime": "2026-02-07T19:03:39.938Z",
+          "rawStartTime": 1770491019430,
+          "rawEndTime": 1770491019938,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:24.567Z",
-          "endTime": "2026-02-07T13:23:24.567Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:39.938Z",
+          "endTime": "2026-02-07T19:03:40.938Z",
+          "rawStartTime": 1770491019938,
+          "rawEndTime": 1770491020938,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:23.436Z",
-          "endTime": "2026-02-07T13:23:24.573Z",
+          "startTime": "2026-02-07T19:03:39.959Z",
+          "endTime": "2026-02-07T19:03:41.194Z",
+          "rawStartTime": 1770491019959,
+          "rawEndTime": 1770491021194,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP",
           "status": "SOFT_FAILED",
-          "startTime": "2026-02-07T13:23:25.900Z",
-          "endTime": "2026-02-07T13:23:25.900Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresuPPPPPPPPPPPPPPPPPPP-1770470605310.png"
+          "startTime": "2026-02-07T19:03:41.194Z",
+          "endTime": "2026-02-07T19:03:42.194Z",
+          "rawStartTime": 1770491021194,
+          "rawEndTime": 1770491022194,
+          "duration": "0:01",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresuPPPPPPPPPPPPPPPPPPP-1770491021927.png"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresuPPPPPPPPPPPPPPPPPPP\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:24.835Z",
-          "endTime": "2026-02-07T13:23:25.906Z",
+          "startTime": "2026-02-07T19:03:41.460Z",
+          "endTime": "2026-02-07T19:03:42.375Z",
+          "rawStartTime": 1770491021460,
+          "rawEndTime": 1770491022375,
           "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:28.200Z",
-          "endTime": "2026-02-07T13:23:28.200Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:42.375Z",
+          "endTime": "2026-02-07T19:03:43.375Z",
+          "rawStartTime": 1770491022375,
+          "rawEndTime": 1770491023375,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:26.398Z",
-          "endTime": "2026-02-07T13:23:28.212Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:03:42.604Z",
+          "endTime": "2026-02-07T19:03:44.607Z",
+          "rawStartTime": 1770491022604,
+          "rawEndTime": 1770491024607,
+          "duration": "0:02"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:29.444Z",
-          "endTime": "2026-02-07T13:23:29.444Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:44.607Z",
+          "endTime": "2026-02-07T19:03:45.607Z",
+          "rawStartTime": 1770491024607,
+          "rawEndTime": 1770491025607,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:28.790Z",
-          "endTime": "2026-02-07T13:23:29.458Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:45.190Z",
+          "endTime": "2026-02-07T19:03:45.875Z",
+          "rawStartTime": 1770491025190,
+          "rawEndTime": 1770491025875,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:30.773Z",
-          "endTime": "2026-02-07T13:23:30.773Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:45.875Z",
+          "endTime": "2026-02-07T19:03:46.875Z",
+          "rawStartTime": 1770491025875,
+          "rawEndTime": 1770491026875,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:29.550Z",
-          "endTime": "2026-02-07T13:23:30.780Z",
+          "startTime": "2026-02-07T19:03:45.903Z",
+          "endTime": "2026-02-07T19:03:47.331Z",
+          "rawStartTime": 1770491025903,
+          "rawEndTime": 1770491027331,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:31.597Z",
-          "endTime": "2026-02-07T13:23:31.597Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:47.331Z",
+          "endTime": "2026-02-07T19:03:48.331Z",
+          "rawStartTime": 1770491027331,
+          "rawEndTime": 1770491028331,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:31.021Z",
-          "endTime": "2026-02-07T13:23:31.610Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:47.603Z",
+          "endTime": "2026-02-07T19:03:48.147Z",
+          "rawStartTime": 1770491027603,
+          "rawEndTime": 1770491028147,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:32.570Z",
-          "endTime": "2026-02-07T13:23:32.570Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:48.147Z",
+          "endTime": "2026-02-07T19:03:49.147Z",
+          "rawStartTime": 1770491028147,
+          "rawEndTime": 1770491029147,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:31.637Z",
-          "endTime": "2026-02-07T13:23:32.577Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:48.169Z",
+          "endTime": "2026-02-07T19:03:48.980Z",
+          "rawStartTime": 1770491028169,
+          "rawEndTime": 1770491028980,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "SOFT_FAILED",
-          "startTime": "2026-02-07T13:23:33.952Z",
-          "endTime": "2026-02-07T13:23:33.952Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresu-1770470613169.png"
+          "startTime": "2026-02-07T19:03:48.980Z",
+          "endTime": "2026-02-07T19:03:49.980Z",
+          "rawStartTime": 1770491028980,
+          "rawEndTime": 1770491029980,
+          "duration": "0:01",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message_Pros_m__zadajte_platn__emailov__adresu-1770491029528.png"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:32.602Z",
-          "endTime": "2026-02-07T13:23:33.961Z",
+          "startTime": "2026-02-07T19:03:49.061Z",
+          "endTime": "2026-02-07T19:03:49.970Z",
+          "rawStartTime": 1770491029061,
+          "rawEndTime": 1770491029970,
           "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:36.522Z",
-          "endTime": "2026-02-07T13:23:36.522Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:49.970Z",
+          "endTime": "2026-02-07T19:03:50.970Z",
+          "rawStartTime": 1770491029970,
+          "rawEndTime": 1770491030970,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:34.448Z",
-          "endTime": "2026-02-07T13:23:36.527Z",
+          "startTime": "2026-02-07T19:03:50.270Z",
+          "endTime": "2026-02-07T19:03:51.850Z",
+          "rawStartTime": 1770491030270,
+          "rawEndTime": 1770491031850,
           "duration": "0:02"
         },
         {
           "step": "field Email has value test@gmail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:37.760Z",
-          "endTime": "2026-02-07T13:23:37.760Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:51.850Z",
+          "endTime": "2026-02-07T19:03:52.850Z",
+          "rawStartTime": 1770491031850,
+          "rawEndTime": 1770491032850,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"test@gmail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:37.205Z",
-          "endTime": "2026-02-07T13:23:37.768Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:51.940Z",
+          "endTime": "2026-02-07T19:03:52.301Z",
+          "rawStartTime": 1770491031940,
+          "rawEndTime": 1770491032301,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:38.105Z",
-          "endTime": "2026-02-07T13:23:38.105Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:52.301Z",
+          "endTime": "2026-02-07T19:03:53.301Z",
+          "rawStartTime": 1770491032301,
+          "rawEndTime": 1770491033301,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:37.838Z",
-          "endTime": "2026-02-07T13:23:38.118Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:52.852Z",
+          "endTime": "2026-02-07T19:03:52.986Z",
+          "rawStartTime": 1770491032852,
+          "rawEndTime": 1770491032986,
+          "duration": "0:01"
         },
         {
           "step": "I type \"example.name+test@gmail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:40.808Z",
-          "endTime": "2026-02-07T13:23:40.808Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:52.986Z",
+          "endTime": "2026-02-07T19:03:53.986Z",
+          "rawStartTime": 1770491032986,
+          "rawEndTime": 1770491033986,
+          "duration": "0:01"
         },
         {
           "step": "I type \"example.name+test@gmail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:38.184Z",
-          "endTime": "2026-02-07T13:23:40.816Z",
+          "startTime": "2026-02-07T19:03:53.315Z",
+          "endTime": "2026-02-07T19:03:55.484Z",
+          "rawStartTime": 1770491033315,
+          "rawEndTime": 1770491035484,
           "duration": "0:02"
         },
         {
           "step": "field Email has value example.name+test@gmail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:41.518Z",
-          "endTime": "2026-02-07T13:23:41.518Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:55.484Z",
+          "endTime": "2026-02-07T19:03:56.484Z",
+          "rawStartTime": 1770491035484,
+          "rawEndTime": 1770491036484,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"example.name+test@gmail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:41.166Z",
-          "endTime": "2026-02-07T13:23:41.522Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:55.823Z",
+          "endTime": "2026-02-07T19:03:56.209Z",
+          "rawStartTime": 1770491035823,
+          "rawEndTime": 1770491036209,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:41.646Z",
-          "endTime": "2026-02-07T13:23:41.646Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:56.209Z",
+          "endTime": "2026-02-07T19:03:57.209Z",
+          "rawStartTime": 1770491036209,
+          "rawEndTime": 1770491037209,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:41.545Z",
-          "endTime": "2026-02-07T13:23:41.650Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:56.238Z",
+          "endTime": "2026-02-07T19:03:56.361Z",
+          "rawStartTime": 1770491036238,
+          "rawEndTime": 1770491036361,
+          "duration": "0:01"
         },
         {
           "step": "I type \"user123@mail.domain.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:43.223Z",
-          "endTime": "2026-02-07T13:23:43.223Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:56.361Z",
+          "endTime": "2026-02-07T19:03:57.361Z",
+          "rawStartTime": 1770491036361,
+          "rawEndTime": 1770491037361,
+          "duration": "0:01"
         },
         {
           "step": "I type \"user123@mail.domain.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:41.676Z",
-          "endTime": "2026-02-07T13:23:43.227Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:03:56.391Z",
+          "endTime": "2026-02-07T19:03:58.182Z",
+          "rawStartTime": 1770491036391,
+          "rawEndTime": 1770491038182,
+          "duration": "0:02"
         },
         {
           "step": "field Email has value user123@mail.domain.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:44.171Z",
-          "endTime": "2026-02-07T13:23:44.171Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:58.182Z",
+          "endTime": "2026-02-07T19:03:59.182Z",
+          "rawStartTime": 1770491038182,
+          "rawEndTime": 1770491039182,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"user123@mail.domain.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:43.723Z",
-          "endTime": "2026-02-07T13:23:44.176Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:58.755Z",
+          "endTime": "2026-02-07T19:03:59.148Z",
+          "rawStartTime": 1770491038755,
+          "rawEndTime": 1770491039148,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:44.554Z",
-          "endTime": "2026-02-07T13:23:44.554Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:59.148Z",
+          "endTime": "2026-02-07T19:04:00.148Z",
+          "rawStartTime": 1770491039148,
+          "rawEndTime": 1770491040148,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:44.371Z",
-          "endTime": "2026-02-07T13:23:44.559Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:59.171Z",
+          "endTime": "2026-02-07T19:03:59.269Z",
+          "rawStartTime": 1770491039171,
+          "rawEndTime": 1770491039269,
+          "duration": "0:01"
         },
         {
           "step": "I type \"name.surname@mail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:46.728Z",
-          "endTime": "2026-02-07T13:23:46.728Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:03:59.269Z",
+          "endTime": "2026-02-07T19:04:00.269Z",
+          "rawStartTime": 1770491039269,
+          "rawEndTime": 1770491040269,
+          "duration": "0:01"
         },
         {
           "step": "I type \"name.surname@mail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:44.860Z",
-          "endTime": "2026-02-07T13:23:46.733Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:03:59.361Z",
+          "endTime": "2026-02-07T19:04:01.063Z",
+          "rawStartTime": 1770491039361,
+          "rawEndTime": 1770491041063,
+          "duration": "0:02"
         },
         {
           "step": "field Email has value name.surname@mail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:47.514Z",
-          "endTime": "2026-02-07T13:23:47.514Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:01.063Z",
+          "endTime": "2026-02-07T19:04:02.063Z",
+          "rawStartTime": 1770491041063,
+          "rawEndTime": 1770491042063,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"name.surname@mail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:47.151Z",
-          "endTime": "2026-02-07T13:23:47.523Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:01.352Z",
+          "endTime": "2026-02-07T19:04:01.702Z",
+          "rawStartTime": 1770491041352,
+          "rawEndTime": 1770491041702,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:47.858Z",
-          "endTime": "2026-02-07T13:23:47.858Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:01.702Z",
+          "endTime": "2026-02-07T19:04:02.702Z",
+          "rawStartTime": 1770491041702,
+          "rawEndTime": 1770491042702,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:47.755Z",
-          "endTime": "2026-02-07T13:23:47.862Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:01.724Z",
+          "endTime": "2026-02-07T19:04:01.826Z",
+          "rawStartTime": 1770491041724,
+          "rawEndTime": 1770491041826,
+          "duration": "0:01"
         },
         {
           "step": "I type \"email_12345@gmail.io\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:50.392Z",
-          "endTime": "2026-02-07T13:23:50.392Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:01.826Z",
+          "endTime": "2026-02-07T19:04:02.826Z",
+          "rawStartTime": 1770491041826,
+          "rawEndTime": 1770491042826,
+          "duration": "0:01"
         },
         {
           "step": "I type \"email_12345@gmail.io\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:48.038Z",
-          "endTime": "2026-02-07T13:23:50.399Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:04:01.923Z",
+          "endTime": "2026-02-07T19:04:03.362Z",
+          "rawStartTime": 1770491041923,
+          "rawEndTime": 1770491043362,
+          "duration": "0:01"
         },
         {
           "step": "field Email has value email_12345@gmail.io",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:51.210Z",
-          "endTime": "2026-02-07T13:23:51.210Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:03.362Z",
+          "endTime": "2026-02-07T19:04:04.362Z",
+          "rawStartTime": 1770491043362,
+          "rawEndTime": 1770491044362,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"email_12345@gmail.io\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:50.824Z",
-          "endTime": "2026-02-07T13:23:51.215Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:03.640Z",
+          "endTime": "2026-02-07T19:04:04.028Z",
+          "rawStartTime": 1770491043640,
+          "rawEndTime": 1770491044028,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:51.549Z",
-          "endTime": "2026-02-07T13:23:51.549Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:04.028Z",
+          "endTime": "2026-02-07T19:04:05.028Z",
+          "rawStartTime": 1770491044028,
+          "rawEndTime": 1770491045028,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:51.387Z",
-          "endTime": "2026-02-07T13:23:51.557Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:04.061Z",
+          "endTime": "2026-02-07T19:04:04.202Z",
+          "rawStartTime": 1770491044061,
+          "rawEndTime": 1770491044202,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:53.244Z",
-          "endTime": "2026-02-07T13:23:53.244Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:04.202Z",
+          "endTime": "2026-02-07T19:04:05.202Z",
+          "rawStartTime": 1770491044202,
+          "rawEndTime": 1770491045202,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:51.587Z",
-          "endTime": "2026-02-07T13:23:53.252Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:04:04.344Z",
+          "endTime": "2026-02-07T19:04:05.892Z",
+          "rawStartTime": 1770491044344,
+          "rawEndTime": 1770491045892,
+          "duration": "0:02"
         },
         {
           "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:54.651Z",
-          "endTime": "2026-02-07T13:23:54.651Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:05.892Z",
+          "endTime": "2026-02-07T19:04:06.892Z",
+          "rawStartTime": 1770491045892,
+          "rawEndTime": 1770491046892,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Telefónne číslo je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:53.693Z",
-          "endTime": "2026-02-07T13:23:54.665Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:06.486Z",
+          "endTime": "2026-02-07T19:04:07.290Z",
+          "rawStartTime": 1770491046486,
+          "rawEndTime": 1770491047290,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:57.112Z",
-          "endTime": "2026-02-07T13:23:57.112Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:07.290Z",
+          "endTime": "2026-02-07T19:04:08.290Z",
+          "rawStartTime": 1770491047290,
+          "rawEndTime": 1770491048290,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:54.847Z",
-          "endTime": "2026-02-07T13:23:57.121Z",
+          "startTime": "2026-02-07T19:04:07.405Z",
+          "endTime": "2026-02-07T19:04:09.439Z",
+          "rawStartTime": 1770491047405,
+          "rawEndTime": 1770491049439,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:58.590Z",
-          "endTime": "2026-02-07T13:23:58.590Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:09.439Z",
+          "endTime": "2026-02-07T19:04:10.439Z",
+          "rawStartTime": 1770491049439,
+          "rawEndTime": 1770491050439,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:57.801Z",
-          "endTime": "2026-02-07T13:23:58.613Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:09.770Z",
+          "endTime": "2026-02-07T19:04:10.340Z",
+          "rawStartTime": 1770491049770,
+          "rawEndTime": 1770491050340,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:00.903Z",
-          "endTime": "2026-02-07T13:24:00.903Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:10.340Z",
+          "endTime": "2026-02-07T19:04:11.340Z",
+          "rawStartTime": 1770491050340,
+          "rawEndTime": 1770491051340,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:23:58.864Z",
-          "endTime": "2026-02-07T13:24:00.943Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:04:10.432Z",
+          "endTime": "2026-02-07T19:04:11.871Z",
+          "rawStartTime": 1770491050432,
+          "rawEndTime": 1770491051871,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:02.105Z",
-          "endTime": "2026-02-07T13:24:02.105Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:11.871Z",
+          "endTime": "2026-02-07T19:04:12.871Z",
+          "rawStartTime": 1770491051871,
+          "rawEndTime": 1770491052871,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:01.444Z",
-          "endTime": "2026-02-07T13:24:02.126Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:12.192Z",
+          "endTime": "2026-02-07T19:04:12.791Z",
+          "rawStartTime": 1770491052192,
+          "rawEndTime": 1770491052791,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:04.680Z",
-          "endTime": "2026-02-07T13:24:04.680Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:12.791Z",
+          "endTime": "2026-02-07T19:04:13.791Z",
+          "rawStartTime": 1770491052791,
+          "rawEndTime": 1770491053791,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:02.154Z",
-          "endTime": "2026-02-07T13:24:04.691Z",
+          "startTime": "2026-02-07T19:04:12.891Z",
+          "endTime": "2026-02-07T19:04:14.676Z",
+          "rawStartTime": 1770491052891,
+          "rawEndTime": 1770491054676,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:06.022Z",
-          "endTime": "2026-02-07T13:24:06.022Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:14.676Z",
+          "endTime": "2026-02-07T19:04:15.676Z",
+          "rawStartTime": 1770491054676,
+          "rawEndTime": 1770491055676,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:05.222Z",
-          "endTime": "2026-02-07T13:24:06.042Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:15.223Z",
+          "endTime": "2026-02-07T19:04:16.046Z",
+          "rawStartTime": 1770491055223,
+          "rawEndTime": 1770491056046,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:08.670Z",
-          "endTime": "2026-02-07T13:24:08.670Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:16.046Z",
+          "endTime": "2026-02-07T19:04:17.046Z",
+          "rawStartTime": 1770491056046,
+          "rawEndTime": 1770491057046,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:06.080Z",
-          "endTime": "2026-02-07T13:24:08.675Z",
+          "startTime": "2026-02-07T19:04:16.079Z",
+          "endTime": "2026-02-07T19:04:18.286Z",
+          "rawStartTime": 1770491056079,
+          "rawEndTime": 1770491058286,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:10.044Z",
-          "endTime": "2026-02-07T13:24:10.044Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:18.286Z",
+          "endTime": "2026-02-07T19:04:19.286Z",
+          "rawStartTime": 1770491058286,
+          "rawEndTime": 1770491059286,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:09.254Z",
-          "endTime": "2026-02-07T13:24:10.057Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:18.890Z",
+          "endTime": "2026-02-07T19:04:19.572Z",
+          "rawStartTime": 1770491058890,
+          "rawEndTime": 1770491059572,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:13.432Z",
-          "endTime": "2026-02-07T13:24:13.432Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:19.572Z",
+          "endTime": "2026-02-07T19:04:20.572Z",
+          "rawStartTime": 1770491059572,
+          "rawEndTime": 1770491060572,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:10.090Z",
-          "endTime": "2026-02-07T13:24:13.438Z",
-          "duration": "0:03"
+          "startTime": "2026-02-07T19:04:19.596Z",
+          "endTime": "2026-02-07T19:04:21.456Z",
+          "rawStartTime": 1770491059596,
+          "rawEndTime": 1770491061456,
+          "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:14.944Z",
-          "endTime": "2026-02-07T13:24:14.944Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:21.456Z",
+          "endTime": "2026-02-07T19:04:22.456Z",
+          "rawStartTime": 1770491061456,
+          "rawEndTime": 1770491062456,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:14.089Z",
-          "endTime": "2026-02-07T13:24:14.969Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:22.152Z",
+          "endTime": "2026-02-07T19:04:22.842Z",
+          "rawStartTime": 1770491062152,
+          "rawEndTime": 1770491062842,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:16.952Z",
-          "endTime": "2026-02-07T13:24:16.952Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:22.842Z",
+          "endTime": "2026-02-07T19:04:23.842Z",
+          "rawStartTime": 1770491062842,
+          "rawEndTime": 1770491063842,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:15.168Z",
-          "endTime": "2026-02-07T13:24:16.964Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:04:22.868Z",
+          "endTime": "2026-02-07T19:04:24.503Z",
+          "rawStartTime": 1770491062868,
+          "rawEndTime": 1770491064503,
+          "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "SOFT_FAILED",
-          "startTime": "2026-02-07T13:24:19.218Z",
-          "endTime": "2026-02-07T13:24:19.218Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message___slo_mus__by__uveden__v_medzin_rodnom_form_te_a_bez_medzier_-1770470658444.png"
+          "startTime": "2026-02-07T19:04:24.503Z",
+          "endTime": "2026-02-07T19:04:25.503Z",
+          "rawStartTime": 1770491064503,
+          "rawEndTime": 1770491065503,
+          "duration": "0:01",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/soft-failed/I_see_validation_message___slo_mus__by__uveden__v_medzin_rodnom_form_te_a_bez_medzier_-1770491066069.png"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:17.800Z",
-          "endTime": "2026-02-07T13:24:19.229Z",
+          "startTime": "2026-02-07T19:04:25.363Z",
+          "endTime": "2026-02-07T19:04:26.582Z",
+          "rawStartTime": 1770491065363,
+          "rawEndTime": 1770491066582,
           "duration": "0:01"
         },
         {
           "step": "I type \"323456789\" into the field Telefón",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:24:22.437Z",
-          "endTime": "2026-02-07T13:24:22.437Z",
-          "duration": "0:00"
+          "status": "FAILED",
+          "startTime": "2026-02-07T19:04:26.582Z",
+          "endTime": "2026-02-07T19:04:29.960Z",
+          "rawStartTime": 1770491066582,
+          "rawEndTime": 1770491069960,
+          "duration": "0:03",
+          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/failed/I_type__323456789__into_the_field_Telef_n-1770491070109.png"
         },
         {
           "step": "I type \"323456789\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:19.658Z",
-          "endTime": "2026-02-07T13:24:22.444Z",
+          "startTime": "2026-02-07T19:04:27.014Z",
+          "endTime": "2026-02-07T19:04:28.955Z",
+          "rawStartTime": 1770491067014,
+          "rawEndTime": 1770491068955,
           "duration": "0:02"
-        },
-        {
-          "step": "field \"Telefón\" has value \"+421 323 456 789\"",
-          "status": "FAILED",
-          "startTime": "2026-02-07T13:24:23.754Z",
-          "endTime": "2026-02-07T13:24:23.754Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Some_basic_features/Testing_basic_verification_of_fields_inside_request_for_the_information_form/failed/field__Telef_n__has_value___421_323_456_789_-1770470664213.png"
         }
       ],
-      "testStartTime": "2026-02-07T13:22:35.155Z",
-      "testEndTime": "2026-02-07T13:24:24.213Z",
-      "testDuration": "1:49",
+      "testStartTime": "2026-02-07T19:02:59.473Z",
+      "testEndTime": "2026-02-07T19:04:30.108Z",
+      "testDuration": "1:30",
       "testStatus": "FAILED"
     },
     {
@@ -1489,42 +1881,43 @@
         {
           "step": "I visit business-max product",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:30.865Z",
-          "endTime": "2026-02-07T13:24:30.865Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:04:40.338Z",
+          "endTime": "2026-02-07T19:04:41.338Z",
+          "rawStartTime": 1770491080338,
+          "rawEndTime": 1770491081338,
+          "duration": "0:01"
         },
         {
           "step": "I visit business-max product",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:30.856Z",
-          "endTime": "2026-02-07T13:24:34.322Z",
+          "startTime": "2026-02-07T19:04:40.374Z",
+          "endTime": "2026-02-07T19:04:43.721Z",
+          "rawStartTime": 1770491080374,
+          "rawEndTime": 1770491083721,
           "duration": "0:03"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:24:34.446Z",
-          "endTime": "2026-02-07T13:24:34.446Z",
-          "duration": "0:00"
+          "status": "FAILED",
+          "startTime": "2026-02-07T19:04:43.721Z",
+          "endTime": "2026-02-07T19:04:52.338Z",
+          "rawStartTime": 1770491083721,
+          "rawEndTime": 1770491092338,
+          "duration": "0:09",
+          "screenshot": "cypress/screenshots/Testing_Business_max/Verification_of_articles_for_business_max_product/failed/I_click_onto_the_button__Odmietnu__v_etky_-1770491092891.png"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:34.438Z",
-          "endTime": "2026-02-07T13:24:35.935Z",
+          "startTime": "2026-02-07T19:04:43.787Z",
+          "endTime": "2026-02-07T19:04:45.241Z",
+          "rawStartTime": 1770491083787,
+          "rawEndTime": 1770491085241,
           "duration": "0:01"
-        },
-        {
-          "step": "I see article \"Odcudzenie\"",
-          "status": "FAILED",
-          "startTime": "2026-02-07T13:24:43.053Z",
-          "endTime": "2026-02-07T13:24:43.053Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Testing_Business_max/Verification_of_articles_for_business_max_product/failed/I_see_article__Odcudzenie_-1770470683646.png"
         }
       ],
-      "testStartTime": "2026-02-07T13:24:30.818Z",
-      "testEndTime": "2026-02-07T13:24:43.646Z",
+      "testStartTime": "2026-02-07T19:04:40.338Z",
+      "testEndTime": "2026-02-07T19:04:52.891Z",
       "testDuration": "0:12",
       "testStatus": "FAILED"
     },
@@ -1535,897 +1928,1142 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:48.699Z",
-          "endTime": "2026-02-07T13:24:48.699Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:03.648Z",
+          "endTime": "2026-02-07T19:05:04.648Z",
+          "rawStartTime": 1770491103648,
+          "rawEndTime": 1770491104648,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:48.695Z",
-          "endTime": "2026-02-07T13:24:51.236Z",
+          "startTime": "2026-02-07T19:05:03.699Z",
+          "endTime": "2026-02-07T19:05:06.050Z",
+          "rawStartTime": 1770491103699,
+          "rawEndTime": 1770491106050,
           "duration": "0:02"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:51.534Z",
-          "endTime": "2026-02-07T13:24:51.534Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:06.050Z",
+          "endTime": "2026-02-07T19:05:07.050Z",
+          "rawStartTime": 1770491106050,
+          "rawEndTime": 1770491107050,
+          "duration": "0:01"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:51.527Z",
-          "endTime": "2026-02-07T13:24:53.047Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:05:06.312Z",
+          "endTime": "2026-02-07T19:05:07.833Z",
+          "rawStartTime": 1770491106312,
+          "rawEndTime": 1770491107833,
+          "duration": "0:02"
         },
         {
           "step": "I click onto hyperlink Poistenie",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:53.199Z",
-          "endTime": "2026-02-07T13:24:53.199Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:07.833Z",
+          "endTime": "2026-02-07T19:05:08.833Z",
+          "rawStartTime": 1770491107833,
+          "rawEndTime": 1770491108833,
+          "duration": "0:01"
         },
         {
           "step": "I click onto hyperlink \"Poistenie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:53.136Z",
-          "endTime": "2026-02-07T13:24:53.309Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:07.878Z",
+          "endTime": "2026-02-07T19:05:08.090Z",
+          "rawStartTime": 1770491107878,
+          "rawEndTime": 1770491108090,
+          "duration": "0:01"
         },
         {
           "step": "I see all listed links",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:53.344Z",
-          "endTime": "2026-02-07T13:24:53.344Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:08.090Z",
+          "endTime": "2026-02-07T19:05:09.090Z",
+          "rawStartTime": 1770491108090,
+          "rawEndTime": 1770491109090,
+          "duration": "0:01"
         },
         {
           "step": "I see links",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:53.335Z",
-          "endTime": "2026-02-07T13:24:55.991Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:05:08.197Z",
+          "endTime": "2026-02-07T19:05:08.620Z",
+          "rawStartTime": 1770491108197,
+          "rawEndTime": 1770491108620,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link zodpovednost",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:56.175Z",
-          "endTime": "2026-02-07T13:24:56.175Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:08.620Z",
+          "endTime": "2026-02-07T19:05:09.620Z",
+          "rawStartTime": 1770491108620,
+          "rawEndTime": 1770491109620,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link \"zodpovednost\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:56.029Z",
-          "endTime": "2026-02-07T13:24:56.181Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:08.724Z",
+          "endTime": "2026-02-07T19:05:08.856Z",
+          "rawStartTime": 1770491108724,
+          "rawEndTime": 1770491108856,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:58.478Z",
-          "endTime": "2026-02-07T13:24:58.478Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:08.856Z",
+          "endTime": "2026-02-07T19:05:09.856Z",
+          "rawStartTime": 1770491108856,
+          "rawEndTime": 1770491109856,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link \"zodpovednost/skoda-sposobena-zamestnavatelovi\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:56.214Z",
-          "endTime": "2026-02-07T13:24:58.482Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:05:08.876Z",
+          "endTime": "2026-02-07T19:05:10.099Z",
+          "rawStartTime": 1770491108876,
+          "rawEndTime": 1770491110099,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text: Úvod | O poistení | Pripoistenia | Otázky a odpovede | Dokumenty | Chcem poistenie zodpovednosti",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:58.793Z",
-          "endTime": "2026-02-07T13:24:58.793Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:10.099Z",
+          "endTime": "2026-02-07T19:05:11.099Z",
+          "rawStartTime": 1770491110099,
+          "rawEndTime": 1770491111099,
+          "duration": "0:01"
         },
         {
           "step": "I see links for webelements with text",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:58.781Z",
-          "endTime": "2026-02-07T13:24:59.692Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:10.249Z",
+          "endTime": "2026-02-07T19:05:10.772Z",
+          "rawStartTime": 1770491110249,
+          "rawEndTime": 1770491110772,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:02.854Z",
-          "endTime": "2026-02-07T13:25:02.854Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:10.772Z",
+          "endTime": "2026-02-07T19:05:11.772Z",
+          "rawStartTime": 1770491110772,
+          "rawEndTime": 1770491111772,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the link of webelement with text \"Chcem poistenie zodpovednosti\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:24:59.924Z",
-          "endTime": "2026-02-07T13:25:02.858Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:05:10.938Z",
+          "endTime": "2026-02-07T19:05:13.594Z",
+          "rawStartTime": 1770491110938,
+          "rawEndTime": 1770491113594,
+          "duration": "0:03"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:03.083Z",
-          "endTime": "2026-02-07T13:25:03.083Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I click onto the button \"Odmietnuť všetky\"",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:25:03.075Z",
-          "endTime": "2026-02-07T13:25:04.695Z",
+          "startTime": "2026-02-07T19:05:13.594Z",
+          "endTime": "2026-02-07T19:05:14.594Z",
+          "rawStartTime": 1770491113594,
+          "rawEndTime": 1770491114594,
           "duration": "0:01"
+        },
+        {
+          "step": "I click onto the button \"Odmietnuť všetky\"",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:05:13.773Z",
+          "endTime": "2026-02-07T19:05:15.308Z",
+          "rawStartTime": 1770491113773,
+          "rawEndTime": 1770491115308,
+          "duration": "0:02"
         },
         {
           "step": "I see following checkboxes in expected states",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:06.704Z",
-          "endTime": "2026-02-07T13:25:06.704Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:15.308Z",
+          "endTime": "2026-02-07T19:05:16.308Z",
+          "rawStartTime": 1770491115308,
+          "rawEndTime": 1770491116308,
+          "duration": "0:01"
         },
         {
           "step": "I see following checkboxes in states",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:04.768Z",
-          "endTime": "2026-02-07T13:25:06.710Z",
+          "startTime": "2026-02-07T19:05:15.397Z",
+          "endTime": "2026-02-07T19:05:16.611Z",
+          "rawStartTime": 1770491115397,
+          "rawEndTime": 1770491116611,
           "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:08.461Z",
-          "endTime": "2026-02-07T13:25:08.461Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:16.611Z",
+          "endTime": "2026-02-07T19:05:17.611Z",
+          "rawStartTime": 1770491116611,
+          "rawEndTime": 1770491117611,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:07.290Z",
-          "endTime": "2026-02-07T13:25:08.469Z",
+          "startTime": "2026-02-07T19:05:16.937Z",
+          "endTime": "2026-02-07T19:05:17.677Z",
+          "rawStartTime": 1770491116937,
+          "rawEndTime": 1770491117677,
           "duration": "0:01"
         },
         {
           "step": "field Meno has value Alex",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:09.319Z",
-          "endTime": "2026-02-07T13:25:09.319Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:17.677Z",
+          "endTime": "2026-02-07T19:05:18.677Z",
+          "rawStartTime": 1770491117677,
+          "rawEndTime": 1770491118677,
+          "duration": "0:01"
         },
         {
           "step": "field \"Meno\" has value \"Alex\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:08.915Z",
-          "endTime": "2026-02-07T13:25:09.325Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:17.846Z",
+          "endTime": "2026-02-07T19:05:18.012Z",
+          "rawStartTime": 1770491117846,
+          "rawEndTime": 1770491118012,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:10.550Z",
-          "endTime": "2026-02-07T13:25:10.550Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:18.012Z",
+          "endTime": "2026-02-07T19:05:19.012Z",
+          "rawStartTime": 1770491118012,
+          "rawEndTime": 1770491119012,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:09.554Z",
-          "endTime": "2026-02-07T13:25:10.557Z",
+          "startTime": "2026-02-07T19:05:18.092Z",
+          "endTime": "2026-02-07T19:05:18.613Z",
+          "rawStartTime": 1770491118092,
+          "rawEndTime": 1770491118613,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Meno je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:11.466Z",
-          "endTime": "2026-02-07T13:25:11.466Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:18.613Z",
+          "endTime": "2026-02-07T19:05:19.613Z",
+          "rawStartTime": 1770491118613,
+          "rawEndTime": 1770491119613,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Meno je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:10.773Z",
-          "endTime": "2026-02-07T13:25:11.473Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:18.666Z",
+          "endTime": "2026-02-07T19:05:19.132Z",
+          "rawStartTime": 1770491118666,
+          "rawEndTime": 1770491119132,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field Meno",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:12.753Z",
-          "endTime": "2026-02-07T13:25:12.753Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:19.132Z",
+          "endTime": "2026-02-07T19:05:20.132Z",
+          "rawStartTime": 1770491119132,
+          "rawEndTime": 1770491120132,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Alex\" into the field \"Meno\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:11.805Z",
-          "endTime": "2026-02-07T13:25:12.756Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:19.295Z",
+          "endTime": "2026-02-07T19:05:20.021Z",
+          "rawStartTime": 1770491119295,
+          "rawEndTime": 1770491120021,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Meno je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:13.179Z",
-          "endTime": "2026-02-07T13:25:13.179Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:20.021Z",
+          "endTime": "2026-02-07T19:05:21.021Z",
+          "rawStartTime": 1770491120021,
+          "rawEndTime": 1770491121021,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Meno je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:12.850Z",
-          "endTime": "2026-02-07T13:25:13.182Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:20.076Z",
+          "endTime": "2026-02-07T19:05:20.495Z",
+          "rawStartTime": 1770491120076,
+          "rawEndTime": 1770491120495,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:14.038Z",
-          "endTime": "2026-02-07T13:25:14.038Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:20.495Z",
+          "endTime": "2026-02-07T19:05:21.495Z",
+          "rawStartTime": 1770491120495,
+          "rawEndTime": 1770491121495,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:13.200Z",
-          "endTime": "2026-02-07T13:25:14.042Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:20.689Z",
+          "endTime": "2026-02-07T19:05:21.485Z",
+          "rawStartTime": 1770491120689,
+          "rawEndTime": 1770491121485,
+          "duration": "0:01"
         },
         {
           "step": "field Priezvisko has value Gregor",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:14.486Z",
-          "endTime": "2026-02-07T13:25:14.486Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:21.485Z",
+          "endTime": "2026-02-07T19:05:22.485Z",
+          "rawStartTime": 1770491121485,
+          "rawEndTime": 1770491122485,
+          "duration": "0:01"
         },
         {
           "step": "field \"Priezvisko\" has value \"Gregor\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:14.270Z",
-          "endTime": "2026-02-07T13:25:14.490Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:21.620Z",
+          "endTime": "2026-02-07T19:05:21.824Z",
+          "rawStartTime": 1770491121620,
+          "rawEndTime": 1770491121824,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:15.459Z",
-          "endTime": "2026-02-07T13:25:15.459Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:21.824Z",
+          "endTime": "2026-02-07T19:05:22.824Z",
+          "rawStartTime": 1770491121824,
+          "rawEndTime": 1770491122824,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:14.679Z",
-          "endTime": "2026-02-07T13:25:15.465Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:22.066Z",
+          "endTime": "2026-02-07T19:05:22.643Z",
+          "rawStartTime": 1770491122066,
+          "rawEndTime": 1770491122643,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Priezvisko je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:16.435Z",
-          "endTime": "2026-02-07T13:25:16.435Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:22.643Z",
+          "endTime": "2026-02-07T19:05:23.643Z",
+          "rawStartTime": 1770491122643,
+          "rawEndTime": 1770491123643,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Priezvisko je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:15.928Z",
-          "endTime": "2026-02-07T13:25:16.446Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:22.737Z",
+          "endTime": "2026-02-07T19:05:23.268Z",
+          "rawStartTime": 1770491122737,
+          "rawEndTime": 1770491123268,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field Priezvisko",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:17.657Z",
-          "endTime": "2026-02-07T13:25:17.657Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:23.268Z",
+          "endTime": "2026-02-07T19:05:24.268Z",
+          "rawStartTime": 1770491123268,
+          "rawEndTime": 1770491124268,
+          "duration": "0:01"
         },
         {
           "step": "I type \"Gregor\" into the field \"Priezvisko\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:16.468Z",
-          "endTime": "2026-02-07T13:25:17.661Z",
+          "startTime": "2026-02-07T19:05:23.501Z",
+          "endTime": "2026-02-07T19:05:24.535Z",
+          "rawStartTime": 1770491123501,
+          "rawEndTime": 1770491124535,
           "duration": "0:01"
         },
         {
           "step": "I do not see validation message Priezvisko je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:18.171Z",
-          "endTime": "2026-02-07T13:25:18.171Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:24.535Z",
+          "endTime": "2026-02-07T19:05:25.535Z",
+          "rawStartTime": 1770491124535,
+          "rawEndTime": 1770491125535,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Priezvisko je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:17.882Z",
-          "endTime": "2026-02-07T13:25:18.176Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:24.939Z",
+          "endTime": "2026-02-07T19:05:25.217Z",
+          "rawStartTime": 1770491124939,
+          "rawEndTime": 1770491125217,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:19.285Z",
-          "endTime": "2026-02-07T13:25:19.285Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:25.217Z",
+          "endTime": "2026-02-07T19:05:26.217Z",
+          "rawStartTime": 1770491125217,
+          "rawEndTime": 1770491126217,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:18.386Z",
-          "endTime": "2026-02-07T13:25:19.290Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:25.258Z",
+          "endTime": "2026-02-07T19:05:26.315Z",
+          "rawStartTime": 1770491125258,
+          "rawEndTime": 1770491126315,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:19.855Z",
-          "endTime": "2026-02-07T13:25:19.855Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:26.315Z",
+          "endTime": "2026-02-07T19:05:27.315Z",
+          "rawStartTime": 1770491126315,
+          "rawEndTime": 1770491127315,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:19.419Z",
-          "endTime": "2026-02-07T13:25:19.862Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:26.471Z",
+          "endTime": "2026-02-07T19:05:26.967Z",
+          "rawStartTime": 1770491126471,
+          "rawEndTime": 1770491126967,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:20.829Z",
-          "endTime": "2026-02-07T13:25:20.829Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:26.967Z",
+          "endTime": "2026-02-07T19:05:27.967Z",
+          "rawStartTime": 1770491126967,
+          "rawEndTime": 1770491127967,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:20.057Z",
-          "endTime": "2026-02-07T13:25:20.832Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:26.989Z",
+          "endTime": "2026-02-07T19:05:27.956Z",
+          "rawStartTime": 1770491126989,
+          "rawEndTime": 1770491127956,
+          "duration": "0:01"
         },
         {
           "step": "I click away",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:21.000Z",
-          "endTime": "2026-02-07T13:25:21.000Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:27.956Z",
+          "endTime": "2026-02-07T19:05:28.956Z",
+          "rawStartTime": 1770491127956,
+          "rawEndTime": 1770491128956,
+          "duration": "0:01"
         },
         {
           "step": "I click away",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:20.891Z",
-          "endTime": "2026-02-07T13:25:21.003Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:28.261Z",
+          "endTime": "2026-02-07T19:05:28.388Z",
+          "rawStartTime": 1770491128261,
+          "rawEndTime": 1770491128388,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:21.459Z",
-          "endTime": "2026-02-07T13:25:21.459Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:28.388Z",
+          "endTime": "2026-02-07T19:05:29.388Z",
+          "rawStartTime": 1770491128388,
+          "rawEndTime": 1770491129388,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:21.022Z",
-          "endTime": "2026-02-07T13:25:21.466Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:28.410Z",
+          "endTime": "2026-02-07T19:05:28.885Z",
+          "rawStartTime": 1770491128410,
+          "rawEndTime": 1770491128885,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:22.517Z",
-          "endTime": "2026-02-07T13:25:22.517Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:28.885Z",
+          "endTime": "2026-02-07T19:05:29.885Z",
+          "rawStartTime": 1770491128885,
+          "rawEndTime": 1770491129885,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:21.670Z",
-          "endTime": "2026-02-07T13:25:22.521Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:28.911Z",
+          "endTime": "2026-02-07T19:05:29.888Z",
+          "rawStartTime": 1770491128911,
+          "rawEndTime": 1770491129888,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:23.074Z",
-          "endTime": "2026-02-07T13:25:23.074Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:29.888Z",
+          "endTime": "2026-02-07T19:05:30.888Z",
+          "rawStartTime": 1770491129888,
+          "rawEndTime": 1770491130888,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:22.581Z",
-          "endTime": "2026-02-07T13:25:23.081Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:29.956Z",
+          "endTime": "2026-02-07T19:05:30.488Z",
+          "rawStartTime": 1770491129956,
+          "rawEndTime": 1770491130488,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:24.195Z",
-          "endTime": "2026-02-07T13:25:24.195Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:30.488Z",
+          "endTime": "2026-02-07T19:05:31.488Z",
+          "rawStartTime": 1770491130488,
+          "rawEndTime": 1770491131488,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:23.297Z",
-          "endTime": "2026-02-07T13:25:24.199Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:30.723Z",
+          "endTime": "2026-02-07T19:05:31.763Z",
+          "rawStartTime": 1770491130723,
+          "rawEndTime": 1770491131763,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:24.769Z",
-          "endTime": "2026-02-07T13:25:24.769Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:31.763Z",
+          "endTime": "2026-02-07T19:05:32.763Z",
+          "rawStartTime": 1770491131763,
+          "rawEndTime": 1770491132763,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:24.279Z",
-          "endTime": "2026-02-07T13:25:24.777Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:31.938Z",
+          "endTime": "2026-02-07T19:05:32.433Z",
+          "rawStartTime": 1770491131938,
+          "rawEndTime": 1770491132433,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:25.614Z",
-          "endTime": "2026-02-07T13:25:25.614Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:32.433Z",
+          "endTime": "2026-02-07T19:05:33.433Z",
+          "rawStartTime": 1770491132433,
+          "rawEndTime": 1770491133433,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:25.008Z",
-          "endTime": "2026-02-07T13:25:25.618Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:32.453Z",
+          "endTime": "2026-02-07T19:05:33.235Z",
+          "rawStartTime": 1770491132453,
+          "rawEndTime": 1770491133235,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message Email je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:26.146Z",
-          "endTime": "2026-02-07T13:25:26.146Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:33.235Z",
+          "endTime": "2026-02-07T19:05:34.235Z",
+          "rawStartTime": 1770491133235,
+          "rawEndTime": 1770491134235,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Email je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:25.640Z",
-          "endTime": "2026-02-07T13:25:26.157Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:33.397Z",
+          "endTime": "2026-02-07T19:05:33.915Z",
+          "rawStartTime": 1770491133397,
+          "rawEndTime": 1770491133915,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:27.599Z",
-          "endTime": "2026-02-07T13:25:27.599Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:33.915Z",
+          "endTime": "2026-02-07T19:05:34.915Z",
+          "rawStartTime": 1770491133915,
+          "rawEndTime": 1770491134915,
+          "duration": "0:01"
         },
         {
           "step": "I type \"test@gmail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:26.445Z",
-          "endTime": "2026-02-07T13:25:27.603Z",
+          "startTime": "2026-02-07T19:05:33.940Z",
+          "endTime": "2026-02-07T19:05:35.293Z",
+          "rawStartTime": 1770491133940,
+          "rawEndTime": 1770491135293,
           "duration": "0:01"
         },
         {
           "step": "field Email has value test@gmail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:28.164Z",
-          "endTime": "2026-02-07T13:25:28.164Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:35.293Z",
+          "endTime": "2026-02-07T19:05:36.293Z",
+          "rawStartTime": 1770491135293,
+          "rawEndTime": 1770491136293,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"test@gmail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:27.901Z",
-          "endTime": "2026-02-07T13:25:28.169Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:35.681Z",
+          "endTime": "2026-02-07T19:05:36.111Z",
+          "rawStartTime": 1770491135681,
+          "rawEndTime": 1770491136111,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:28.439Z",
-          "endTime": "2026-02-07T13:25:28.439Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:36.111Z",
+          "endTime": "2026-02-07T19:05:37.111Z",
+          "rawStartTime": 1770491136111,
+          "rawEndTime": 1770491137111,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:28.361Z",
-          "endTime": "2026-02-07T13:25:28.443Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:36.236Z",
+          "endTime": "2026-02-07T19:05:36.335Z",
+          "rawStartTime": 1770491136236,
+          "rawEndTime": 1770491136335,
+          "duration": "0:01"
         },
         {
           "step": "I type \"example.name+test@gmail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:30.087Z",
-          "endTime": "2026-02-07T13:25:30.087Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:36.335Z",
+          "endTime": "2026-02-07T19:05:37.335Z",
+          "rawStartTime": 1770491136335,
+          "rawEndTime": 1770491137335,
+          "duration": "0:01"
         },
         {
           "step": "I type \"example.name+test@gmail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:28.517Z",
-          "endTime": "2026-02-07T13:25:30.091Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:05:36.362Z",
+          "endTime": "2026-02-07T19:05:37.911Z",
+          "rawStartTime": 1770491136362,
+          "rawEndTime": 1770491137911,
+          "duration": "0:02"
         },
         {
           "step": "field Email has value example.name+test@gmail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:30.723Z",
-          "endTime": "2026-02-07T13:25:30.723Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:37.911Z",
+          "endTime": "2026-02-07T19:05:38.911Z",
+          "rawStartTime": 1770491137911,
+          "rawEndTime": 1770491138911,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"example.name+test@gmail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:30.457Z",
-          "endTime": "2026-02-07T13:25:30.727Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:38.129Z",
+          "endTime": "2026-02-07T19:05:38.406Z",
+          "rawStartTime": 1770491138129,
+          "rawEndTime": 1770491138406,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:30.996Z",
-          "endTime": "2026-02-07T13:25:30.996Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:38.406Z",
+          "endTime": "2026-02-07T19:05:39.406Z",
+          "rawStartTime": 1770491138406,
+          "rawEndTime": 1770491139406,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:30.909Z",
-          "endTime": "2026-02-07T13:25:31.000Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:38.668Z",
+          "endTime": "2026-02-07T19:05:38.822Z",
+          "rawStartTime": 1770491138668,
+          "rawEndTime": 1770491138822,
+          "duration": "0:01"
         },
         {
           "step": "I type \"user123@mail.domain.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:32.597Z",
-          "endTime": "2026-02-07T13:25:32.597Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:38.822Z",
+          "endTime": "2026-02-07T19:05:39.822Z",
+          "rawStartTime": 1770491138822,
+          "rawEndTime": 1770491139822,
+          "duration": "0:01"
         },
         {
           "step": "I type \"user123@mail.domain.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:31.039Z",
-          "endTime": "2026-02-07T13:25:32.601Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:05:38.854Z",
+          "endTime": "2026-02-07T19:05:40.570Z",
+          "rawStartTime": 1770491138854,
+          "rawEndTime": 1770491140570,
+          "duration": "0:02"
         },
         {
           "step": "field Email has value user123@mail.domain.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:33.150Z",
-          "endTime": "2026-02-07T13:25:33.150Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:40.570Z",
+          "endTime": "2026-02-07T19:05:41.570Z",
+          "rawStartTime": 1770491140570,
+          "rawEndTime": 1770491141570,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"user123@mail.domain.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:32.865Z",
-          "endTime": "2026-02-07T13:25:33.154Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:40.897Z",
+          "endTime": "2026-02-07T19:05:41.176Z",
+          "rawStartTime": 1770491140897,
+          "rawEndTime": 1770491141176,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:33.477Z",
-          "endTime": "2026-02-07T13:25:33.477Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:41.176Z",
+          "endTime": "2026-02-07T19:05:42.176Z",
+          "rawStartTime": 1770491141176,
+          "rawEndTime": 1770491142176,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:33.396Z",
-          "endTime": "2026-02-07T13:25:33.483Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:41.327Z",
+          "endTime": "2026-02-07T19:05:41.415Z",
+          "rawStartTime": 1770491141327,
+          "rawEndTime": 1770491141415,
+          "duration": "0:01"
         },
         {
           "step": "I type \"name.surname@mail.com\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.112Z",
-          "endTime": "2026-02-07T13:25:35.112Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:41.415Z",
+          "endTime": "2026-02-07T19:05:42.415Z",
+          "rawStartTime": 1770491141415,
+          "rawEndTime": 1770491142415,
+          "duration": "0:01"
         },
         {
           "step": "I type \"name.surname@mail.com\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:33.509Z",
-          "endTime": "2026-02-07T13:25:35.120Z",
+          "startTime": "2026-02-07T19:05:41.439Z",
+          "endTime": "2026-02-07T19:05:42.698Z",
+          "rawStartTime": 1770491141439,
+          "rawEndTime": 1770491142698,
           "duration": "0:01"
         },
         {
           "step": "field Email has value name.surname@mail.com",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.683Z",
-          "endTime": "2026-02-07T13:25:35.683Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:42.698Z",
+          "endTime": "2026-02-07T19:05:43.698Z",
+          "rawStartTime": 1770491142698,
+          "rawEndTime": 1770491143698,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"name.surname@mail.com\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.403Z",
-          "endTime": "2026-02-07T13:25:35.687Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:42.783Z",
+          "endTime": "2026-02-07T19:05:43.096Z",
+          "rawStartTime": 1770491142783,
+          "rawEndTime": 1770491143096,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.913Z",
-          "endTime": "2026-02-07T13:25:35.913Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:43.096Z",
+          "endTime": "2026-02-07T19:05:44.096Z",
+          "rawStartTime": 1770491143096,
+          "rawEndTime": 1770491144096,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.840Z",
-          "endTime": "2026-02-07T13:25:35.917Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:43.448Z",
+          "endTime": "2026-02-07T19:05:43.570Z",
+          "rawStartTime": 1770491143448,
+          "rawEndTime": 1770491143570,
+          "duration": "0:01"
         },
         {
           "step": "I type \"email_12345@gmail.io\" into the field Email",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:37.439Z",
-          "endTime": "2026-02-07T13:25:37.439Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:43.570Z",
+          "endTime": "2026-02-07T19:05:44.570Z",
+          "rawStartTime": 1770491143570,
+          "rawEndTime": 1770491144570,
+          "duration": "0:01"
         },
         {
           "step": "I type \"email_12345@gmail.io\" into the field \"Email\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:35.938Z",
-          "endTime": "2026-02-07T13:25:37.444Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:05:43.756Z",
+          "endTime": "2026-02-07T19:05:45.671Z",
+          "rawStartTime": 1770491143756,
+          "rawEndTime": 1770491145671,
+          "duration": "0:02"
         },
         {
           "step": "field Email has value email_12345@gmail.io",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:38.089Z",
-          "endTime": "2026-02-07T13:25:38.089Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:45.671Z",
+          "endTime": "2026-02-07T19:05:46.671Z",
+          "rawStartTime": 1770491145671,
+          "rawEndTime": 1770491146671,
+          "duration": "0:01"
         },
         {
           "step": "field \"Email\" has value \"email_12345@gmail.io\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:37.728Z",
-          "endTime": "2026-02-07T13:25:38.094Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:45.987Z",
+          "endTime": "2026-02-07T19:05:46.294Z",
+          "rawStartTime": 1770491145987,
+          "rawEndTime": 1770491146294,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message Prosím, zadajte platnú emailovú adresu",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:38.431Z",
-          "endTime": "2026-02-07T13:25:38.431Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:46.294Z",
+          "endTime": "2026-02-07T19:05:47.294Z",
+          "rawStartTime": 1770491146294,
+          "rawEndTime": 1770491147294,
+          "duration": "0:01"
         },
         {
           "step": "I do not see validation message \"Prosím, zadajte platnú emailovú adresu\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:38.336Z",
-          "endTime": "2026-02-07T13:25:38.436Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:46.411Z",
+          "endTime": "2026-02-07T19:05:46.499Z",
+          "rawStartTime": 1770491146411,
+          "rawEndTime": 1770491146499,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:39.536Z",
-          "endTime": "2026-02-07T13:25:39.536Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:46.499Z",
+          "endTime": "2026-02-07T19:05:47.499Z",
+          "rawStartTime": 1770491146499,
+          "rawEndTime": 1770491147499,
+          "duration": "0:01"
         },
         {
           "step": "I type \"\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:38.518Z",
-          "endTime": "2026-02-07T13:25:39.542Z",
+          "startTime": "2026-02-07T19:05:46.584Z",
+          "endTime": "2026-02-07T19:05:47.726Z",
+          "rawStartTime": 1770491146584,
+          "rawEndTime": 1770491147726,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:40.355Z",
-          "endTime": "2026-02-07T13:25:40.355Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:47.726Z",
+          "endTime": "2026-02-07T19:05:48.726Z",
+          "rawStartTime": 1770491147726,
+          "rawEndTime": 1770491148726,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Telefónne číslo je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:39.757Z",
-          "endTime": "2026-02-07T13:25:40.364Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:48.248Z",
+          "endTime": "2026-02-07T19:05:48.798Z",
+          "rawStartTime": 1770491148248,
+          "rawEndTime": 1770491148798,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:41.755Z",
-          "endTime": "2026-02-07T13:25:41.755Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:48.798Z",
+          "endTime": "2026-02-07T19:05:49.798Z",
+          "rawStartTime": 1770491148798,
+          "rawEndTime": 1770491149798,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:40.654Z",
-          "endTime": "2026-02-07T13:25:41.760Z",
+          "startTime": "2026-02-07T19:05:48.821Z",
+          "endTime": "2026-02-07T19:05:49.985Z",
+          "rawStartTime": 1770491148821,
+          "rawEndTime": 1770491149985,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:43.118Z",
-          "endTime": "2026-02-07T13:25:43.118Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:49.985Z",
+          "endTime": "2026-02-07T19:05:50.985Z",
+          "rawStartTime": 1770491149985,
+          "rawEndTime": 1770491150985,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:42.515Z",
-          "endTime": "2026-02-07T13:25:43.130Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:50.144Z",
+          "endTime": "2026-02-07T19:05:50.722Z",
+          "rawStartTime": 1770491150144,
+          "rawEndTime": 1770491150722,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:45.227Z",
-          "endTime": "2026-02-07T13:25:45.227Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:50.722Z",
+          "endTime": "2026-02-07T19:05:51.722Z",
+          "rawStartTime": 1770491150722,
+          "rawEndTime": 1770491151722,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:43.152Z",
-          "endTime": "2026-02-07T13:25:45.236Z",
+          "startTime": "2026-02-07T19:05:50.748Z",
+          "endTime": "2026-02-07T19:05:52.549Z",
+          "rawStartTime": 1770491150748,
+          "rawEndTime": 1770491152549,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:46.394Z",
-          "endTime": "2026-02-07T13:25:46.394Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:52.549Z",
+          "endTime": "2026-02-07T19:05:53.549Z",
+          "rawStartTime": 1770491152549,
+          "rawEndTime": 1770491153549,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:45.710Z",
-          "endTime": "2026-02-07T13:25:46.405Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:52.918Z",
+          "endTime": "2026-02-07T19:05:53.602Z",
+          "rawStartTime": 1770491152918,
+          "rawEndTime": 1770491153602,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:48.614Z",
-          "endTime": "2026-02-07T13:25:48.614Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:53.602Z",
+          "endTime": "2026-02-07T19:05:54.602Z",
+          "rawStartTime": 1770491153602,
+          "rawEndTime": 1770491154602,
+          "duration": "0:01"
         },
         {
           "step": "I type \"1234567\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:46.431Z",
-          "endTime": "2026-02-07T13:25:48.624Z",
+          "startTime": "2026-02-07T19:05:53.703Z",
+          "endTime": "2026-02-07T19:05:55.591Z",
+          "rawStartTime": 1770491153703,
+          "rawEndTime": 1770491155591,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:49.728Z",
-          "endTime": "2026-02-07T13:25:49.728Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:55.591Z",
+          "endTime": "2026-02-07T19:05:56.591Z",
+          "rawStartTime": 1770491155591,
+          "rawEndTime": 1770491156591,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:49.057Z",
-          "endTime": "2026-02-07T13:25:49.750Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:55.971Z",
+          "endTime": "2026-02-07T19:05:56.595Z",
+          "rawStartTime": 1770491155971,
+          "rawEndTime": 1770491156595,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:52.239Z",
-          "endTime": "2026-02-07T13:25:52.239Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:56.595Z",
+          "endTime": "2026-02-07T19:05:57.595Z",
+          "rawStartTime": 1770491156595,
+          "rawEndTime": 1770491157595,
+          "duration": "0:01"
         },
         {
           "step": "I type \"12345678\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:49.794Z",
-          "endTime": "2026-02-07T13:25:52.253Z",
+          "startTime": "2026-02-07T19:05:56.626Z",
+          "endTime": "2026-02-07T19:05:58.522Z",
+          "rawStartTime": 1770491156626,
+          "rawEndTime": 1770491158522,
           "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:53.337Z",
-          "endTime": "2026-02-07T13:25:53.337Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:58.522Z",
+          "endTime": "2026-02-07T19:05:59.522Z",
+          "rawStartTime": 1770491158522,
+          "rawEndTime": 1770491159522,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:52.672Z",
-          "endTime": "2026-02-07T13:25:53.353Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:58.836Z",
+          "endTime": "2026-02-07T19:05:59.515Z",
+          "rawStartTime": 1770491158836,
+          "rawEndTime": 1770491159515,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:55.370Z",
-          "endTime": "2026-02-07T13:25:55.370Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:05:59.515Z",
+          "endTime": "2026-02-07T19:06:00.515Z",
+          "rawStartTime": 1770491159515,
+          "rawEndTime": 1770491160515,
+          "duration": "0:01"
         },
         {
           "step": "I type \"123456789\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:53.378Z",
-          "endTime": "2026-02-07T13:25:55.374Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:05:59.690Z",
+          "endTime": "2026-02-07T19:06:01.547Z",
+          "rawStartTime": 1770491159690,
+          "rawEndTime": 1770491161547,
+          "duration": "0:02"
         },
         {
           "step": "I see validation message Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:56.458Z",
-          "endTime": "2026-02-07T13:25:56.458Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:01.547Z",
+          "endTime": "2026-02-07T19:06:02.547Z",
+          "rawStartTime": 1770491161547,
+          "rawEndTime": 1770491162547,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Číslo musí byť uvedené v medzinárodnom formáte a bez medzier.\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:55.797Z",
-          "endTime": "2026-02-07T13:25:56.471Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:01.914Z",
+          "endTime": "2026-02-07T19:06:02.511Z",
+          "rawStartTime": 1770491161914,
+          "rawEndTime": 1770491162511,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field Telefón",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:57.772Z",
-          "endTime": "2026-02-07T13:25:57.772Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:02.511Z",
+          "endTime": "2026-02-07T19:06:03.511Z",
+          "rawStartTime": 1770491162511,
+          "rawEndTime": 1770491163511,
+          "duration": "0:01"
         },
         {
           "step": "I type \" \" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:56.496Z",
-          "endTime": "2026-02-07T13:25:57.779Z",
+          "startTime": "2026-02-07T19:06:02.536Z",
+          "endTime": "2026-02-07T19:06:03.571Z",
+          "rawStartTime": 1770491162536,
+          "rawEndTime": 1770491163571,
           "duration": "0:01"
         },
         {
           "step": "I see validation message Telefónne číslo je povinný údaj",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:59.067Z",
-          "endTime": "2026-02-07T13:25:59.067Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:03.571Z",
+          "endTime": "2026-02-07T19:06:04.571Z",
+          "rawStartTime": 1770491163571,
+          "rawEndTime": 1770491164571,
+          "duration": "0:01"
         },
         {
           "step": "I see validation message \"Telefónne číslo je povinný údaj\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:58.387Z",
-          "endTime": "2026-02-07T13:25:59.089Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:03.674Z",
+          "endTime": "2026-02-07T19:06:04.530Z",
+          "rawStartTime": 1770491163674,
+          "rawEndTime": 1770491164530,
+          "duration": "0:01"
         },
         {
           "step": "I type \"323456789\" into the field Telefón",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:26:01.503Z",
-          "endTime": "2026-02-07T13:26:01.503Z",
-          "duration": "0:00"
+          "status": "FAILED",
+          "startTime": "2026-02-07T19:06:04.530Z",
+          "endTime": "2026-02-07T19:06:07.713Z",
+          "rawStartTime": 1770491164530,
+          "rawEndTime": 1770491167713,
+          "duration": "0:03",
+          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_fields__links_and_checkboxes_for_responsibility_insurance/failed/I_type__323456789__into_the_field_Telef_n-1770491168037.png"
         },
         {
           "step": "I type \"323456789\" into the field \"Telefón\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:25:59.116Z",
-          "endTime": "2026-02-07T13:26:01.519Z",
+          "startTime": "2026-02-07T19:06:04.974Z",
+          "endTime": "2026-02-07T19:06:06.848Z",
+          "rawStartTime": 1770491164974,
+          "rawEndTime": 1770491166848,
           "duration": "0:02"
-        },
-        {
-          "step": "field \"Telefón\" has value \"+421 323 456 789\"",
-          "status": "FAILED",
-          "startTime": "2026-02-07T13:26:02.945Z",
-          "endTime": "2026-02-07T13:26:02.945Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_fields__links_and_checkboxes_for_responsibility_insurance/failed/field__Telef_n__has_value___421_323_456_789_-1770470763030.png"
         }
       ],
-      "testStartTime": "2026-02-07T13:24:48.655Z",
-      "testEndTime": "2026-02-07T13:26:03.029Z",
-      "testDuration": "1:14",
+      "testStartTime": "2026-02-07T19:05:03.648Z",
+      "testEndTime": "2026-02-07T19:06:08.036Z",
+      "testDuration": "1:04",
       "testStatus": "FAILED"
     },
     {
@@ -2435,250 +3073,309 @@
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:05.317Z",
-          "endTime": "2026-02-07T13:26:05.317Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:12.651Z",
+          "endTime": "2026-02-07T19:06:13.651Z",
+          "rawStartTime": 1770491172651,
+          "rawEndTime": 1770491173651,
+          "duration": "0:01"
         },
         {
           "step": "I visit the main website",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:05.314Z",
-          "endTime": "2026-02-07T13:26:08.022Z",
-          "duration": "0:02"
+          "startTime": "2026-02-07T19:06:12.933Z",
+          "endTime": "2026-02-07T19:06:16.574Z",
+          "rawStartTime": 1770491172933,
+          "rawEndTime": 1770491176574,
+          "duration": "0:04"
         },
         {
           "step": "I wait for 1500 milliseconds",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:09.026Z",
-          "endTime": "2026-02-07T13:26:09.026Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I wait for 1500 milliseconds",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:26:09.022Z",
-          "endTime": "2026-02-07T13:26:10.537Z",
+          "startTime": "2026-02-07T19:06:16.574Z",
+          "endTime": "2026-02-07T19:06:17.574Z",
+          "rawStartTime": 1770491176574,
+          "rawEndTime": 1770491177574,
           "duration": "0:01"
+        },
+        {
+          "step": "I wait for 1500 milliseconds",
+          "status": "PASSED",
+          "startTime": "2026-02-07T19:06:16.822Z",
+          "endTime": "2026-02-07T19:06:18.414Z",
+          "rawStartTime": 1770491176822,
+          "rawEndTime": 1770491178414,
+          "duration": "0:02"
         },
         {
           "step": "I click onto hyperlink Poistenie",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:10.845Z",
-          "endTime": "2026-02-07T13:26:10.845Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:18.414Z",
+          "endTime": "2026-02-07T19:06:19.414Z",
+          "rawStartTime": 1770491178414,
+          "rawEndTime": 1770491179414,
+          "duration": "0:01"
         },
         {
           "step": "I click onto hyperlink \"Poistenie\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:10.577Z",
-          "endTime": "2026-02-07T13:26:11.703Z",
+          "startTime": "2026-02-07T19:06:18.688Z",
+          "endTime": "2026-02-07T19:06:19.163Z",
+          "rawStartTime": 1770491178688,
+          "rawEndTime": 1770491179163,
           "duration": "0:01"
         },
         {
           "step": "I click onto the simple link zodpovednost",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:12.823Z",
-          "endTime": "2026-02-07T13:26:12.823Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:19.163Z",
+          "endTime": "2026-02-07T19:06:20.163Z",
+          "rawStartTime": 1770491179163,
+          "rawEndTime": 1770491180163,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link \"zodpovednost\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:12.298Z",
-          "endTime": "2026-02-07T13:26:12.828Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:19.186Z",
+          "endTime": "2026-02-07T19:06:19.569Z",
+          "rawStartTime": 1770491179186,
+          "rawEndTime": 1770491179569,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link zodpovednost/skoda-sposobena-zamestnavatelovi",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:15.974Z",
-          "endTime": "2026-02-07T13:26:15.974Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:19.569Z",
+          "endTime": "2026-02-07T19:06:20.569Z",
+          "rawStartTime": 1770491179569,
+          "rawEndTime": 1770491180569,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the simple link \"zodpovednost/skoda-sposobena-zamestnavatelovi\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:12.941Z",
-          "endTime": "2026-02-07T13:26:15.981Z",
-          "duration": "0:03"
+          "startTime": "2026-02-07T19:06:19.859Z",
+          "endTime": "2026-02-07T19:06:24.081Z",
+          "rawStartTime": 1770491179859,
+          "rawEndTime": 1770491184081,
+          "duration": "0:04"
         },
         {
           "step": "I click onto the link of webelement with text Chcem poistenie zodpovednosti",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:22.593Z",
-          "endTime": "2026-02-07T13:26:22.593Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:24.081Z",
+          "endTime": "2026-02-07T19:06:25.081Z",
+          "rawStartTime": 1770491184081,
+          "rawEndTime": 1770491185081,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the link of webelement with text \"Chcem poistenie zodpovednosti\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:16.839Z",
-          "endTime": "2026-02-07T13:26:22.598Z",
+          "startTime": "2026-02-07T19:06:24.461Z",
+          "endTime": "2026-02-07T19:06:28.972Z",
+          "rawStartTime": 1770491184461,
+          "rawEndTime": 1770491188972,
           "duration": "0:05"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:23.741Z",
-          "endTime": "2026-02-07T13:26:23.741Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:28.972Z",
+          "endTime": "2026-02-07T19:06:29.972Z",
+          "rawStartTime": 1770491188972,
+          "rawEndTime": 1770491189972,
+          "duration": "0:01"
         },
         {
           "step": "I click onto the button \"Odmietnuť všetky\"",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:23.734Z",
-          "endTime": "2026-02-07T13:26:25.545Z",
-          "duration": "0:01"
+          "startTime": "2026-02-07T19:06:29.655Z",
+          "endTime": "2026-02-07T19:06:31.240Z",
+          "rawStartTime": 1770491189655,
+          "rawEndTime": 1770491191240,
+          "duration": "0:02"
         },
         {
           "step": "Inside the block Auto I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:26.580Z",
-          "endTime": "2026-02-07T13:26:26.580Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:31.240Z",
+          "endTime": "2026-02-07T19:06:32.240Z",
+          "rawStartTime": 1770491191240,
+          "rawEndTime": 1770491192240,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Auto\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:26.562Z",
-          "endTime": "2026-02-07T13:26:31.864Z",
-          "duration": "0:05"
+          "startTime": "2026-02-07T19:06:31.627Z",
+          "endTime": "2026-02-07T19:06:35.143Z",
+          "rawStartTime": 1770491191627,
+          "rawEndTime": 1770491195143,
+          "duration": "0:04"
         },
         {
           "step": "Inside the block Život I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:32.836Z",
-          "endTime": "2026-02-07T13:26:32.836Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:35.143Z",
+          "endTime": "2026-02-07T19:06:36.143Z",
+          "rawStartTime": 1770491195143,
+          "rawEndTime": 1770491196143,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Život\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:32.814Z",
-          "endTime": "2026-02-07T13:26:43.270Z",
-          "duration": "0:10"
+          "startTime": "2026-02-07T19:06:35.793Z",
+          "endTime": "2026-02-07T19:06:43.866Z",
+          "rawStartTime": 1770491195793,
+          "rawEndTime": 1770491203866,
+          "duration": "0:08"
         },
         {
           "step": "Inside the block Majetok I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:43.648Z",
-          "endTime": "2026-02-07T13:26:43.648Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:43.866Z",
+          "endTime": "2026-02-07T19:06:44.866Z",
+          "rawStartTime": 1770491203866,
+          "rawEndTime": 1770491204866,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Majetok\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:43.640Z",
-          "endTime": "2026-02-07T13:26:45.454Z",
+          "startTime": "2026-02-07T19:06:44.243Z",
+          "endTime": "2026-02-07T19:06:45.665Z",
+          "rawStartTime": 1770491204243,
+          "rawEndTime": 1770491205665,
           "duration": "0:01"
         },
         {
           "step": "Inside the block Zodpovednosť I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:46.063Z",
-          "endTime": "2026-02-07T13:26:46.063Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:45.665Z",
+          "endTime": "2026-02-07T19:06:46.665Z",
+          "rawStartTime": 1770491205665,
+          "rawEndTime": 1770491206665,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Zodpovednosť\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:46.053Z",
-          "endTime": "2026-02-07T13:26:47.699Z",
+          "startTime": "2026-02-07T19:06:46.241Z",
+          "endTime": "2026-02-07T19:06:47.330Z",
+          "rawStartTime": 1770491206241,
+          "rawEndTime": 1770491207330,
           "duration": "0:01"
         },
         {
           "step": "Inside the block Cestovanie I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:48.009Z",
-          "endTime": "2026-02-07T13:26:48.009Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:47.330Z",
+          "endTime": "2026-02-07T19:06:48.330Z",
+          "rawStartTime": 1770491207330,
+          "rawEndTime": 1770491208330,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Cestovanie\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:47.993Z",
-          "endTime": "2026-02-07T13:26:52.013Z",
-          "duration": "0:04"
+          "startTime": "2026-02-07T19:06:47.481Z",
+          "endTime": "2026-02-07T19:06:50.031Z",
+          "rawStartTime": 1770491207481,
+          "rawEndTime": 1770491210031,
+          "duration": "0:03"
         },
         {
           "step": "Inside the block Asistenčné služby I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:52.892Z",
-          "endTime": "2026-02-07T13:26:52.892Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:50.031Z",
+          "endTime": "2026-02-07T19:06:51.031Z",
+          "rawStartTime": 1770491210031,
+          "rawEndTime": 1770491211031,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Asistenčné služby\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:52.866Z",
-          "endTime": "2026-02-07T13:26:54.440Z",
+          "startTime": "2026-02-07T19:06:50.571Z",
+          "endTime": "2026-02-07T19:06:51.315Z",
+          "rawStartTime": 1770491210571,
+          "rawEndTime": 1770491211315,
           "duration": "0:01"
         },
         {
           "step": "Inside the block Bankopoistenie I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:55.280Z",
-          "endTime": "2026-02-07T13:26:55.280Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:51.315Z",
+          "endTime": "2026-02-07T19:06:52.315Z",
+          "rawStartTime": 1770491211315,
+          "rawEndTime": 1770491212315,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Bankopoistenie\" I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:55.271Z",
-          "endTime": "2026-02-07T13:26:56.731Z",
+          "startTime": "2026-02-07T19:06:51.357Z",
+          "endTime": "2026-02-07T19:06:52.126Z",
+          "rawStartTime": 1770491211357,
+          "rawEndTime": 1770491212126,
           "duration": "0:01"
         },
         {
           "step": "Inside the highlighted block Rýchle linky I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:57.060Z",
-          "endTime": "2026-02-07T13:26:57.060Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:52.126Z",
+          "endTime": "2026-02-07T19:06:53.126Z",
+          "rawStartTime": 1770491212126,
+          "rawEndTime": 1770491213126,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Rýchle linky\" with highlighted header I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:26:57.040Z",
-          "endTime": "2026-02-07T13:27:01.438Z",
-          "duration": "0:04"
+          "startTime": "2026-02-07T19:06:52.296Z",
+          "endTime": "2026-02-07T19:06:54.766Z",
+          "rawStartTime": 1770491212296,
+          "rawEndTime": 1770491214766,
+          "duration": "0:02"
         },
         {
           "step": "Inside the highlighted block Dôležité odkazy I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:27:02.256Z",
-          "endTime": "2026-02-07T13:27:02.256Z",
-          "duration": "0:00"
+          "startTime": "2026-02-07T19:06:54.766Z",
+          "endTime": "2026-02-07T19:06:55.766Z",
+          "rawStartTime": 1770491214766,
+          "rawEndTime": 1770491215766,
+          "duration": "0:01"
         },
         {
           "step": "Inside the block \"Dôležité odkazy\" with highlighted header I see hyperlinks",
           "status": "PASSED",
-          "startTime": "2026-02-07T13:27:02.241Z",
-          "endTime": "2026-02-07T13:27:06.390Z",
-          "duration": "0:04"
+          "startTime": "2026-02-07T19:06:55.123Z",
+          "endTime": "2026-02-07T19:06:57.921Z",
+          "rawStartTime": 1770491215123,
+          "rawEndTime": 1770491217921,
+          "duration": "0:03"
         },
         {
           "step": "I see links for webelements with text: Zľava 10 % pre všetkých na havarijné poistenie | Zľava 10 % na poistenie bývania až na 3 roky a k tomu extra 20 % pre poistenie bytu na prvý rok",
-          "status": "PASSED",
-          "startTime": "2026-02-07T13:27:07.117Z",
-          "endTime": "2026-02-07T13:27:07.117Z",
-          "duration": "0:00"
-        },
-        {
-          "step": "I see links for webelements with text",
           "status": "FAILED",
-          "startTime": "2026-02-07T13:27:15.003Z",
-          "endTime": "2026-02-07T13:27:15.003Z",
-          "duration": "0:00",
-          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_links_inside_responsibility_insurance/failed/I_see_links_for_webelements_with_text-1770470835662.png"
+          "startTime": "2026-02-07T19:06:57.921Z",
+          "endTime": "2026-02-07T19:07:05.896Z",
+          "rawStartTime": 1770491217921,
+          "rawEndTime": 1770491225896,
+          "duration": "0:08",
+          "screenshot": "cypress/screenshots/Testing_section_responsibility_insurance/Verification_of_links_inside_responsibility_insurance/failed/I_see_links_for_webelements_with_text__Z_ava_10___pre_v_etk_ch_na_havarijn__poistenie___Z_ava_10___na_poistenie_b_vania_a__na_3_roky_a_k_tomu_extra_20___pre_poistenie_bytu_na_prv__rok-1770491226473.png"
         }
       ],
-      "testStartTime": "2026-02-07T13:26:04.974Z",
-      "testEndTime": "2026-02-07T13:27:15.661Z",
-      "testDuration": "1:10",
+      "testStartTime": "2026-02-07T19:06:12.651Z",
+      "testEndTime": "2026-02-07T19:07:06.473Z",
+      "testDuration": "0:53",
       "testStatus": "FAILED"
     }
   ],
-  "executionStartTime": "2026-02-07T13:21:53.803Z",
-  "executionEndTime": "2026-02-07T13:27:15.661Z",
-  "executionDuration": "5:21"
+  "executionStartTime": "2026-02-07T19:02:15.379Z",
+  "executionEndTime": "2026-02-07T19:07:06.473Z",
+  "executionDuration": "4:51"
 }

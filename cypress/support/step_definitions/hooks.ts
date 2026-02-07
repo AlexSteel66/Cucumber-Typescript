@@ -3,11 +3,10 @@ import {
   ensureScenario,
   finalizeScenario,
   reportStep,
+  normalizeStepsTimeline,
   StepStatus,
-  currentStepName,
   currentScenario,
-  setCurrentStep,
-  clearCurrentStep,
+  currentStepName,
 } from '../reports/hierarchicalReport';
 
 import { formatDuration } from '../reports/TimeUtils';
@@ -21,51 +20,53 @@ const toSafeName = (value: string) =>
   value.replace(/[^a-zA-Z0-9]/g, '_');
 
 // ======================================================
-// STEP CONTEXT – START TIME
+// STEP START
 // ======================================================
 
 BeforeStep(function ({ pickleStep }) {
-  setCurrentStep(pickleStep.text);
-
-  // pridanie casovania krokov
-  (pickleStep as any).startTime = new Date().toISOString();
+  // jednotný zdroj pravdy – timestamp v ms
+  (pickleStep as any).__startTime = Date.now();
 });
 
 // ======================================================
-// STEP CONTEXT – END TIME
+// STEP END
 // ======================================================
 
 AfterStep(function ({ pickleStep }) {
-  if (!currentScenario) return;
+  const rawStartTime = (pickleStep as any).__startTime;
+  const rawEndTime = Date.now();
 
-  const stepName = pickleStep.text;
-  const step = currentScenario.steps.find(s => s.step === stepName);
-
-  const endTime = new Date().toISOString();
-  const startTime = (pickleStep as any).startTime ?? endTime;
-
-  reportStep(stepName, 'PASSED', {
-    startTime,
-    endTime,
-    duration: formatDuration(startTime, endTime),
+  reportStep(pickleStep.text, 'PASSED', {
+    rawStartTime, // number
+    rawEndTime,   // number
   });
-
-  clearCurrentStep();
 });
 
 // ======================================================
-// GLOBAL FAIL HANDLER (EXCEPT STEP FAILURE)
+// GLOBAL FAIL
 // ======================================================
 
 Cypress.on('fail', function (error) {
-  const stepName = currentStepName || 'Unknown step';
+  if (currentScenario && currentScenario.steps.length > 0) {
+    // najbližší neuzavretý krok (bez rawEndTime)
+    const lastOpenStep = [...currentScenario.steps]
+      .reverse()
+      .find(step => step.rawEndTime === undefined);
 
-  reportStep(stepName, 'FAILED', {
-    messages: [error.message, error.stack || ''],
-  });
+    if (lastOpenStep) {
+      lastOpenStep.status = 'FAILED';
+      lastOpenStep.rawEndTime = Date.now();
+    } else {
+      // ak žiadny neexistuje, pridáme krok ako fallback
+      reportStep('Unknown step', 'FAILED', {
+        rawEndTime: Date.now(),
+      });
+    }
+  }
 
   throw error;
 });
+
 
 // ======================================================
 // BEFORE EACH SCENARIO
@@ -104,6 +105,9 @@ afterEach(function () {
       currentScenario.testEndTime
     );
     currentScenario.testStatus = testStatus;
+
+    // 🔥 POST-PROCESSING ČASOVEJ OSI KROKOV
+    normalizeStepsTimeline(currentScenario);
   }
 
   const finalize = () => {
@@ -114,23 +118,16 @@ afterEach(function () {
   if (testStatus === 'FAILED' && currentScenario) {
     const failedStep = [...currentScenario.steps]
       .reverse()
-      .find(step => step.status === 'FAILED');
+      .find(s => s.status === 'FAILED');
 
     if (failedStep) {
-      const safeFeature = toSafeName(feature);
-      const safeScenario = toSafeName(scenario);
-      const safeStep = toSafeName(failedStep.step);
-      const timestamp = Date.now();
+      const screenshotPath =
+        `${toSafeName(feature)}/${toSafeName(scenario)}/failed/${toSafeName(failedStep.step)}-${Date.now()}`;
 
-      const screenshotCypressPath =
-        `${safeFeature}/${safeScenario}/failed/${safeStep}-${timestamp}`;
-
-      return cy
-        .screenshot(screenshotCypressPath, { capture: 'runner' })
-        .then(() => {
-          failedStep.screenshot = `cypress/screenshots/${screenshotCypressPath}.png`;
-          finalize();
-        });
+      return cy.screenshot(screenshotPath).then(() => {
+        failedStep.screenshot = `cypress/screenshots/${screenshotPath}.png`;
+        finalize();
+      });
     }
   }
 
@@ -138,7 +135,7 @@ afterEach(function () {
 });
 
 // ======================================================
-// AFTER ALL TESTS
+// AFTER ALL
 // ======================================================
 
 after(() => {
