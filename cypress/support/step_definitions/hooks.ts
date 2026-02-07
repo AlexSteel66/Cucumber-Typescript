@@ -29,14 +29,27 @@ BeforeStep(function ({ pickleStep }) {
 
   // pridanie casovania krokov
   (pickleStep as any).startTime = new Date().toISOString();
-  (pickleStep as any).startPerf = performance.now();
 });
 
 // ======================================================
 // STEP CONTEXT – END TIME
 // ======================================================
 
-AfterStep(function () {
+AfterStep(function ({ pickleStep }) {
+  if (!currentScenario) return;
+
+  const stepName = pickleStep.text;
+  const step = currentScenario.steps.find(s => s.step === stepName);
+
+  const endTime = new Date().toISOString();
+  const startTime = (pickleStep as any).startTime ?? endTime;
+
+  reportStep(stepName, 'PASSED', {
+    startTime,
+    endTime,
+    duration: formatDuration(startTime, endTime),
+  });
+
   clearCurrentStep();
 });
 
@@ -85,35 +98,14 @@ afterEach(function () {
       : 'PASSED';
 
   if (currentScenario) {
-    const steps = currentScenario.steps;
-
-    for (let i = 0; i < steps.length; i++) {
-      const currentStep = steps[i];
-      const nextStep = steps[i + 1];
-
-      const startMs = (currentStep as any).startPerf ?? performance.now();
-      const endMs = nextStep
-        ? (nextStep as any).startPerf ?? performance.now()
-        : performance.now();
-
-      currentStep.duration = formatDuration(startMs, endMs);
-
-      currentStep.startTime =
-        (currentStep as any).startTime ?? new Date().toISOString();
-      currentStep.endTime = new Date().toISOString();
-    }
-
     currentScenario.testEndTime = new Date().toISOString();
     currentScenario.testDuration = formatDuration(
       currentScenario.testStartTime!,
       currentScenario.testEndTime
     );
-
-    // uloženie testStatus na koniec scenára
     currentScenario.testStatus = testStatus;
   }
 
-  // SCREENSHOT NA POSLEDNÝ FAILNUTÝ KROK
   const finalize = () => {
     cy.task('appendScenarioToReport', currentScenario);
     finalizeScenario();
@@ -142,7 +134,7 @@ afterEach(function () {
     }
   }
 
-  finalize(); // pre PASSED alebo SKIPPED, alebo ak failnutý krok screenshot sa nespustil
+  finalize();
 });
 
 // ======================================================
